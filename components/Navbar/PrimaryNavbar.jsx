@@ -42,7 +42,7 @@ const PrimaryNavbar = () => {
           <div className="nav-logo" style={{ width: '15%' }}>
             <Link href="/">
  
-            Paytirement.com 
+            Paytirement
      </Link>
           
           </div>
