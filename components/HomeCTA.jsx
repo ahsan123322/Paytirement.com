@@ -93,12 +93,9 @@ const HomeCta = () => {
       <div className="container relative z-10">
         <div className=" mx-auto   text-center">
           <h2 className="mb-5 text-[48px] font-semibold max-lg:text-[32px]">
-            Convert your payment  <br />
-             mathod
+            Convert your payment <br /> mathod
           </h2>
-          <p className="mx-auto mb-12 max-w-[400px] max-lg:mt-6">
-            Convert your payment mathod now to Paytirement.
-          </p>
+          <p className="mx-auto mb-12 max-w-[400px] max-lg:mt-6"> Convert your payment mathod now to Paytirement. </p>
           <Link href="/contact" className="btn">
             Get Started Today
           </Link>

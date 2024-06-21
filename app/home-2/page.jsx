@@ -13,7 +13,7 @@ const HomePageTwo = () => {
   return (
     <>
       <PaymentHero />
-      <PaymentRating />           
+      <PaymentRating />
       <CoreFeature />
       <WhyUs />
       <PaymentFeatures

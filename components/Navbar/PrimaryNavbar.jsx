@@ -11,7 +11,6 @@ import { createPortal } from 'react-dom'
 import SearchOption from '../SearchOption'
 
 const PrimaryNavbar = () => {
-
   const [showSearch, setShowSearch] = useState(false)
   const [showMobileMenu, setShowMobileMenu] = useState(false)
   const [sticky, setSticky] = useState(false)
@@ -40,11 +39,12 @@ const PrimaryNavbar = () => {
           sticky ? 'nav-sticky' : '',
         )}>
         <nav className="container flex items-center">
-          <div className="nav-logo" style={{width:'15%'}}>
+          <div className="nav-logo" style={{ width: '15%' }}>
             <Link href="/">
-              <Image src={menuData.logoLight} alt="logo" className="dark:hidden" width={70} height={29} />
-             Paytirement.com
-            </Link>
+            <Image src={menuData.logoLight} width={70} height={29} className="dark:hidden" alt="logo" />  
+            Paytirement.com 
+     </Link>
+          
           </div>
 
           <ul className="nav-list mx-auto hidden rounded-large bg-white p-2.5 shadow-nav dark:bg-dark-200 lg:flex [&>*:not(:last-child)]:me-1">
@@ -106,7 +106,7 @@ const PrimaryNavbar = () => {
                 </svg>
               </button>
             </li>
-            <li className="max-lg:hidden text-center">
+            <li className="text-center max-lg:hidden">
               <Link href="/request-demo" className="btn btn-navbar btn-sm">
                 Request Demo
               </Link>
