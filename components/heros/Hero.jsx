@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import heroChartDark from '../../public/images/hero/hero-chart-dark.png'
 import heroChartLight from '../../public/images/hero/hero-chart.png'
-import heroCircleDark from '../../public/images/hero/hero-circle-dark.png'
+// import heroCircleDark from '../../public/images/hero/hero-circle-dark.png'
 import heroCircleLight from '../../public/images/hero/hero-circle.png'
 import heroPolicyDark from '../../public/images/hero/hero-policy-dark.png'
 import heroPolicyLight from '../../public/images/hero/hero-policy.png'
@@ -137,7 +137,7 @@ const Hero = () => {
             <div className="relative min-h-[530px] w-full max-md:min-h-[400px] lg:ml-15">
               <div className="absolute !left-1/2 !top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <Image src={heroCircleLight} alt="hero Image" className="inline-block h-auto w-auto  dark:hidden" />
-                <Image src={heroCircleDark} alt="hero Image" className="hidden h-auto w-auto  dark:inline-block" />
+              
               </div>
               <div className="absolute !-left-[40px] !top-15 max-lg:!left-0 max-lg:aspect-video max-lg:w-[220px] max-md:!top-5 lg:!-top-[20px]">
                 <Image src={heroPolicyLight} alt="hero Image" className="inline-block h-auto w-auto dark:hidden" />
