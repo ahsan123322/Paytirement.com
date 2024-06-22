@@ -5,7 +5,7 @@ import CtaV2 from '@/components/CtaV2'
 
 import PageHero from '@/components/heros/PageHero'
 import PaymentFeatures from '@/components/PaymentFeatures'
-import TeamMembers from '@/components/TeamMembers'
+import TeamMembers from '@/components/TeamMembers' 
 import TestimonialSlider from '@/components/TestimonialSlider'
 import { AboutFeaturesData } from '@/data/data'
 import React from 'react'
