@@ -41,8 +41,8 @@ const PrimaryNavbar = () => {
         <nav className="container flex items-center">
           <div className="nav-logo" style={{ width: '15%' }}>
             <Link href="/">
- 
-            Paytirement
+           
+          <h3>Paytirement</h3>  
      </Link>
           
           </div>

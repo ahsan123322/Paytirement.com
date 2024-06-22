@@ -37,13 +37,13 @@ export const menuData = {
         {
           id: 2.1,
           title: 'Who we are',
-          path: '/',
+          path: '/about',
           newTab: false,
         },
         {
           id: 2.2,
           title: 'Pricing',
-          path: '/home-2',
+          path: '/price',
           newTab: false,
         },
         // {
@@ -163,7 +163,7 @@ export const menuData = {
       submenu: [
         {
           id: 4.1,
-          title: '	Active Deals',
+          title: 'Active Deals',
           path: '/',
           newTab: false,
         },
@@ -242,7 +242,7 @@ export const menuData = {
         {
           id: 6.4,
           title: 'Retirement Planning',
-          path: '/',
+          path: '/integration',
           newTab: false,
         },
       ],
@@ -255,13 +255,13 @@ export const menuData = {
         {
           id: 7.1,
           title: 'Blogs',
-          path: '/',
+          path: '/blog',
           newTab: false,
         },
         {
           id: 7.2,
           title: 'Articles',
-          path: '/',
+          path: '/blog-list',
           newTab: false,
         },
         {
@@ -279,7 +279,7 @@ export const menuData = {
         {
           id: 7.5,
           title: 'FAQs',
-          path: '/',
+          path: '/faq',
           newTab: false,
         },
       ],

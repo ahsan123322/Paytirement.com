@@ -42,14 +42,7 @@ const SecondaryNavbar = () => {
         <nav className="container flex items-center">
           <div className="nav-logo">
             <Link href="/">
-              <Image src={menuData.logoLight} alt="logo" className="dark:hidden" width={70} height={29} />
-              <Image
-                src={menuData.logoDark}
-                alt="logo dark version"
-                className="hidden dark:inline-block"
-                width={70}
-                height={29}
-              />
+             <h3> Paytirement </h3>
             </Link>
           </div>
           <ul className="nav-list hidden lg:ml-7 lg:flex xl:ml-15 [&>*:not(:last-child)]:me-1">
