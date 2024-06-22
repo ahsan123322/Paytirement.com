@@ -3,14 +3,18 @@ import React from 'react'
 import PaymentImage from '../../public/images/payment/payment-hero.png'
 import PaymentImageDark from '../../public/images/payment/payment-hero-dark.png'
 import PaymentImageDevice from '../../public/images/payment/payment-hero-device.png'
-import PaymentImageDeviceDark from '../../public/images/payment/payment-hero-device-dark.png'
-import Image from 'next/image'
+import PaymentImageDeviceDark from '../../public/images/payment/payment-hero-device-dark.png' 
+import Image from 'next/image'  
 import Link from 'next/link'
 import { fadeUpAnimation } from '@/data/animation'
 import { motion } from 'framer-motion'
+
 const PaymentHero = () => {
+
   return (
-    <section className="hero relative overflow-hidden pb-[140px] max-lg:pt-[160px] lg:pt-[260px]">
+
+<section  className="hero relative overflow-hidden pb-[140px] max-lg:pt-[160px] lg:pt-[260px]">
+
       <div className="container">
         <div className="relative z-10 grid grid-cols-12 items-end gap-5">
           <motion.div
