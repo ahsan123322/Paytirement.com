@@ -12,9 +12,7 @@ import { motion } from 'framer-motion'
 const PaymentHero = () => {
 
   return (
-
 <section  className="hero relative overflow-hidden pb-[140px] max-lg:pt-[160px] lg:pt-[260px]">
-
       <div className="container">
         <div className="relative z-10 grid grid-cols-12 items-end gap-5">
           <motion.div
