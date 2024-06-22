@@ -63,11 +63,11 @@ const Solution = () => {
             </div>
           </div>
           <div className="max-md:order-1 lg:-mt-15">
-            <p className="section-tagline">Unlock Your Financial Future with Paytirement.com</p>
+            <p className="section-tagline">Unlock Your Financial Future with Paytirement</p>
 
             <h2 className="mb-8 max-lg:mb-4">How It Works </h2>
             <p className="mb-11 max-lg:mb-6">
-              In your daily routine, every purchase you make with paytirement.com is rounded up to the nearest dollar, and the spare change is automatically invested in a diversified portfolio. Small amounts of money can accumulate into substantial investments over time, all without you even noticing. You can also choose the amount, portfolio, or fund of your choice to invest in.
+              In your daily routine, every purchase you make with Paytirement is rounded up to the nearest dollar, and the spare change is automatically invested in a diversified portfolio. Small amounts of money can accumulate into substantial investments over time, all without you even noticing. You can also choose the amount, portfolio, or fund of your choice to invest in.
             </p>
             <ul className="mb-14 flex max-lg:mb-6 max-md:flex-col max-md:gap-y-5 lg:items-center lg:[&>*:not(:last-child)]:mr-10">
               <li className="relative flex items-center gap-x-2 ">

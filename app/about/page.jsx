@@ -15,7 +15,7 @@ const About = () => {
     <>
       <PageHero
         subtitle="ABOUT COMPANY"
-        title="The future of business is being <br> shaped by aplio"
+        title="The future of business is being <br> shaped by Paytirement"
         paragraph="Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin, though it looks like it"
       />
       <AboutDetails />
