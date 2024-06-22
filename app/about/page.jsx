@@ -10,6 +10,7 @@ import TestimonialSlider from '@/components/TestimonialSlider'
 import { AboutFeaturesData } from '@/data/data'
 import React from 'react'
 
+
 const About = () => {
   return (
     <>
