@@ -132,7 +132,7 @@ const Vision = () => {
                 </span>
                 <span className="font-jakarta_sans font-medium dark:text-white">Guided Payment Procurement</span>
               </li>
-              <li className="flex items-center gap-x-2">
+              {/* <li className="flex items-center gap-x-2">
                 <span className=" shadow-icon item-center relative flex h-7 w-7 justify-center rounded-full bg-white dark:bg-dark-200">
                   <FontAwesomeIcon
                     icon={faCheck}
@@ -150,7 +150,7 @@ const Vision = () => {
                 </span>
 
                 <span className="font-jakarta_sans font-medium dark:text-white">Guided Payment Procurement</span>
-              </li>
+              </li> */}
             </ul>
             <Link href="/contact" className="btn">
               Start Your Journey

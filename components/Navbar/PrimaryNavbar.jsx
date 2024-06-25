@@ -108,8 +108,8 @@ const PrimaryNavbar = () => {
             </li>
             <li className="text-center max-lg:hidden">
               <Link href="/request-demo" className="btn btn-navbar btn-sm">
-                Request Demo
-              </Link>
+            Sign up 
+                </Link>
             </li>
             <li className="max-lg:inline-block lg:hidden">
               <button

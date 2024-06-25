@@ -114,9 +114,9 @@ const Hero = () => {
             <p className="mb-8 font-medium uppercase max-lg:mb-4">Paytirement</p>
             <h1 className="mb-12 max-md:mb-8">
              Where every {' '}
-              <span className="inline-block rounded-[88px] border-2 border-paragraph bg-[#D9D9D900] px-5 pb-2.5 pt-0.5 font-playfair italic leading-none dark:border-[#F0F3EA]">
+           transaction   {/* <span className="inline-block rounded-[88px] border-2 border-paragraph bg-[#D9D9D900] px-5 pb-2.5 pt-0.5 font-playfair italic leading-none dark:border-[#F0F3EA]">
                 transaction
-              </span>
+              </span> */}
               counts.
             </h1>
             <p className="mb-12 max-w-[590px] max-md:mb-8">

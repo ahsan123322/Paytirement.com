@@ -105,8 +105,8 @@ const SecondaryNavbar = () => {
               </button>
             </li>
             <li className="max-lg:hidden">
-              <Link href="/request-demo" className="btn btn-navbar btn-sm">
-                Request Demo
+              <Link href="/" className="btn btn-navbar btn-sm">
+                Sign up
               </Link>
             </li>
             <li className="max-lg:inline-block lg:hidden ">

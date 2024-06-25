@@ -9,7 +9,7 @@ const PageHero = ({ subtitle, title, paragraph }) => {
         <motion.div
           className="mx-auto max-w-[948px] text-center"
           initial="initial"
-          animate="animate"
+          animate="animate" 
           variants={fadeUpAnimation}>
           {subtitle && <p className="mb-4 font-medium uppercase">{subtitle}</p>}
           {title && <h1 className="mb-10 max-lg:mb-10" dangerouslySetInnerHTML={{ __html: title }}></h1>}
