@@ -1,5 +1,5 @@
 #scene{
-   background: linear-gradient(45deg, #5B3C88, #3A5FCD , #feb47b, #86a8e7, #3A5FCD, #5B3C88);
+   background: linear-gradient(45deg, #5B3C88, #3A5FCD , #5B3C88, #5B3C88, #3A5FCD, #5B3C88);
    animation: gradientAnimation 15s ease infinite;   
 } 
 
@@ -19,5 +19,5 @@
 }
 
 img{
-  max-width: ;
+  max-width: fit-content ;
 }

@@ -9,10 +9,12 @@ import solutionImage2 from '@/public/images/solution/solution-shape2.png'
 import solutionImage3Dark from '@/public/images/solution/solution-shape3-dark.png'
 import solution3Image from '@/public/images/solution/solution-shape3.png'
 import solutionImage from '@/public/images/solution/solution.png'
+import mockup from '../public/images/vision/mocups.png'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import mockup2 from '../public/images/vision/2mocukps.png'
 import Link from 'next/link'
 import { useRef } from 'react'
 
@@ -30,18 +32,18 @@ const Solution = () => {
           <div className="max-md:order-2">
             <div className="relative pt-150 lg:px-150 lg:py-150">
               <div className="relative mx-auto aspect-video w-[250px] lg:w-[300px]">
-                <Image src={solutionImage} alt="vision image" className="dark:hidden" />
-                <Image src={solutionImageDark} alt="vision image" className="hidden dark:inline-block" />
+                <Image src={mockup} alt="vision image" className="" />
+                {/* <Image src={solutionImageDark} alt="vision image" className="hidden dark:inline-block" /> */}
                 <motion.div
                   ref={ref1}
                   initial="initial"
                   animate={controlAnimation1}
                   variants={fadeFromLeftAnimation}
-                  className="absolute -top-[130px] bottom-auto left-10 right-auto h-[150px] w-[250px] lg:-top-[185px] lg:left-15 lg:h-[180px] lg:w-[280px] xl:h-[230px] xl:w-[320px]">
-                  <Image src={solutionImage1} alt="vision image" className="w-full  dark:hidden" />
-                  <Image src={solutionImage1Dark} alt="vision image" className="hidden w-full dark:inline-block" />
+                  className="absolute -top-[130px] bottom-auto  right-auto h-[150px] w-[250px] lg:-top-[185px]  lg:h-[180px] lg:w-[280px] xl:h-[230px] xl:w-[320px]">
+                  {/* <Image src={mockup2} alt="vision image" className="w-full  " /> */}
+                  {/* <Image src={solutionImage1Dark} alt="vision image" className="hidden w-full dark:inline-block" /> */}
                 </motion.div>
-                <motion.div
+                {/* <motion.div
                   ref={ref2}
                   initial="initial"
                   animate={controlAnimation2}
@@ -58,7 +60,7 @@ const Solution = () => {
                   className="absolute -bottom-[70px] left-[175px] right-auto top-auto aspect-video w-[150px] lg:-bottom-[86px] lg:left-[200px] lg:w-[170px]">
                   <Image src={solution3Image} alt="vision image" className="w-full dark:hidden" />
                   <Image src={solutionImage3Dark} alt="vision image" className="hidden w-full dark:inline-block" />
-                </motion.div>
+                </motion.div> */}
               </div>
             </div>
           </div>
