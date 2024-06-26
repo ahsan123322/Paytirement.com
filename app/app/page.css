@@ -1,0 +1,22 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/styl.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************/
+#scene{
+   background: linear-gradient(45deg, #5B3C88, #3A5FCD , #feb47b, #86a8e7, #3A5FCD, #5B3C88);
+   animation: gradientAnimation 15s ease infinite;   
+} 
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.bg-primary{
+   background-color: #5B3C88 !important;
+}

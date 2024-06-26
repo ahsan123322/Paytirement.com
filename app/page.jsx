@@ -1,13 +1,13 @@
-// import Clients from '@/components/Clients'
-// import Counter from '@/components/Counter'
-// import FAQ from '@/components/FAQ'
+import Clients from '@/components/Clients'
+import Counter from '@/components/Counter'
+import FAQ from '@/components/FAQ'
 import Hero from '@/components/heros/Hero'
-// import HomeBlog from '@/components/HomeBlog'
+import HomeBlog from '@/components/HomeBlog'
 import HomeCta from '@/components/HomeCTA'
-// import Integration from '@/components/Integration'
-// import Services from '@/components/Services'
+import Integration from '@/components/Integration'
+import Services from '@/components/Services'
 import Solution from '@/components/Solution'
-// import Testimonial from '@/components/Testimonial'
+import Testimonial from '@/components/Testimonial'
 import Vision from '@/components/Vision'
 import './styl.css'
 export const metadata = {
@@ -20,13 +20,14 @@ export default function Home() {
       <Hero />
       <Vision />
       <Solution />
-      {/* <Clients />
-      <Services />
+      <Clients />
+       <Services />
       <Counter />
       <Integration />
       <FAQ />
       <Testimonial />
-      <HomeBlog /> */}
+      <HomeBlog /> 
+      <FAQ />
       <HomeCta />
     </>
   )

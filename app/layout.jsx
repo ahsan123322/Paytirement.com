@@ -1,9 +1,11 @@
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar/Navbar';
 import ThemeSwitcher from '@/components/ThemeSwitcher';
-import '@/scss/theme.scss';
 import Providers from '@/utils/providers';
+import '../app/app/layout.css'
+import '../app/app/page.css'
 
+import '@/scss/theme.scss';
 import { Montserrat } from 'next/font/google';
 
 const montserrat = Montserrat({
