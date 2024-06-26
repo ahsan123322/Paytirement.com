@@ -50,7 +50,7 @@ const SecondaryNavbar = () => {
               <li className={`${menuItem.path ? '' : 'group relative'}`} key={menuItem.id}>
                 {menuItem.path ? (
                   <>
-                    <Link
+                    <Link  style={{color:'white !important' }}
                       href={menuItem.path}
                       className={cn(
                         'flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
@@ -89,7 +89,7 @@ const SecondaryNavbar = () => {
 
           <ul className="ml-auto flex items-center  [&>*:not(:last-child)]:me-2.5">
             <li className="">
-              <button
+              {/* <button
                 onClick={() => setShowSearch(!showSearch)}
                 className="rounded-full bg-white p-2.5 dark:bg-dark-200 "
                 id="open-btn">
@@ -102,10 +102,10 @@ const SecondaryNavbar = () => {
                     className="fill-paragraph dark:fill-white"
                   />
                 </svg>
-              </button>
+              </button> */}
             </li>
             <li className="max-lg:hidden">
-              <Link href="/" className="btn btn-navbar btn-sm">
+              <Link href="/signup" className="btn btn-navbar btn-sm">
                 Sign up
               </Link>
             </li>
@@ -192,8 +192,8 @@ const SecondaryNavbar = () => {
               ))}
 
               <li>
-                <Link href="/request-demo" className="btn btn-navbar btn-sm">
-                  Request Demo
+                <Link href="/signup" className="btn btn-navbar btn-sm">
+                  Signup
                 </Link>
               </li>
             </ul>

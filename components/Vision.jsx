@@ -5,11 +5,14 @@ import visionImage2Light from '@/public/images/vision/vision-image-1.png'
 import visionImage3Light from '@/public/images/vision/vision-image-2.png'
 import visionImage2Dark from '@/public/images/vision/vision-image-dark-1.png'
 import visionImage3Dark from '@/public/images/vision/vision-image-dark-2.png'
+
 import { default as visionImageOneDark, default as visionImageOneLight } from '@/public/images/vision/vision-image.png'
+
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+
 import Link from 'next/link'
 import { useRef } from 'react'
 
@@ -23,7 +26,7 @@ const Vision = () => {
   const controlAnimation3 = useWhileInView(ref3)
 
   return (
-    <section className="relative -mt-24 overflow-hidden bg-gray pb-150 pt-[300px] dark:-mt-24 dark:bg-dark max-md:-mt-60 max-md:pb-20 max-md:pt-[320px] dark:max-md:-mt-60">
+    <section style={{backgroundColor:'white'}} className="relative -mt-24 overflow-hidden bg-gray pb-150 pt-[300px] dark:-mt-24 dark:bg-dark max-md:-mt-60 max-md:pb-20 max-md:pt-[320px] dark:max-md:-mt-60">
       <div className="absolute left-0 top-0 max-w-[1612px] max-md:hidden">
         <svg width="454" height="942" viewBox="0 0 454 942" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -161,11 +164,12 @@ const Vision = () => {
               <Image src={visionImageOneLight} alt="vision image" className="w-[260px] dark:hidden xl:w-[310px]" />
             </motion.div>
             <motion.div variants={fadeUpAnimation} initial="initial" ref={ref2} animate={controlAnimation2}>
-              <Image
+              {/* <Image
                 src={visionImageOneDark}
                 alt="vision image"
                 className="hidden w-[260px] dark:inline-block xl:w-[310px]"
-              />
+              /> */}
+
             </motion.div>
 
             <motion.div

@@ -36,7 +36,7 @@ const PrimaryNavbar = () => {
       <header
         className={cn(
           'fixed left-0 z-50 w-full bg-transparent pt-8 transition-all duration-500 max-md:z-[500]',
-          sticky ? 'nav-sticky' : '',
+          sticky ? 'nav-sticky bg-white'  : '',
         )}>
         <nav className="container flex items-center">
           <div className="nav-logo" style={{ width: '15%' }}>
@@ -47,14 +47,14 @@ const PrimaryNavbar = () => {
           
           </div>
 
-          <ul className="nav-list mx-auto hidden rounded-large bg-white p-2.5 shadow-nav dark:bg-dark-200 lg:flex [&>*:not(:last-child)]:me-1">
+          <ul style={{background:'transparent'}} className="nav-list mx-auto hidden  bg-white p-2.5  dark:bg-dark-200 lg:flex [&>*:not(:last-child)]:me-1">
             {menuData.menuContent.map((menuItem) => (
               <li className={`${menuItem.path ?? 'group relative'}`} key={menuItem.id}>
                 {menuItem.path ? (
-                  <Link
+                  <Link style={{color:"white !important"}}
                     href={menuItem.path}
                     className={cn(
-                      'flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
+                      'flex items-center rounded-large  border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
                     )}>
                     {menuItem.title}
                   </Link>
@@ -91,8 +91,8 @@ const PrimaryNavbar = () => {
 
           <ul className="ml-auto flex items-center [&>*:not(:last-child)]:me-2.5">
             <li className="">
-              <button
-                onClick={() => setShowSearch(!showSearch)}
+              {/* <button
+               
                 className="rounded-full bg-white p-2.5 dark:bg-dark-200 "
                 id="open-btn">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -104,10 +104,10 @@ const PrimaryNavbar = () => {
                     className="fill-paragraph dark:fill-white"
                   />
                 </svg>
-              </button>
+              </button> */}
             </li>
             <li className="text-center max-lg:hidden">
-              <Link href="/request-demo" className="btn btn-navbar btn-sm">
+              <Link href='/signup'    className="btn btn-navbar btn-sm">
             Sign up 
                 </Link>
             </li>
