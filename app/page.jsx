@@ -24,11 +24,9 @@ export default function Home() {
        <Services />
       <Counter />
       <Integration />
-      <FAQ />
       <Testimonial />
       <HomeBlog /> 
       <FAQ />
-      <Integration />
       <HomeCta />
     </>
   )
