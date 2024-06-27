@@ -9,7 +9,7 @@ import Image from 'next/image'
 //  import heroCircleDark from '../../public/images/hero/hero-circle-dark.png'
 
 // import heroCircleLight from '../../public/images/hero/hero-circle.png'
-import mocukp1 from '../../public/images/hero/mocukp1.gif'
+// import mocukp1 from '../../public/images/hero/mocukp1.gif'
 import hero from '../../public/images/hero/hero.gif'
 // import heroPolicyDark  from '../../public/images/hero/hero-policy-dark.png'
 // import heroPolicyLight from '../../public/images/hero/hero-policy.png'
@@ -127,10 +127,10 @@ const Hero = () => {
           </div>
           <div className="col-span-12 md:col-span-5">
             <div className="relative min-h-[530px] w-full max-md:min-h-[400px] lg:ml-15">
-               <div style={{marginTop:'2rem'}}  className="absolute !left-1/2 !top-1/2 -translate-x-1/2 -translate-y-1/2">
+               {/* <div style={{marginTop:'2rem'}}  className="absolute !left-1/2 !top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <Image style={{Width:'150%'}} src={mocukp1} alt="hero Image" className="inline-block h-100 w-100 dark:hidden" />
               <Image style={{Width:'150%'}} src={mocukp1} alt="hero Image" className=" hidden h-100 w-100 dark:inline-block" />
-              </div> 
+              </div>  */}
                               <div className="absolute !-left-[40px] !top-15 max-lg:!left-0 max-lg:aspect-video max-lg:w-[220px] max-md:!top-5 lg:!-top-[20px]"> 
                <Image src={hero} alt="hero Image" className="inline-block h-auto w-auto dark:hidden" />
                 <Image src={hero} alt="hero Image" className="hidden h-auto w-auto dark:inline-block" /> 

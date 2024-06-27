@@ -193,8 +193,8 @@ const PrimaryNavbar = () => {
               ))}
 
               <li>
-                <Link href="/request-demo" className="btn btn-navbar btn-sm">
-                  Request Demo
+                <Link href="/signup" className="btn btn-navbar btn-sm">
+                  Signup
                 </Link>
               </li>
             </ul>
