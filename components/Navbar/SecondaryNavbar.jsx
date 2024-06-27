@@ -42,7 +42,10 @@ const SecondaryNavbar = () => {
         <nav className="container flex items-center">
           <div className="nav-logo">
             <Link href="/">
-             <h3> Paytirement </h3>
+
+          <h3 className={cn(
+             'text-white', sticky ? 'text-black' : '' 
+          )}>Paytirement</h3>
             </Link>
           </div>
           <ul className="nav-list hidden lg:ml-7 lg:flex xl:ml-15 [&>*:not(:last-child)]:me-1">
@@ -105,9 +108,9 @@ const SecondaryNavbar = () => {
               </button> */}
             </li>
             <li className="max-lg:hidden">
-              <Link href="/signup" className="btn btn-navbar btn-sm">
+              <button onClick={() => setShowSearch(!showSearch)}  href="#" className="btn btn-navbar btn-sm">
                 Sign up
-              </Link>
+              </button>
             </li>
             <li className="max-lg:inline-block lg:hidden ">
               <button

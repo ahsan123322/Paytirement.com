@@ -109,9 +109,9 @@ const PrimaryNavbar = () => {
               </button> */}
             </li>
             <li className="text-center max-lg:hidden">
-              <Link href='/signup'    className="btn btn-navbar btn-sm">
-            Sign up 
-                </Link>
+              <button onClick={() => setShowSearch(!showSearch)}  href="#" className="btn btn-navbar btn-sm">
+                Sign up
+              </button>
             </li>
             <li className="max-lg:inline-block lg:hidden">
               <button
