@@ -4,7 +4,7 @@ import ThemeSwitcher from '@/components/ThemeSwitcher';
 import Providers from '@/utils/providers';
 import '../app/app/layout.css'
 import '../app/app/page.css'
-
+import '../app/globals.css'
 import '@/scss/theme.scss';
 import { Montserrat } from 'next/font/google';
 

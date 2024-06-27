@@ -173,7 +173,9 @@ const Vision = () => {
             <div className="absolute bottom-auto left-0 right-auto top-0 block h-full w-1/2">
               <div className="absolute bottom-auto left-0  right-auto top-0 aspect-square w-25 rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200 xl:w-[120px]">
                 <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark 1xl:p-2.5">
-                  <Image src="images/effeciency.svg" alt="value image" className="inline-block" width={40} height={40} />
+                  <Image src="images/effeciency.svg" alt="value image" className=" dark:hidden inline-block" width={40} height={40} />
+                  <Image src="images/effeciency-dark.svg" alt="value image" className=" hidden dark:inline-block" width={40} height={40} />
+               
                 </div>
               </div>
               <div className="leading-0 absolute bottom-auto left-25 right-auto top-[58px] -z-10 w-auto max-xl:top-[42px] max-lg:top-5">
@@ -229,7 +231,9 @@ const Vision = () => {
 
               <div className="absolute bottom-auto left-10  right-auto top-1/2 aspect-square w-25 -translate-y-1/2 rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200 xl:w-[120px]">
                 <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark 1xl:p-2.5">
-                  <Image src="images/investment.svg" alt="value image" className="inline-block" width={40} height={40} />
+                  <Image src="images/investment.svg" alt="value image" className="dark:hidden inline-block" width={40} height={40} />
+                  <Image src="images/investment-dark.svg" alt="value image" className=" hidden dark:inline-block" width={40} height={40} />
+               
                 </div>
               </div>
               <div className="leading-0 absolute bottom-auto left-25 right-auto top-1/2 -z-10 w-auto  -translate-y-1/2">
@@ -280,7 +284,9 @@ const Vision = () => {
 
               <div className="absolute bottom-0 left-0  right-auto top-auto aspect-square w-25 rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200 xl:w-[120px]">
                 <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark 1xl:p-2.5">
-                  <Image src="images/loan.svg" alt="value image" className="inline-block" width={40} height={40} />
+                  <Image src="images/loan.svg" alt="value image" className=" dark:hidden inline-block" width={40} height={40} />
+                  <Image src="images/loan-dark.svg" alt="value image" className="hidden dark:inline-block" width={40} height={40} />
+                
                 </div>
               </div>
               <div className="leading-0 absolute -bottom-[38px] left-25 right-auto top-auto -z-10 w-auto -translate-y-1/2 max-xl:-bottom-[54px]  max-lg:-bottom-[76px]">
@@ -337,7 +343,9 @@ const Vision = () => {
             <div className="absolute bottom-auto left-auto right-0 top-0 block h-full w-1/2">
               <div className="absolute bottom-auto left-auto  right-0 top-0 aspect-square w-25 rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200 xl:w-[120px]">
                 <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark 1xl:p-2.5">
-                  <Image src="images/loan.svg" alt="value image" className="inline-block" width={40} height={40} />
+                  <Image src="images/loan.svg" alt="value image" className=" dark:hidden inline-block" width={40} height={40} />
+                  <Image src="images/loan-dark.svg" alt="value image" className=" hidden dark:inline-block" width={40} height={40} />
+                
                 </div>
               </div>
               <div className="leading-0 absolute bottom-auto left-auto right-25 top-[58px] -z-10 w-auto max-xl:top-[42px] max-lg:top-5">
@@ -393,7 +401,9 @@ const Vision = () => {
 
               <div className="absolute bottom-auto left-auto  right-10 top-1/2 aspect-square w-25 -translate-y-1/2 rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200 xl:w-[120px]">
                 <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark 1xl:p-2.5">
-                  <Image src="images/loan.svg" alt="value image" className="inline-block" width={40} height={40} />
+                  <Image src="images/loan.svg" alt="value image" className="  dark:hidden inline-block" width={40} height={40} />
+                  <Image src="images/loan-dark.svg" alt="value image" className=" hidden  dark:inline-block" width={40} height={40} />
+                
                 </div>
               </div>
               <div className="leading-0 absolute bottom-auto left-auto right-25 top-1/2 -z-10 w-auto -translate-y-1/2">
@@ -447,7 +457,14 @@ const Vision = () => {
                   <Image
                     src="images/sales.svg"
                     alt="value image"
-                    className="inline-block"
+                    className=" dark:hidden inline-block"
+                    width={40}
+                    height={40}
+                  />
+                  <Image
+                    src="images/sales-dark.svg"
+                    alt="value image"
+                    className=" hidden dark:inline-block"
                     width={40}
                     height={40}
                   />
@@ -508,35 +525,46 @@ const Vision = () => {
         </div>
         <div className=" mt-10 grid grid-cols-2 gap-8 md:hidden">
           <div className="mx-auto aspect-square w-25  rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200">
-            <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark ">
-              <Image src="images/investment.svg" alt="value image" className="inline-block" width={40} height={40} />
+            <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark">
+              <Image src="images/investment.svg" alt="value image" className=" dark:hidden inline-block" width={40} height={40} />
+              <Image src="images/investment-dark.svg" alt="value image" className=" hidden dark:inline-block" width={40} height={40} />
+            
             </div>
           </div>
 
           <div className="mx-auto aspect-square w-25  rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200">
             <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark ">
-              <Image src="images/effeciency.svg" alt="value image" className="inline-block" width={40} height={40} />
+              <Image src="images/effeciency.svg" alt="value image" className=" dark:hidden inline-block" width={40} height={40} />
+              <Image src="images/effeciency-dark.svg" alt="value image" className=" hidden dark:inline-block" width={40} height={40} />
+            
             </div>
           </div>
 
           <div className="mx-auto aspect-square w-25  rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200">
             <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark ">
-              <Image src="images/fund.svg" alt="value image" className="inline-block" width={40} height={40} />
+              <Image src="images/fund.svg" alt="value image" className=" dark:hidden inline-block" width={40} height={40} />
+              <Image src="images/fund-dark.svg" alt="value image" className=" hidden  dark:inline-block" width={40} height={40} />
+            
             </div>
           </div>
           <div className="mx-auto aspect-square w-25  rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200">
             <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark ">
-              <Image src="images/loan.svg" alt="value image" className="inline-block" width={40} height={40} />
+              <Image src="images/loan.svg" alt="value image" className=" dark:hidden inline-block" width={40} height={40} />
+              <Image src="images/loan-dark.svg" alt="value image" className="hidden  dark:inline-block" width={40} height={40} />
+           
             </div>
           </div>
           <div className="mx-auto aspect-square w-25  rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200">
             <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark ">
-              <Image src="images/finance.svg" alt="value image" className="inline-block" width={40} height={40} />
+              <Image src="images/finance.svg" alt="value image" className="inline-block dark:hidden" width={40} height={40} />
+              <Image src="images/finance-dark.svg" alt="value image" className=" hidden dark:inline-block" width={40} height={40} />
+          
             </div>
           </div>
           <div className="mx-auto aspect-square w-25  rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200">
             <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark ">
-              <Image src="images/finance.svg" alt="value image" className="inline-block" width={40} height={40} />
+              <Image src="images/finance.svg" alt="value image" className="inline-block dark:hidden" width={40} height={40} />
+              <Image src="images/finance-dark.svg" alt="value image" className=" hidden dark:inline-block" width={40} height={40} />
             </div>
           </div>
         </div> 

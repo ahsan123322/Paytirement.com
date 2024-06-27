@@ -20,14 +20,15 @@ export default function Home() {
       <Hero />
       <Vision />
       <Solution />
-      {/* <Clients />
+       <Clients />
        <Services />
       <Counter />
       <Integration />
       <FAQ />
       <Testimonial />
       <HomeBlog /> 
-      <FAQ /> */}
+      <FAQ />
+      <Integration />
       <HomeCta />
     </>
   )

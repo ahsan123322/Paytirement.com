@@ -5,10 +5,16 @@
 
 
 #scene{
-   background: linear-gradient(45deg, #5B3C88, #ff7e5f, #feb47b, #86a8e7, #3A5FCD, #5B3C88);
+  background: linear-gradient(45deg, #5B3C88, #ff7e5f, #feb47b, #86a8e7, #3A5FCD, #5B3C88);
    animation: gradientAnimation 15s ease infinite;   
 } 
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.montserrat-uniquifier {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
@@ -19,4 +25,91 @@
   100% {
     background-position: 0% 50%;
   }
+  
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:bold;
+  font-style: normal;
+}
+h1{
+  font-size: 4rem !important;
+}
+
+p{
+   font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+}
+
+.btn:is(.dark *){
+  --tw-text-opacity: 1;
+  color: white;
+}
+.btn:is(.dark *)::before{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: #5B3C88;
+}
+.btn:is(.dark *)::after{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: #3A5FCD;
+}
+.btn:hover:is(.dark *){
+  --tw-text-opacity: 1;
+  color: white;
+
+}
+.btn-navbar:is(.dark *){
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.btn-navbar:is(.dark *)::after{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: #3A5FCD;
+}
+
+.bg-primary{
+  --tw-bg-opacity: 1;
+  background-color: #5a3acd;
+}
+.bg-primary-100{
+  --tw-bg-opacity: 1;
+  background-color: #a791fa;
+}
+.bg-primary-200\/20{
+  background-color: rgba(148, 65, 242, 0.2);
+}
+.bg-primary-200\/25{
+  background-color: rgba(127, 65, 242, 0.25);
+}
+.bg-primary-200\/30{
+  background-color: rgba(133, 65, 242, 0.3);
+}
+.bg-primary-200\/50{
+  background-color: rgba(192, 65, 242, 0.5);
+}
+
+
+
+.dark\:stroke-primary:is(.dark *){
+  stroke: #3A5FCD !important;
+}
+
+.dark\:fill-primary:is(.dark *){
+  fill: #3A5FCD !important;
+}
+
+.text-primary{
+  --tw-text-opacity: 1;
+  color: #3A5FCD;
+}
+
+.dark\:text-primary:is(.dark *){
+  color: #3A5FCD !important;
+  
 }

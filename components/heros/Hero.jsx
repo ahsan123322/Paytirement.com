@@ -9,11 +9,12 @@ import Image from 'next/image'
 //  import heroCircleDark from '../../public/images/hero/hero-circle-dark.png'
 
 // import heroCircleLight from '../../public/images/hero/hero-circle.png'
-import mocukp1 from '../../public/images/hero/mocukp1.png'
+import mocukp1 from '../../public/images/hero/mocukp1.gif'
+import hero from '../../public/images/hero/hero.gif'
 // import heroPolicyDark  from '../../public/images/hero/hero-policy-dark.png'
 // import heroPolicyLight from '../../public/images/hero/hero-policy.png'
 // import heroRatingDark  from '../../public/images/hero/hero-rating-dark.png'
-// import heroRatingLight from '../../public/images/hero/hero-rating.png'
+import heroRatingLight from '../../public/images/hero/hero-rating.gif'
 
 const Hero = () => {
   return (
@@ -100,7 +101,7 @@ const Hero = () => {
           initial="initial"
           animate="animate"
           className="relative z-10 grid grid-cols-12 items-center max-lg:gap-y-10">
-          <div className="col-span-12 md:col-span-5 ">
+          <div className="col-span-12 md:col-span-7">
             <p className="mb-8 font-medium uppercase max-lg:mb-4">Paytirement</p>
             <h1 className="mb-12 max-md:mb-8" style={{fontSize:"4rem"}} >
              Where every {' '}
@@ -124,20 +125,20 @@ const Hero = () => {
             </form> */}
 
           </div>
-          <div className="col-span-12 md:col-span-7">
+          <div className="col-span-12 md:col-span-5">
             <div className="relative min-h-[530px] w-full max-md:min-h-[400px] lg:ml-15">
                <div style={{marginTop:'2rem'}}  className="absolute !left-1/2 !top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <Image style={{Width:'150%'}} src={mocukp1} alt="hero Image" className="inline-block h-100 w-100 dark:hidden" />
               <Image style={{Width:'150%'}} src={mocukp1} alt="hero Image" className=" hidden h-100 w-100 dark:inline-block" />
               </div> 
-                             {/* <div className="absolute !-left-[40px] !top-15 max-lg:!left-0 max-lg:aspect-video max-lg:w-[220px] max-md:!top-5 lg:!-top-[20px]">  */}
-                {/* <Image src={heroPolicyLight} alt="hero Image" className="inline-block h-auto w-auto dark:hidden" />
-                <Image src={heroPolicyDark} alt="hero Image" className="hidden h-auto w-auto dark:inline-block" /> */}
-              {/* </div> */}
-              {/* <div className="absolute !bottom-[150px] !left-[50px] max-lg:aspect-square max-lg:w-28 max-md:!bottom-[70px]  max-md:!left-[50px] lg:!bottom-0 lg:!left-[45px] xl:!left-[85px]"> */}
-                {/* <Image src={heroRatingLight} alt="hero Image" className="inline-block h-auto w-auto  dark:hidden" />
-                <Image src={heroRatingDark} alt="hero Image" className="hidden h-auto w-auto  dark:inline-block" /> */}
-              {/* </div> */}
+                              <div className="absolute !-left-[40px] !top-15 max-lg:!left-0 max-lg:aspect-video max-lg:w-[220px] max-md:!top-5 lg:!-top-[20px]"> 
+               <Image src={hero} alt="hero Image" className="inline-block h-auto w-auto dark:hidden" />
+                <Image src={hero} alt="hero Image" className="hidden h-auto w-auto dark:inline-block" /> 
+              </div> 
+               <div className="absolute !bottom-[150px] !left-[50px] max-lg:aspect-square max-lg:w-28 max-md:!bottom-[70px]  max-md:!left-[50px] lg:!bottom-0 lg:!left-[45px] xl:!left-[85px]">
+                <Image src={heroRatingLight} alt="hero Image" className="inline-block h-auto w-auto  " />
+                {/* <Image src={heroRatingDark} alt="hero Image" className="hidden h-auto w-auto  dark:inline-block" />  */}
+              </div> 
               {/* <div className="lg:!not-sr-only-bottom-[45px] absolute !-bottom-0 !-right-5 max-lg:w-[196px] max-md:!-bottom-5 max-md:!-right-5 lg:right-0 xl:right-[30px]"> */}
                 {/* <Image src={heroChartLight} alt="hero Image" className="inline-block dark:hidden" />
                 <Image src={heroChartDark} alt="hero Image" className="hidden dark:inline-block" /> */}
