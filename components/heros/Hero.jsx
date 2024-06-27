@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 // import heroCircleLight from '../../public/images/hero/hero-circle.png'
 // import mocukp1 from '../../public/images/hero/mocukp1.gif'
-import hero from '../../public/images/hero/withdraw_12090576.png'
+import hero from '../../public/images/hero/security_14793871.png'
 // import heroPolicyDark  from '../../public/images/hero/hero-policy-dark.png'
 // import heroPolicyLight from '../../public/images/hero/hero-policy.png'
 // import heroRatingDark  from '../../public/images/hero/hero-rating-dark.png'
