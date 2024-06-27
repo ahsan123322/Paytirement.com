@@ -139,10 +139,10 @@ const Hero = () => {
                 <Image src={heroRatingLight} alt="hero Image" className="inline-block h-auto w-auto  " />
                 {/* <Image src={heroRatingDark} alt="hero Image" className="hidden h-auto w-auto  dark:inline-block" />  */}
               </div> 
-              {/* <div className="lg:!not-sr-only-bottom-[45px] absolute !-bottom-0 !-right-5 max-lg:w-[196px] max-md:!-bottom-5 max-md:!-right-5 lg:right-0 xl:right-[30px]"> */}
-                {/* <Image src={heroChartLight} alt="hero Image" className="inline-block dark:hidden" />
-                <Image src={heroChartDark} alt="hero Image" className="hidden dark:inline-block" /> */}
-              {/* </div> */}
+               <div className="lg:!not-sr-only-bottom-[45px] absolute !-bottom-0 !-right-5 max-lg:w-[196px] max-md:!-bottom-5 max-md:!-right-5 lg:right-0 xl:right-[30px]"> 
+               <Image src={hero} alt="hero Image" className="inline-block dark:hidden" />
+                <Image src={hero} alt="hero Image" className="hidden dark:inline-block" /> 
+               </div>
             </div>
           </div>
         </motion.div>
