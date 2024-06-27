@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 // import heroCircleLight from '../../public/images/hero/hero-circle.png'
 // import mocukp1 from '../../public/images/hero/mocukp1.gif'
-import hero from '../../public/images/hero/money-transfer_5711119.png'
+import hero from '../../public/images/hero/smartphone_8226983.png'
 // import heroPolicyDark  from '../../public/images/hero/hero-policy-dark.png'
 // import heroPolicyLight from '../../public/images/hero/hero-policy.png'
 // import heroRatingDark  from '../../public/images/hero/hero-rating-dark.png'
@@ -19,7 +19,7 @@ import heroRatingLight from '../../public/images/hero/online-payment_5262525.png
 const Hero = () => {
   return (
     <section 
-      className="hero max-mb:pb-[70px] max-mb:pb-[70px] relative overflow-hidden bg-gray pb-[140px] pt-[230px] dark:bg-dark max-lg:pb-25 max-lg:pt-[160px]"
+      className=" skew2 hero max-mb:pb-[70px] max-mb:pb-[70px] relative overflow-hidden bg-gray pb-[140px] pt-[230px] dark:bg-dark max-lg:pb-25 max-lg:pt-[160px]"
       id="scene"  >
       <div className="absolute left-1/2 top-0 max-w-[1612px] -translate-x-1/2 max-lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" width="1612" height="520" viewBox="0 0 1612 520" fill="none">
@@ -95,7 +95,7 @@ const Hero = () => {
           </defs>
         </svg>
       </div>
-      <div className="container">
+      <div className="container skwrewvers2 ">
         <motion.div
           variants={fadeUpAnimation}
           initial="initial"
@@ -136,13 +136,13 @@ const Hero = () => {
                 <Image src={hero} alt="hero Image" className="hidden h-auto w-auto dark:inline-block" /> 
               </div> 
                <div className="absolute !bottom-[150px] !left-[50px] max-lg:aspect-square max-lg:w-28 max-md:!bottom-[70px]  max-md:!left-[50px] lg:!bottom-0 lg:!left-[45px] xl:!left-[85px]">
-                <Image src={heroRatingLight} alt="hero Image" className="inline-block h-auto w-auto  " />
+                {/* <Image src={heroRatingLight} alt="hero Image" className="inline-block h-auto w-auto  " /> */}
                 {/* <Image src={heroRatingDark} alt="hero Image" className="hidden h-auto w-auto  dark:inline-block" />  */}
               </div> 
-               <div className="lg:!not-sr-only-bottom-[45px] absolute !-bottom-0 !-right-5 max-lg:w-[196px] max-md:!-bottom-5 max-md:!-right-5 lg:right-0 xl:right-[30px]"> 
+               {/* <div className="lg:!not-sr-only-bottom-[45px] absolute !-bottom-0 !-right-5 max-lg:w-[196px] max-md:!-bottom-5 max-md:!-right-5 lg:right-0 xl:right-[30px]"> 
                <Image src={hero} alt="hero Image" className="inline-block dark:hidden" />
-                <Image src={hero} alt="hero Image" className="hidden dark:inline-block" /> 
-               </div>
+                <Image src={hero} alt="hero Image" className="hidden dark:inline-block" />  */}
+               {/* </div> */}
             </div>
           </div>
         </motion.div>

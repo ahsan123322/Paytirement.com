@@ -199,3 +199,12 @@ h3{
 .skwrewvers{
   transform: skewY(-3deg);
 }
+.skwrewvers2{
+  transform: skewY(20deg);
+  margin-top: 12rem;
+}
+
+.skew2{
+  transform-origin: bottom left;
+  transform: skewY(-20deg);
+}
