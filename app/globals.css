@@ -33,15 +33,17 @@ h1,h2,h3,h4,h5,h6{
   font-weight:bold;
   font-style: normal;
 }
+
+
 h1,
 
-h3,
+/* h3,
 h4,
 h5,
 h6 {
   font-size: ;
   font-weight: ;
-}
+} */
 h2{
  font-size: 3rem;
 }
@@ -187,4 +189,13 @@ p{
 
 h3{
   font-size: 1.8rem;
+}
+
+.skew{
+  transform: skewY(3deg);
+
+}
+
+.skwrewvers{
+  transform: skewY(-3deg);
 }

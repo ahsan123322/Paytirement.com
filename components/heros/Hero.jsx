@@ -10,11 +10,11 @@ import Image from 'next/image'
 
 // import heroCircleLight from '../../public/images/hero/hero-circle.png'
 // import mocukp1 from '../../public/images/hero/mocukp1.gif'
-import hero from '../../public/images/hero/hero.gif'
+import hero from '../../public/images/hero/money-transfer_5711119.png'
 // import heroPolicyDark  from '../../public/images/hero/hero-policy-dark.png'
 // import heroPolicyLight from '../../public/images/hero/hero-policy.png'
 // import heroRatingDark  from '../../public/images/hero/hero-rating-dark.png'
-import heroRatingLight from '../../public/images/hero/hero-rating.gif'
+import heroRatingLight from '../../public/images/hero/online-payment_5262525.png'
 
 const Hero = () => {
   return (
@@ -102,15 +102,15 @@ const Hero = () => {
           animate="animate"
           className="relative z-10 grid grid-cols-12 items-center max-lg:gap-y-10">
           <div className="col-span-12 md:col-span-7">
-            <p className="mb-8 font-medium uppercase max-lg:mb-4">Paytirement</p>
-            <h1 className="mb-12 max-md:mb-8" style={{fontSize:"4rem"}} >
+            <p className="mb-8 font-medium uppercase max-lg:mb-4" style={{color:"white"}} >Paytirement</p>
+            <h1 className="mb-12 max-md:mb-8" style={{fontSize:"4rem", color:"white"  }} >
              Where every {' '}
            transaction   {/* <span className="inline-block rounded-[88px] border-2 border-paragraph bg-[#D9D9D900] px-5 pb-2.5 pt-0.5 font-playfair italic leading-none dark:border-[#F0F3EA]">
                 transaction
               </span> */}
               counts.
             </h1>
-            <p className="mb-12 max-w-[590px] max-md:mb-8">
+            <p className="mb-12 max-w-[590px] max-md:mb-8" style={{color:"white"}}>
               Imagine a payment platform that not only makes your daily transactions seamless but also helps you to pay, save & invest effortlessly in your financial future.
             </p>
             {/* <form>

@@ -15,6 +15,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import mockup2 from '../public/images/vision/2mocukps.png'
+import earth from '../public/images/solution/howit.png'
 import Link from 'next/link'
 import { useRef } from 'react'
 
@@ -26,13 +27,46 @@ const Solution = () => {
   const controlAnimation2 = useWhileInView(ref2)
   const controlAnimation3 = useWhileInView(ref3)
   return (
-    <section className="relative overflow-hidden bg-white pb-150 pt-[160px] dark:bg-dark-300 max-lg:pb-150 max-lg:pt-20 lg:pb-15">
-      <div className="container ">
-        <div className="grid grid-cols-2 items-center gap-10 max-md:grid-cols-1 1xl:gap-x-24">
+    <section style={{background:'#041641'}}  className="skew relative overflow-hidden bg-white pb-150 pt-[160px] dark:bg-dark-300 max-lg:pb-150 max-lg:pt-20 lg:pb-15">
+      <div className="container skwrewvers ">
+        <div className="  grid grid-cols-2 items-center gap-10 max-md:grid-cols-1 1xl:gap-x-24">
+   
+
+        <div className=" text-white max-md:order-1 lg:-mt-15">
+            <p className=" text-white  section-tagline">Unlock Your Financial Future with Paytirement</p>
+
+            <h2 className=" text-white mb-8 max-lg:mb-4">How It Works </h2>
+            <p className=" text-white mb-11 max-lg:mb-6">
+              In your daily routine, every purchase you make with Paytirement is rounded up to the nearest dollar, and the spare change is automatically invested in a diversified portfolio. Small amounts of money can accumulate into substantial investments over time, all without you even noticing. You can also choose the amount, portfolio, or fund of your choice to invest in.
+            </p>
+            <ul className="mb-14 flex max-lg:mb-6 max-md:flex-col max-md:gap-y-5 lg:items-center lg:[&>*:not(:last-child)]:mr-10">
+              <li className="relative flex items-center gap-x-2 ">
+                <FontAwesomeIcon icon={faCheck} className="text-paragraph dark:text-primary" />
+                <span className="font-jakarta_sans font-medium dark:text-white">Fast payment send</span>
+              </li>
+              <li className="relative flex items-center gap-x-2 ">
+                <FontAwesomeIcon icon={faCheck} className="text-paragraph dark:text-primary" />
+                <span className="font-jakarta_sans font-medium dark:text-white">Secure 100%</span>
+              </li>
+              <li className="relative flex items-center gap-x-2 ">
+                <FontAwesomeIcon icon={faCheck} className="text-paragraph dark:text-primary" />
+                <span className="font-jakarta_sans font-medium dark:text-white">Cloud save data  </span>
+              </li>
+            </ul>
+            <Link href="/contact" className="btn-outline">
+              Start Your Journey
+            </Link>
+
+          </div>
+          
+
+      
           <div className="max-md:order-2">
             <div className="relative pt-150 lg:px-150 lg:py-150">
               <div className="relative mx-auto aspect-video w-[250px] lg:w-[300px]">
-                <Image src={mockup} alt="vision image" className="" />
+          <Image src={earth} alt="vision image" className="w-50" />
+
+                {/* <Image src={earth} alt="vision image" className="" /> */}
                 {/* <Image src={solutionImageDark} alt="vision image" className="hidden dark:inline-block" /> */}
                 <motion.div
                   ref={ref1}
@@ -64,31 +98,7 @@ const Solution = () => {
               </div>
             </div>
           </div>
-          <div className="max-md:order-1 lg:-mt-15">
-            <p className="section-tagline">Unlock Your Financial Future with Paytirement</p>
-
-            <h2 className="mb-8 max-lg:mb-4">How It Works </h2>
-            <p className="mb-11 max-lg:mb-6">
-              In your daily routine, every purchase you make with Paytirement is rounded up to the nearest dollar, and the spare change is automatically invested in a diversified portfolio. Small amounts of money can accumulate into substantial investments over time, all without you even noticing. You can also choose the amount, portfolio, or fund of your choice to invest in.
-            </p>
-            <ul className="mb-14 flex max-lg:mb-6 max-md:flex-col max-md:gap-y-5 lg:items-center lg:[&>*:not(:last-child)]:mr-10">
-              <li className="relative flex items-center gap-x-2 ">
-                <FontAwesomeIcon icon={faCheck} className="text-paragraph dark:text-primary" />
-                <span className="font-jakarta_sans font-medium dark:text-white">Fast payment send</span>
-              </li>
-              <li className="relative flex items-center gap-x-2 ">
-                <FontAwesomeIcon icon={faCheck} className="text-paragraph dark:text-primary" />
-                <span className="font-jakarta_sans font-medium dark:text-white">Secure 100%</span>
-              </li>
-              <li className="relative flex items-center gap-x-2 ">
-                <FontAwesomeIcon icon={faCheck} className="text-paragraph dark:text-primary" />
-                <span className="font-jakarta_sans font-medium dark:text-white">Cloud save data  </span>
-              </li>
-            </ul>
-            <Link href="/contact" className="btn-outline">
-              Start Your Journey
-            </Link>
-          </div>
+          
         </div>
       </div>
     </section>

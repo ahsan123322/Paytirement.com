@@ -35,19 +35,21 @@ const PrimaryNavbar = () => {
     <>
       <header
         className={cn(
-          'fixed left-0 z-50 w-full bg-transparent pt-8 transition-all duration-500 max-md:z-[500]',
-          sticky ? 'nav-sticky bg-white dark:bg-dark-200'  : '',
+          'fixed left-0 z-50 w-full bg-transparent  text-white pt-8 transition-all duration-500 max-md:z-[500]',
+          sticky ? 'nav-sticky bg-white text-black'  : '',
         )}>
         <nav className="container flex items-center">
           <div className="nav-logo" style={{ width: '15%' }}>
             <Link href="/">
            
-          <h3>Paytirement</h3>  
+          <h3 className={cn(
+             'text-white', sticky ? 'text-black' : '' 
+          )}>Paytirement</h3>  
      </Link>
           
           </div>
 
-          <ul style={{background:'transparent'}} className="nav-list mx-auto hidden  bg-white p-2.5  dark:bg-dark-200 lg:flex [&>*:not(:last-child)]:me-1">
+          <ul  className=" rounded-full nav-list mx-auto hidden  bg-white p-2.5  dark:bg-dark-200 lg:flex [&>*:not(:last-child)]:me-1">
             {menuData.menuContent.map((menuItem) => (
               <li className={`${menuItem.path ?? 'group relative'}`} key={menuItem.id}>
                 {menuItem.path ? (

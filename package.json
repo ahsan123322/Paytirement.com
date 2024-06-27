@@ -29,7 +29,8 @@
     "react-player": "^2.14.1",
     "sass": "^1.63.6",
     "swiper": "^11.0.6",
-    "tailwind-merge": "^2.2.1"
+    "tailwind-merge": "^2.2.1",
+    "three": "^0.165.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
