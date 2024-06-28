@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
 const Globe = () => {
@@ -8,52 +8,45 @@ const Globe = () => {
     const mount = mountRef.current;
 
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(45, mount.clientWidth / mount.clientHeight, 0.1, 1000);
-    camera.position.z = 2;
-
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(mount.clientWidth, mount.clientHeight);
+    renderer.setSize(window.innerWidth, window.innerHeight);
     mount.appendChild(renderer.domElement);
 
-    const geometry = new THREE.SphereGeometry(0.5, 32, 32);
-    const texture = new THREE.TextureLoader().load('/earth.png'); // Add your texture image path here
+    const geometry = new THREE.SphereGeometry(5, 32, 32);
+    const textureLoader = new THREE.TextureLoader();
+    const texture = textureLoader.load('/earthmap1k.jpg'); // Add your texture image in the public folder
     const material = new THREE.MeshBasicMaterial({ map: texture });
-    const globe = new THREE.Mesh(geometry, material);
-    scene.add(globe);
+    const sphere = new THREE.Mesh(geometry, material);
+    scene.add(sphere);
 
-    const onWindowResize = () => {
-      camera.aspect = mount.clientWidth / mount.clientHeight;
-      camera.updateProjectionMatrix();
-      renderer.setSize(mount.clientWidth, mount.clientHeight);
-    };
+    camera.position.z = 15;
 
-    const onMouseMove = (event) => {
-      const mouseX = (event.clientX - window.innerWidth / 2) / 100;
-      const mouseY = (event.clientY - window.innerHeight / 2) / 100;
-
-      globe.rotation.x = mouseY;
-      globe.rotation.y = mouseX;
-    };
-
-    window.addEventListener('resize', onWindowResize, false);
-    document.addEventListener('mousemove', onMouseMove, false);
-
-    const animate = () => {
+    const animate = function () {
       requestAnimationFrame(animate);
-      globe.rotation.y += 0.001; // Auto-rotation
+
+      sphere.rotation.y += 0.005;
+
       renderer.render(scene, camera);
     };
 
     animate();
 
+    const handleResize = () => {
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+    };
+
+    window.addEventListener('resize', handleResize);
+
     return () => {
       mount.removeChild(renderer.domElement);
-      window.removeEventListener('resize', onWindowResize);
-      document.removeEventListener('mousemove', onMouseMove);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
-  return <div ref={mountRef} style={{ width: '100vw', height: '100vh' }} />;
+  return <div ref={mountRef} />;
 };
 
 export default Globe;

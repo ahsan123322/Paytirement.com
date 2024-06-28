@@ -18,7 +18,7 @@ import mockup2 from '../public/images/vision/2mocukps.png'
 import earth from '../public/images/solution/howit.png'
 import Link from 'next/link'
 import { useRef } from 'react'
-
+import { GlobeDemo } from '@/utils/ui/globe'
 const Solution = () => {
   const ref1 = useRef(null)
   const ref2 = useRef(null)
@@ -64,8 +64,7 @@ const Solution = () => {
           <div className="max-md:order-2">
             <div className="relative pt-150 lg:px-150 lg:py-150">
               <div className="relative mx-auto aspect-video w-[250px] lg:w-[300px]">
-          <Image src={earth} alt="vision image" className="w-50" />
-
+ <GlobeDemo />
                 {/* <Image src={earth} alt="vision image" className="" /> */}
                 {/* <Image src={solutionImageDark} alt="vision image" className="hidden dark:inline-block" /> */}
                 <motion.div
