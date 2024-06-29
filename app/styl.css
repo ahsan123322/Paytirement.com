@@ -13,6 +13,23 @@
 body{
   background-color: white !important;
 }
+h1:is(.dark *),
+  h2:is(.dark *),
+  h3:is(.dark *),
+  h4:is(.dark *),
+  h5:is(.dark *),
+  h6:is(.dark *){
+  --tw-text-opacity: 1;
+  color: black;
+}
+.dark\:bg-dark:is(.dark *){
+  --tw-bg-opacity: 1;
+ background-color: white;
+}
+p:is(.dark *){
+  --tw-text-opacity: 1;
+   color: black;
+}
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;

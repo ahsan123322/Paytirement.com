@@ -195,9 +195,9 @@ const SecondaryNavbar = () => {
               ))}
 
               <li>
-                <Link href="/signup" className="btn btn-navbar btn-sm">
+                <button onClick={() => setShowSearch(!showSearch)} className="btn btn-navbar btn-sm">
                   Signup
-                </Link>
+                </button>
               </li>
             </ul>
           </div>
