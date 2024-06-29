@@ -195,9 +195,9 @@ const PrimaryNavbar = () => {
               ))}
 
               <li>
-                <button onClick={() => setShowSearch(!showSearch)} className="btn btn-navbar btn-sm">
+                <Link href={'/signup'} className="btn btn-navbar btn-sm">
                   Signup
-                </button>
+                </Link>
               </li>
             </ul>
           </div>

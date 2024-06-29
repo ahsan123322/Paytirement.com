@@ -108,9 +108,9 @@ const SecondaryNavbar = () => {
               </button> */}
             </li>
             <li className="max-lg:hidden">
-              <button onClick={() => setShowSearch(!showSearch)}  href="#" className="btn btn-navbar btn-sm">
+              <Link href={'/signup'} className="btn btn-navbar btn-sm">
                 Sign up
-              </button>
+              </Link>
             </li>
             <li className="max-lg:inline-block lg:hidden ">
               <button
