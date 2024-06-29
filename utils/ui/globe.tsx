@@ -396,7 +396,7 @@ export function GlobeDemo() {
  
   return (
     <>
-    <div style={{height: '562%' , width: "362%"}}>
+    <div style={{height: '562%' , width: "362%", marginLeft:'-16rem'}}>
 
       <World  data={sampleArcs}  globeConfig={globeConfig} />
     </div>
