@@ -62,3 +62,5 @@
 [0628/124455.674:ERROR:crashpad_client_win.cc(868)] not connected
 [0628/124455.849:ERROR:registration_protocol_win.cc(108)] CreateFile: The system cannot find the file specified. (0x2)
 [0628/124458.513:ERROR:crashpad_client_win.cc(868)] not connected
+[0628/142033.732:ERROR:registration_protocol_win.cc(108)] CreateFile: The system cannot find the file specified. (0x2)
+[0628/142050.978:ERROR:registration_protocol_win.cc(108)] CreateFile: The system cannot find the file specified. (0x2)

@@ -9,6 +9,7 @@ import Services from '@/components/Services'
 import Solution from '@/components/Solution'
 import Testimonial from '@/components/Testimonial'
 import Vision from '@/components/Vision'
+// import { TypewriterEffectSmoothDemo } from '@/utils/ui/Typeefectcomponent'
 import './styl.css'
 export const metadata = {
   title: 'Paytirement',
@@ -27,6 +28,7 @@ export default function Home() {
       {/* <Testimonial /> */}
       {/* <HomeBlog />  */}
       <FAQ /> 
+ {/* <TypewriterEffectSmoothDemo/> */}
       <HomeCta />
     </>
   )

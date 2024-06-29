@@ -131,12 +131,12 @@ const Hero = () => {
           </div>
           <div className="col-span-12 md:col-span-5">
             <div className="relative min-h-[530px] w-full max-md:min-h-[400px] lg:ml-15">
+               <Image  src={hero} alt="hero Image" className="inline-block h-auto w-auto dark:hidden" />
                {/* <div style={{marginTop:'2rem'}}  className="absolute !left-1/2 !top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <Image style={{Width:'150%'}} src={mocukp1} alt="hero Image" className="inline-block h-100 w-100 dark:hidden" />
               <Image style={{Width:'150%'}} src={mocukp1} alt="hero Image" className=" hidden h-100 w-100 dark:inline-block" />
               </div>  */}
                               <div className="absolute !-left-[40px] !top-15 max-lg:!left-0 max-lg:aspect-video max-lg:w-[220px] max-md:!top-5 lg:!-top-[20px]"> 
-               <Image src={hero} alt="hero Image" className="inline-block h-auto w-auto dark:hidden" />
                 <Image src={hero} alt="hero Image" className="hidden h-auto w-auto dark:inline-block" /> 
               </div> 
                <div className="absolute !bottom-[150px] !left-[50px] max-lg:aspect-square max-lg:w-28 max-md:!bottom-[70px]  max-md:!left-[50px] lg:!bottom-0 lg:!left-[45px] xl:!left-[85px]">
