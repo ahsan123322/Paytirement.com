@@ -55,21 +55,21 @@ p{
 
 .btn:is(.dark *){
   --tw-text-opacity: 1;
-  color: white;
+  color: white !important;
 }
 .btn:is(.dark *)::before{
   content: var(--tw-content);
   --tw-bg-opacity: 1;
-  background-color: #5B3C88;
+  background-color: #5B3C88 !important;
 }
 .btn:is(.dark *)::after{
   content: var(--tw-content);
   --tw-bg-opacity: 1;
-  background-color: #3A5FCD;
+  background-color: #3A5FCD !important;
 }
 .btn:hover:is(.dark *){
   --tw-text-opacity: 1;
-  color: white;
+  color: white !important;
 
 }
 .btn-navbar:is(.dark *){
@@ -84,23 +84,23 @@ p{
 
 .bg-primary{
   --tw-bg-opacity: 1;
-  background-color: #5a3acd;
+  background-color: #5a3acd !important;
 }
 .bg-primary-100{
   --tw-bg-opacity: 1;
-  background-color: #a791fa;
+  background-color: #a791fa !important;
 }
 .bg-primary-200\/20{
-  background-color: rgba(148, 65, 242, 0.2);
+  background-color: rgba(148, 65, 242, 0.2) !important; 
 }
 .bg-primary-200\/25{
-  background-color: rgba(127, 65, 242, 0.25);
+  background-color: rgba(127, 65, 242, 0.25) !important;
 }
 .bg-primary-200\/30{
-  background-color: rgba(133, 65, 242, 0.3);
+  background-color: rgba(133, 65, 242, 0.3) !important ;
 }
 .bg-primary-200\/50{
-  background-color: rgba(192, 65, 242, 0.5);
+  background-color: rgba(192, 65, 242, 0.5) !important;
 }
 
 
@@ -115,7 +115,7 @@ p{
 
 .text-primary{
   --tw-text-opacity: 1;
-  color: #3A5FCD;
+  color: #3A5FCD !important;
 }
 
 .dark\:text-primary:is(.dark *){
@@ -132,7 +132,7 @@ p{
   --tw-border-opacity: 1;
   border-color: rgb(237 240 230 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: #3A5FCD;
+  background-color: #3A5FCD !important;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 13px;
@@ -160,7 +160,7 @@ p{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   border-radius: 30px;
   --tw-bg-opacity: 1;
-  background-color: #3A5FCD;
+  background-color: #3A5FCD !important;
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
@@ -169,7 +169,7 @@ p{
 }
 .btn-outline:is(.dark *){
   --tw-border-opacity: 1;
-  border-color: rgb(49 51 48 / var(--tw-border-opacity));
+  border-color: rgb(49 51 48 / var(--tw-border-opacity) ) !important;
   background-color: transparent;
   --tw-text-opacity: 1;
   color: white;
@@ -177,7 +177,7 @@ p{
 .btn-outline:is(.dark *)::before{
   content: var(--tw-content);
   --tw-bg-opacity: 1;
-  background-color: #3A5FCD;
+  background-color: #3A5FCD !important;
 }
 
 
