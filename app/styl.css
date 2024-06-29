@@ -9,6 +9,10 @@
   font-weight: weight;
   font-style: normal;
 }
+
+body{
+  background-color: white !important;
+}
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
