@@ -1054,7 +1054,7 @@ export const FooterData = {
   logo: '/images/logo.svg',
   logoDark: '/images/logo-light.svg',
   footerText: 'Turpis tortor nunc sed amet et faucibus vitae morbi congue sed id mauris.',
-  copyright: `${new Date().getFullYear()} Paytirement. All Rights Reserved`,
+  copyright: `${new Date().getFullYear()} Powered by Protaxpak.`,
   email: 'info@example.com',
   phone: '+3 230 705 5448',
   expolre: [
