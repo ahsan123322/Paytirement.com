@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
- 
+
 const World = dynamic(() => import("../ui/Globasit").then((m) => m.World), {
   ssr: false,
 });
@@ -396,9 +396,11 @@ export function GlobeDemo() {
  
   return (
     <>
-    <div style={{height: '562%' , width: "362%", marginLeft:'-16rem'}}>
+    
+    <div className="globe" >
 
       <World  data={sampleArcs}  globeConfig={globeConfig} />
+
     </div>
     {/* <div  className=" bg-white">
        <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">

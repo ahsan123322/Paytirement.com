@@ -237,6 +237,23 @@ h3{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+@media only screen and  (max-width: 768px){
+  
+ .globe{
+height: 262%; 
+width: 262%;
+margin-left:-16rem;
+
+} 
+}
+.globe{
+height:562%; 
+width: 362%;
+margin-left:-16rem;
+
+}
+
  .transparent-input {
             background: rgb(0, 0, 0);
             border: 1px solid rgba(255, 255, 255, 0.2);
