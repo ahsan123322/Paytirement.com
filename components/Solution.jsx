@@ -64,7 +64,8 @@ const Solution = () => {
           <div className="max-md:order-2">
             <div className="relative pt-150 lg:px-150 lg:py-150">
               <div className="relative mx-auto aspect-video w-[250px] lg:w-[300px]">
- <GlobeDemo />
+              
+              <GlobeDemo />
                 {/* <Image src={earth} alt="vision image" className="" /> */}
                 {/* <Image src={solutionImageDark} alt="vision image" className="hidden dark:inline-block" /> */}
                 <motion.div
