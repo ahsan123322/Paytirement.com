@@ -22,7 +22,7 @@ export default function Home() {
       <Vision />
       <Solution />
         {/* <Clients /> */}
-       {/* <Services /> */}
+       <Services />
       {/* <Counter /> */}
       <Integration />
       {/* <Testimonial /> */}
