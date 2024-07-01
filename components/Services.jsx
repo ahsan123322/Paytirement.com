@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import useWhileInView from '@/hooks/useWhileInView'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
-import whypaytirment from "../public/images/services/whypaytirement.png"
+import whypaytirment from "../public/images/services/mocukp130.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useRef } from 'react'
 const Services = ({ sectionDetails = true }) => {
@@ -147,7 +147,7 @@ const Services = ({ sectionDetails = true }) => {
               Sign up
             </Link>
           </div>
-          <Image src={whypaytirment} height={500} width={400} />
+          <Image  src={whypaytirment} height={700} width={700} />
         
         </div>
       </div>

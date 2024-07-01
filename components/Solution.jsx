@@ -73,7 +73,7 @@ const Solution = () => {
                   initial="initial"
                   animate={controlAnimation1}
                   variants={fadeFromLeftAnimation}
-                  className="absolute -top-[130px] bottom-auto  right-auto h-[150px] w-[250px] lg:-top-[185px]  lg:h-[180px] lg:w-[280px] xl:h-[230px] xl:w-[320px]">
+                  className=" -top-[130px] bottom-auto  right-auto h-[150px] w-[250px] lg:-top-[185px]  lg:h-[180px] lg:w-[280px] xl:h-[230px] xl:w-[320px]">
                   {/* <Image src={mockup2} alt="vision image" className="w-full  " /> */}
                   {/* <Image src={solutionImage1Dark} alt="vision image" className="hidden w-full dark:inline-block" /> */}
                 </motion.div>
