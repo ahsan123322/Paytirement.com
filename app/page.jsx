@@ -21,7 +21,7 @@ export default function Home() {
       <Hero />
       <Vision />
       <Solution />
-        <Clients />
+        {/* <Clients /> */}
        {/* <Services /> */}
       {/* <Counter /> */}
       <Integration />

@@ -39,7 +39,7 @@ const PrimaryNavbar = () => {
           sticky ? 'nav-sticky bg-white text-black'  : '',
         )}>
         <nav className="container flex items-center">
-          <div className="nav-logo" style={{ width: '15%' }}>
+          <div className="nav-logo" style={{ width: '25%' }}>
             <Link href="/">
            
           <h3 className={cn(

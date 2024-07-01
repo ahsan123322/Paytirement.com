@@ -38,10 +38,10 @@ export function SignupFormDemo() {
           <Label htmlFor="email">Email Address</Label>
           <Input id="email" placeholder="projectmayhem@fc.com" type="email" />
         </LabelInputContainer>
-        <LabelInputContainer className="mb-4">
+        {/* <LabelInputContainer className="mb-4">
           <Label htmlFor="password">Password</Label>
           <Input id="password" placeholder="••••••••" type="password" />
-        </LabelInputContainer>
+        </LabelInputContainer> */}
         {/* <LabelInputContainer className="mb-8">
           <Label htmlFor="twitterpassword">Your twitter password</Label>
           <Input

@@ -11,7 +11,7 @@ const FAQ = () => {
   const generalFaq = FAQData.filter((faq) => faq.type.includes('general'))
 
   return (
-    <section className=" relative overflow-hidden bg-gray pb-[130px] pt-150 dark:bg-dark max-md:py-20">
+    <section className=" relative overflow-hidden bg-white pb-[130px] pt-150 dark:bg-dark max-md:py-20">
       <div className="absolute left-1/2 top-0 max-w-[1612px] -translate-x-1/2">
         <svg xmlns="http://www.w3.org/2000/svg" width="1612" height="520" viewBox="0 0 1612 520" fill="none">
           <path
@@ -66,8 +66,7 @@ const FAQ = () => {
               Question
             </h2>
             <p>
-              Neque accumsan dolor nullam commodo. Odio massa nisi ullamcorper suspendisse amet amet. Aenean suspendisse
-              eget est pulvinar. Fames eget eget nascetur ornare
+Welcome to our FAQ section! Find answers to common questions about our products, services, and policies. For further assistance, contact our customer support team.
             </p>
           </div>
           <div className="[&>*:not(:last-child)]:mb-5">

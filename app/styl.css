@@ -254,6 +254,12 @@ margin-left:-16rem;
 
 }
 
+.text-base{
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+
  .transparent-input {
             background: rgb(0, 0, 0);
             border: 1px solid rgba(255, 255, 255, 0.2);
