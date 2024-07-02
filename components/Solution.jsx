@@ -63,7 +63,7 @@ const Solution = () => {
       
           <div className="max-md:order-2">
             <div className="relative pt-150 lg:px-150 lg:py-150">
-              <div className="relative mx-auto aspect-video w-[250px] lg:w-[300px]">
+              <div className="relative mx-auto aspect-video w-[250px] lg:w-[300px]" style={{width:"200%"}} >
               
        <Image src={earth} />
                 {/* <Image src={earth} alt="vision image" className="" /> */}
