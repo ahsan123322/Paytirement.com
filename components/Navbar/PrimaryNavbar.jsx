@@ -1,5 +1,4 @@
 'use client'
-
 import { menuData } from '@/data/data'
 import { cn } from '@/utils/cn'
 import { faAngleDown, faTimes } from '@fortawesome/free-solid-svg-icons'
@@ -43,35 +42,35 @@ const PrimaryNavbar = () => {
             <Link href="/">
            
           <h3 className={cn(
-             'text-white', sticky ? 'text-black' : '' 
+             'text-white', sticky ? 'text-Purple' : '' 
           )}>Paytirement</h3>  
      </Link>
           
           </div>
 
-          <ul  className=" rounded-full nav-list mx-auto hidden  bg-white p-2.5  dark:bg-dark-200 lg:flex [&>*:not(:last-child)]:me-1">
+          <ul  className=" rounded-full nav-list mx-auto hidden bg-Purple  p-2.5  dark:bg-dark-200 lg:flex [&>*:not(:last-child)]:me-1">
             {menuData.menuContent.map((menuItem) => (
               <li className={`${menuItem.path ?? 'group relative'}`} key={menuItem.id}>
                 {menuItem.path ? (
                   <Link style={{color:"white !important"}}
                     href={menuItem.path}
                     className={cn(
-                      'flex items-center rounded-large  border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
+                      'flex items-center  rounded-large  border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
                     )}>
                     {menuItem.title}
                   </Link>
                 ) : (
                   <>
-                    <Link
+                    <Link style={{color:"white !important"}}
                       href="#"
                       className={cn(
-                        'flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
+                        'flex  items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-black hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
                         menuItem.title === 'home' ? 'active' : '',
                       )}>
                       {menuItem.title}
                       <FontAwesomeIcon
                         icon={faAngleDown}
-                        className="ml-1 mt-1 text-paragraph duration-500 group-hover:rotate-180 dark:text-white"
+                        className="ml-1 mt-1 text-paragraph duration-500 group-hover:rotate-180 text-white "
                       />
                     </Link>
                     <ul className="absolute left-0 top-12 z-10 min-w-[250px] origin-top scale-y-0 rounded-md bg-white p-5 opacity-0 duration-500  group-hover:scale-y-100 group-hover:opacity-100 dark:bg-dark-200 [&>*:not(:first-child)]:mt-2.5 [&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-borderColor dark:[&>*:not(:last-child)]:border-borderColor-dark">

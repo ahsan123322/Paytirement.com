@@ -258,7 +258,19 @@ margin-left:-16rem;
   font-size: 0.8rem;
   line-height: 1.5rem;
 }
+.bg-Purple{
+  background-color:#7f18c4;
+}
+.white{
+color: beige !important;
 
+}
+.italic{
+  font-style: normal;
+}
+.text-Purple{
+  color: #5a3acd;
+}
 
  .transparent-input {
             background: rgb(0, 0, 0);
