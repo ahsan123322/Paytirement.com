@@ -49,8 +49,27 @@ h2{
 }
 
 h1{
-  font-size: 4rem !important;
+  font-size: 6rem ;
 }
+
+@media (max-width: 768px){
+  h1{
+    font-size: 4rem;
+  }
+ .globe{
+height: 162%; 
+width: 162%;
+
+
+} 
+}
+.globe{
+height:562%; 
+width: 362%;
+margin-left:-16rem;
+
+}
+
 
 p{
    font-family: "Montserrat", sans-serif;
@@ -244,21 +263,6 @@ h3{
 }
 
 
-@media only screen and  (max-width: 768px){
-  
- .globe{
-height: 162%; 
-width: 162%;
-
-
-} 
-}
-.globe{
-height:562%; 
-width: 362%;
-margin-left:-16rem;
-
-}
 
 .text-base{
   font-size: 0.8rem;

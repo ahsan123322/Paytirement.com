@@ -99,14 +99,14 @@ const Hero = () => {
 
  
       <div className="container  ">
-        <div
+        <div 
           // variants={fadeUpAnimation}
           // initial="initial"
           // animate="animate"
           className="relative z-10 grid grid-cols-12 items-center max-lg:gap-y-10">
           <div className="col-span-12 md:col-span-7">
-            <p className="mb-8 font-medium uppercase max-lg:mb-4" style={{color:"white"}} >Paytirement</p>
-            <h1 className="mb-12 max-md:mb-8" style={{fontSize:"4rem", color:"white"  }} >
+            <p className="mb-8 font-medium uppercase max-lg:mb-4 text-Purple" style={{color:"white", fontWeight:'bold'}} >Paytirement</p>
+            <h1 className="mb-12 max-md:mb-8" style={{ color:"white"  }} >
              Where every {' '}
            transaction   {/* <span className="inline-block rounded-[88px] border-2 border-paragraph bg-[#D9D9D900] px-5 pb-2.5 pt-0.5 font-playfair italic leading-none dark:border-[#F0F3EA]">
                 transaction
