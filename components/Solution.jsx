@@ -27,12 +27,12 @@ const Solution = () => {
   const controlAnimation2 = useWhileInView(ref2)
   const controlAnimation3 = useWhileInView(ref3)
   return (
-    <section style={{background:'#041641'}}  className="skew relative overflow-hidden bg-white pb-150 pt-[160px] dark:bg-dark-300 max-lg:pb-150 max-lg:pt-20 lg:pb-15">
+    <section   className="skew relative overflow-hidden bg-white pb-150 pt-[160px] dark:bg-dark-300 max-lg:pb-150 max-lg:pt-20 lg:pb-15">
       <div className="container skwrewvers ">
         <div className="  grid grid-cols-2 items-center gap-10 max-md:grid-cols-1 1xl:gap-x-24">
    
 
-        <div className=" text-white max-md:order-1 lg:-mt-15">
+        <div className="  max-md:order-1 lg:-mt-15">
             <p className=" text-white  section-tagline">Unlock Your Financial Future with Paytirement</p>
 
             <h2 className=" text-white mb-8 max-lg:mb-4">How It Works </h2>

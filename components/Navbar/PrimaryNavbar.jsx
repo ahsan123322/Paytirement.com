@@ -42,7 +42,7 @@ const PrimaryNavbar = () => {
             <Link href="/">
            
           <h3 className={cn(
-             'text-white', sticky ? 'text-Purple' : '' 
+             'text-Purple', sticky ? 'text-Purple' : '' 
           )}>Paytirement</h3>  
      </Link>
           

@@ -16,7 +16,6 @@ import hero from '../../public/images/hero/mocukp13.png'
 // import heroRatingDark  from '../../public/images/hero/hero-rating-dark.png'
 import heroRatingLight from '../../public/images/hero/online-payment_5262525.png'
 
-import { WavyBackground } from '@/utils/ui/wavy-background'
 const Hero = () => {
   return (
     <section 
@@ -98,12 +97,12 @@ const Hero = () => {
         </svg>
       </div>
 
-        <WavyBackground waveWidth={50}   className=''  backgroundFill='transparent' />
+ 
       <div className="container  ">
-        <motion.div
-          variants={fadeUpAnimation}
-          initial="initial"
-          animate="animate"
+        <div
+          // variants={fadeUpAnimation}
+          // initial="initial"
+          // animate="animate"
           className="relative z-10 grid grid-cols-12 items-center max-lg:gap-y-10">
           <div className="col-span-12 md:col-span-7">
             <p className="mb-8 font-medium uppercase max-lg:mb-4" style={{color:"white"}} >Paytirement</p>
@@ -149,7 +148,7 @@ const Hero = () => {
                {/* </div> */}
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   )

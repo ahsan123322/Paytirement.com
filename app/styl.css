@@ -1,6 +1,8 @@
 #scene{
-   background: linear-gradient(45deg, #5B3C88, #3A5FCD , #5B3C88, #5B3C88, #3A5FCD, #5B3C88);
-   animation: gradientAnimation 15s ease infinite;   
+
+
+   background: white;
+ 
 }  
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 .montserrat-uniquifier {
@@ -21,11 +23,15 @@
   }
   
 }
+p{
+  color: black !important;
+}
 h1,h2,h3,h4,h5,h6{
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight:bold;
   font-style: normal;
+  color: black !important;
 }
 
 
@@ -269,7 +275,7 @@ color: beige !important;
   font-style: normal;
 }
 .text-Purple{
-  color: #5a3acd;
+  color: #5a3acd !important;
 }
 
  .transparent-input {
