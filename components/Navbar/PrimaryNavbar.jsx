@@ -143,9 +143,9 @@ const PrimaryNavbar = () => {
             </li>
           </ul>
 
-          <div className={`mobile-menu max-lg:overflow-y-auto ${showMobileMenu ? 'open' : ''}`}>
-            <button
-              className="navbar-toggle-close absolute right-6 top-5 h-10 w-10 rounded-full bg-white outline-none dark:bg-dark-200 "
+          <div style={{background:'white !important '}}  className={`mobile-menu max-lg:overflow-y-auto ${showMobileMenu ? 'open' : ''}`}>
+            <button style={{background:'#5a3acd'}}
+              className="navbar-toggle-close absolute right-6 top-5 h-10 w-10 rounded-full  outline-none dark:bg-dark-200 "
               onClick={() => setShowMobileMenu(!showMobileMenu)}>
               <FontAwesomeIcon icon={faTimes} />
             </button>
@@ -154,10 +154,10 @@ const PrimaryNavbar = () => {
                 <li className={cn(menuItem.path ? '' : 'group relative')} key={menuItem.id}>
                   {menuItem.path ? (
                     <>
-                      <Link
+                      <Link style={{color:'#5a3acd !important'}}
                         href={menuItem.path}
                         className={cn(
-                          'flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
+                          'flex items-center rounded-large text-white border border-transparent px-5 py-[5px] font-Inter text-base font-medium leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
                         )}
                         onClick={() => setShowMobileMenu(!showMobileMenu)}>
                         {menuItem.title}
@@ -166,10 +166,10 @@ const PrimaryNavbar = () => {
                   ) : (
                     <>
                       <Link
-                        href="#"
+                        href="#" style={{color:"#5a3acd"}}
                         className="flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5">
                         {menuItem.title}
-                        <FontAwesomeIcon
+                        <FontAwesomeIcon color='#5a3acd'
                           icon={faAngleDown}
                           className="ml-auto mt-1 text-paragraph duration-500 group-hover:rotate-180 dark:text-white"
                         />
@@ -179,7 +179,7 @@ const PrimaryNavbar = () => {
                           <li
                             className="relative overflow-hidden pb-2.5 text-base capitalize text-paragraph duration-500 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph  before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:before:bg-white"
                             key={submenuItem.id}>
-                            <Link
+                            <Link style={{color:'#5a3acd !important'}}
                               href={submenuItem.path}
                               className="flex"
                               onClick={() => setShowMobileMenu(!showMobileMenu)}>
