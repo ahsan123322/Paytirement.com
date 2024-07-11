@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="col-span-12 lg:col-span-6">
 
             <h3 className='text-Purple' >Paytirement</h3>
-            <p className="max-w-[350px] max-lg:mx-auto">{FooterData.footerText}</p>
+            <p className="mt-6 max-w-[350px] max-lg:mx-auto">{FooterData.footerText}</p>
           </div>
           <div className="col-span-12 max-lg:text-center lg:col-span-2">
             <h3 className="mb-8 text-lg font-medium">Explore</h3>
