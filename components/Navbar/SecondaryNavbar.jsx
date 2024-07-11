@@ -44,7 +44,7 @@ const SecondaryNavbar = () => {
             <Link href="/">
 
           <h3 className={cn(
-             'text-white', sticky ? 'text-black' : '' 
+             'text-Purple', sticky ? 'text-Purple' : '' 
           )}>Paytirement</h3>
             </Link>
           </div>
