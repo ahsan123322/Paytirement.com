@@ -24,10 +24,10 @@ export default function Home() {
         {/* <Clients /> */}
        <Services />
       {/* <Counter /> */}
-      <Integration />
+      {/* <Integration /> */}
       {/* <Testimonial /> */}
       {/* <HomeBlog />  */}
-      <FAQ /> 
+      {/* <FAQ />  */}
  {/* <TypewriterEffectSmoothDemo/> */}
       <HomeCta />
     </>
