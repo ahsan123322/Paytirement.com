@@ -45,7 +45,7 @@ const SecondaryNavbar = () => {
 
           <h3 className={cn(
              'text-Purple', sticky ? 'text-Purple' : '' 
-          )} style={{color:'#5a3acd' ,   fontSize:'1.8rem',   fontWeight:'bold' }} > Paytirement</h3>
+          )} style={{color:'#5a3acd' ,   fontSize:'1.8rem',   fontWeight:'700' }} > Paytirement</h3>
             </Link>
           </div>
           <ul style={{background:'#7f18c4',    borderRadius:'3rem' }} className=" p-2.5 nav-list hidden lg:ml-7 lg:flex xl:ml-15 [&>*:not(:last-child)]:me-1">
