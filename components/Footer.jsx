@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="mb-20 grid grid-cols-12 max-lg:gap-y-10 max-lg:text-center">
           <div className="col-span-12 lg:col-span-6">
 
-            <h3 className='text-Purple' >Paytirement</h3>
+            <h3 className='text-Purple' style={{color:'#5a3acd', fontWeight:"bold"}} >Paytirement</h3>
             <p className="mt-6 max-w-[350px] max-lg:mx-auto">{FooterData.footerText}</p>
           </div>
           <div className="col-span-12 max-lg:text-center lg:col-span-2">

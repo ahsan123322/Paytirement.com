@@ -13,7 +13,7 @@ export const menuData = {
         {
           id: 1.1,
           title: 'Secure and Trusted',
-          path: '/',
+          path: '/payment/Secureandtrust',
           newTab: false,
         },
         {
@@ -62,25 +62,25 @@ export const menuData = {
         {
           id: 3.1,
           title: 'Automated Investing',
-          path: '/',
+          path: '/investing/automatedInvesting',
           newTab: false,
         },
         {
           id: 3.2,
           title: 'Portfolio Investing',
-          path: '/',
+          path: '/investing/portfolioinvestment',
           newTab: false,
         },
         {
           id: 3.3,
           title: 'Crypto Investing',
-          path: '/',
+          path: '/investing/cyptoinvestment',
           newTab: false,
         },
         {
           id: 3.4,
           title: 'ESG Investing',
-          path: '/',
+          path: '/investing/esginvesting',
           newTab: false,
         },
       ],
@@ -164,25 +164,25 @@ export const menuData = {
         {
           id: 4.1,
           title: 'Active Deals',
-          path: '/',
+          path: '/savings/activedeels',
           newTab: false,
         },
         {
           id: 4.2,
           title: 'Personalized Recommendation ',
-          path: '/',
+          path: '/savings/Personalized',
           newTab: false,
         },
         {
           id: 4.3,
           title: '	Cashback Rewards',
-          path: '/',
+          path: '/savings/cashbackreward',
           newTab: false,
         },
         {
           id: 4.4,
           title: 'Discount Alerts',
-          path: '/',
+          path: '/savings/discountalert',
           newTab: false,
         },
       ],

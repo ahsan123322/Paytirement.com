@@ -33,10 +33,10 @@ const SecondaryNavbar = () => {
 
   return (
     <header>
-      <TopBar sticky={sticky} />
-      <div
+
+      <div 
         className={cn(
-          'fixed left-0 top-12 z-50 w-full bg-transparent transition-all duration-500 max-md:z-[500]',
+          'fixed left-0  z-50 w-full bg-transparent transition-all duration-500 max-md:z-[500]',
           sticky ? 'nav-sticky bg-white dark:bg-dark-200' : '',
         )}>
         <nav className="container flex items-center">
@@ -45,18 +45,18 @@ const SecondaryNavbar = () => {
 
           <h3 className={cn(
              'text-Purple', sticky ? 'text-Purple' : '' 
-          )}>Paytirement</h3>
+          )} style={{color:'#5a3acd' , fontSize:'2rem' , fontWeight:'bold' }} > Paytirement</h3>
             </Link>
           </div>
-          <ul className="nav-list hidden lg:ml-7 lg:flex xl:ml-15 [&>*:not(:last-child)]:me-1">
+          <ul style={{background:'#5a3acd', borderRadius:'3rem' }} className="nav-list hidden lg:ml-7 lg:flex xl:ml-15 [&>*:not(:last-child)]:me-1">
             {menuData.menuContent.map((menuItem) => (
               <li className={`${menuItem.path ? '' : 'group relative'}`} key={menuItem.id}>
                 {menuItem.path ? (
                   <>
-                    <Link  style={{color:'white !important' }}
+                    <Link  
                       href={menuItem.path}
                       className={cn(
-                        'flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
+                        'flex items-center rounded-large text-white border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
                         pathname === menuItem.path ? 'active' : '',
                       )}>
                       {menuItem.title}
@@ -64,11 +64,11 @@ const SecondaryNavbar = () => {
                   </>
                 ) : (
                   <>
-                    <Link
+                    <Link style={{color:'white'}}
                       href="/"
-                      className="flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5">
+                      className="flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-black hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5">
                       {menuItem.title}
-                      <FontAwesomeIcon
+                      <FontAwesomeIcon style={{color:'white'}}
                         icon={faAngleDown}
                         className="ml-1 mt-1 text-paragraph duration-500 group-hover:rotate-180 dark:text-white"
                       />
@@ -78,7 +78,7 @@ const SecondaryNavbar = () => {
                         <li
                           className="relative overflow-hidden pb-2.5 text-base capitalize text-paragraph duration-500 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph  before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:before:bg-white"
                           key={submenuItem.id}>
-                          <Link href={submenuItem.path} className="flex">
+                          <Link  href={submenuItem.path} className="flex">
                             {submenuItem.title}
                           </Link>
                         </li>
@@ -108,9 +108,9 @@ const SecondaryNavbar = () => {
               </button> */}
             </li>
             <li className="max-lg:hidden">
-              <Link href={'/signup'} className="btn btn-navbar btn-sm">
+                <button onClick={() => setShowSearch(!showSearch)}  href="#" className="btn btn-navbar btn-sm">
                 Sign up
-              </Link>
+              </button>
             </li>
             <li className="max-lg:inline-block lg:hidden ">
               <button
@@ -143,7 +143,7 @@ const SecondaryNavbar = () => {
             </li>
           </ul>
 
-          <div className={`mobile-menu max-lg:overflow-y-auto ${innerMobileMenu ? 'open' : ''}`}>
+          <div style={{background:'white'}} className={`mobile-menu max-lg:overflow-y-auto ${innerMobileMenu ? 'open' : ''}`}>
             <button
               className=" navbar-toggle-close absolute right-6 top-5 h-10 w-10 rounded-full bg-white outline-none dark:bg-dark-200"
               onClick={() => setInnerMobileMenu(!innerMobileMenu)}>
@@ -154,7 +154,7 @@ const SecondaryNavbar = () => {
                 <li className={`${menuItem.path ? '' : 'group relative'}`} key={menuItem.id}>
                   {menuItem.path ? (
                     <>
-                      <Link
+                      <Link  style={{color:'#5a3acd !important'}}
                         href={menuItem.path}
                         className={cn(
                           'flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
@@ -166,11 +166,11 @@ const SecondaryNavbar = () => {
                     </>
                   ) : (
                     <>
-                      <Link
+                      <Link  style={{color:'#5a3acd'}}
                         href="#"
                         className="flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5">
                         {menuItem.title}
-                        <FontAwesomeIcon
+                        <FontAwesomeIcon style={{color:'#5a3acd'}}
                           icon={faAngleDown}
                           className="ml-auto mt-1 text-paragraph duration-500 group-hover:rotate-180 dark:text-white"
                         />

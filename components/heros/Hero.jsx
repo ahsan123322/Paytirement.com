@@ -113,7 +113,7 @@ const Hero = () => {
               </span> */}
               counts.
             </h1>
-            <p className="mb-12 max-w-[590px] max-md:mb-8" style={{color:"white"}}>
+            <p className="mb-12 max-w-[590px] max-md:mb-8" >
               Imagine a payment platform that not only makes your daily transactions seamless but also helps you to pay, save & invest effortlessly in your financial future.
             </p>
             {/* <form>

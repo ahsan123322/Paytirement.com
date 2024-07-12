@@ -5,78 +5,64 @@ import PaymentImageDark from '../../public/images/payment/payment-hero-dark.png'
 import PaymentImageDevice from '../../public/images/payment/payment-hero-device.png'
 import PaymentImageDeviceDark from '../../public/images/payment/payment-hero-device-dark.png' 
 import Image from 'next/image'  
+import hero from '../../public/images/hero/mocukp13.png'
 import Link from 'next/link'
 import { fadeUpAnimation } from '@/data/animation'
 import { motion } from 'framer-motion'
 
-const PaymentHero = () => {
+const PaymentHero = ({heading, pargraph ,src}) => {
 
   return (
 <section  className="hero relative overflow-hidden pb-[140px] max-lg:pt-[160px] lg:pt-[260px]">
-      <div className="container">
-        <div className="relative z-10 grid grid-cols-12 items-end gap-5">
-          <motion.div
-            className="max-md:col-span-full max-md:mb-[350px] md:col-span-7"
-            initial="initial"
-            animate="animate"
-            variants={fadeUpAnimation}>
-            <p className=" mb-4 font-medium uppercase">Digital Payment Solution</p>
-            <h1 className="mb-10">
-              Smart
-              <span className="inline-block px-5 pb-2.5 pt-0.5  font-playfair italic leading-none"> Payment </span>
-              solution for your Business
+     
+      <div className="container  ">
+        <div 
+          // variants={fadeUpAnimation}
+          // initial="initial"
+          // animate="animate"
+          className="relative z-10 grid grid-cols-12 items-center max-lg:gap-y-10">
+          <div className="col-span-12 md:col-span-7">
+            {/* <p className="mb-8 font-medium uppercase max-lg:mb-4 text-Purple" style={{color:"", fontWeight:'bold', fontSize:'x-large'}}  >Paytirement</p> */}
+            <h1 className="mb-12 max-md:mb-8  " style={{ color:"", fontSize:'5rem' , fontWeight:"bold"  }} >
+            {heading} {' '}
+           
+           
             </h1>
-            <p className="mb-12 max-w-[590px]">
-              Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It&rsquo;s not Latin,
-              though it looks like it
+            <p className="mb-12 max-w-[590px] max-md:mb-8">
+            {pargraph}.
             </p>
-            <div className="flex items-center gap-4">
-              <Link href="/contact" className="btn">
-                Get Started
-              </Link>
-              <Link href="/request-demo" className="btn-outline">
-                Get a Demo
-              </Link>
-            </div>
-          </motion.div>
-          <motion.div
-            className="relative max-md:col-span-full md:z-10 md:col-span-5"
-            initial="initial"
-            animate="animate"
-            variants={fadeUpAnimation}>
-            <div className="absolute left-1/2 top-1/2 -z-10 flex -translate-x-1/2 -translate-y-1/2 max-md:hidden">
-              <div className="rounded-full bg-primary-200/20 blur-[145px]  max-1xl:h-[335px] max-1xl:w-[335px] max-lg:hidden 1xl:h-[442px] 1xl:w-[442px]"></div>
-              <div className="-ml-[170px] -mt-150 rounded-full  bg-primary-200/25 blur-[145px] max-1xl:h-[335px] max-1xl:blur-[80px] max-lg:w-[335px] max-md:ml-0 1xl:h-[442px] 1xl:w-[442px]"></div>
-              <div className="-ml-[170px] rounded-full bg-primary-200/20  blur-[145px] max-1xl:h-[335px] max-1xl:w-[335px] max-lg:hidden 1xl:h-[442px] 1xl:w-[442px]"></div>
-            </div>
-            <div className="absolute -bottom-150 left-1/2 -z-10 h-full w-full -translate-x-1/2 bg-[url('/images/hero-gradient.png')]  bg-contain bg-center bg-no-repeat p-[350px] opacity-70 md:hidden"></div>
-            <div className="h-full w-full">
-              <div className="relative">
-                <Image
-                  src={PaymentImage}
-                  alt="hero Image"
-                  className="inline-block w-full rounded-medium shadow-nav dark:hidden"
+            {/* <form>
+              <div className="border-borderColour grid w-full max-w-[520px] grid-cols-12 items-center rounded-[60px] border bg-white pb-1 pe-1 pl-4 pt-1 dark:border-[#31332F] dark:bg-dark-200 sm:pl-5">
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  className=" placeholder:text-light text-light col-span-8 bg-transparent leading-[1.75] text-[#A1A49D] outline-none transition-all duration-300  focus:border-primary focus:outline-none dark:placeholder:text-[#A1A49D] xs:col-span-8 "
                 />
-                <Image
-                  src={PaymentImageDark}
-                  alt="hero Image"
-                  className="hidden w-full rounded-medium shadow-nav dark:inline-block"
-                />
-                <div className="absolute bottom-2.5 left-1/2 -translate-x-1/2 max-lg:w-4/5 max-md:w-[285px] lg:aspect-video lg:w-[285px]">
-                  <Image
-                    src={PaymentImageDevice}
-                    alt="hero Image"
-                    className="inline-block w-full rounded-t-medium  dark:hidden"
-                  />
-                  <Image
-                    src={PaymentImageDeviceDark}
-                    alt="hero Image"
-                    className="hidden w-full rounded-t-medium dark:inline-block "
-                  />
-                </div>
+                <button className="btn col-span-4 max-lg:!px-3 max-lg:!text-sm xs:col-span-4 ">Get Started</button>
               </div>
+            </form> */}
+
+          </div>
+          <div className="col-span-12 md:col-span-5">
+            <div className="relative min-h-[530px] w-full max-md:min-h-[400px] lg:ml-15">
+               <Image  src={src} alt="hero Image" className="inline-block h-auto w-auto dark:hidden" />
+               {/* <div style={{marginTop:'2rem'}}  className="absolute !left-1/2 !top-1/2 -translate-x-1/2 -translate-y-1/2">
+                <Image style={{Width:'150%'}} src={mocukp1} alt="hero Image" className="inline-block h-100 w-100 dark:hidden" />
+              <Image style={{Width:'150%'}} src={mocukp1} alt="hero Image" className=" hidden h-100 w-100 dark:inline-block" />
+              </div>  */}
+                              <div className="absolute !-left-[40px] !top-15 max-lg:!left-0 max-lg:aspect-video max-lg:w-[220px] max-md:!top-5 lg:!-top-[20px]"> 
+                <Image src={hero} alt="hero Image" className="hidden h-auto w-auto dark:inline-block" /> 
+              </div> 
+               <div className="absolute !bottom-[150px] !left-[50px] max-lg:aspect-square max-lg:w-28 max-md:!bottom-[70px]  max-md:!left-[50px] lg:!bottom-0 lg:!left-[45px] xl:!left-[85px]">
+                {/* <Image src={heroRatingLight} alt="hero Image" className="inline-block h-auto w-auto  " /> */}
+                {/* <Image src={heroRatingDark} alt="hero Image" className="hidden h-auto w-auto  dark:inline-block" />  */}
+              </div> 
+               {/* <div className="lg:!not-sr-only-bottom-[45px] absolute !-bottom-0 !-right-5 max-lg:w-[196px] max-md:!-bottom-5 max-md:!-right-5 lg:right-0 xl:right-[30px]"> 
+               <Image src={hero} alt="hero Image" className="inline-block dark:hidden" />
+                <Image src={hero} alt="hero Image" className="hidden dark:inline-block" />  */}
+               {/* </div> */}
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
