@@ -255,13 +255,13 @@ export const menuData = {
         {
           id: 7.1,
           title: 'Blogs',
-          path: '/blog',
+          path: '#',
           newTab: false,
         },
         {
           id: 7.2,
           title: 'Articles',
-          path: '/blog-list',
+          path: '#',
           newTab: false,
         },
         {
@@ -1114,7 +1114,7 @@ export const FooterData = {
     {
       id: 5,
       name: 'FAQs',
-      link: '/login',
+      link: '#',
     },
     // {
     //   id: 6,
