@@ -52,10 +52,10 @@ const PrimaryNavbar = () => {
             {menuData.menuContent.map((menuItem) => (
               <li className={`${menuItem.path ?? 'group relative'}`} key={menuItem.id}>
                 {menuItem.path ? (
-                  <Link style={{color:"white !important"}}
+                  <Link style={{color:"white !important"}}  
                     href={menuItem.path}
                     className={cn(
-                      'flex items-center  rounded-large  border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
+                      'flex items-center  rounded-large  border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8  transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
                     )}>
                     {menuItem.title}
                   </Link>
@@ -64,7 +64,7 @@ const PrimaryNavbar = () => {
                     <Link style={{color:"white !important"}}
                       href="#"
                       className={cn(
-                        'flex  items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-black hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
+                        'flex  items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8  transition-colors duration-500 hover:border-borderColor hover:bg-black hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
                         menuItem.title === 'home' ? 'active' : '',
                       )}>
                       {menuItem.title}
