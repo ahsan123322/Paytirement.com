@@ -7,7 +7,7 @@ import PaymentFeatures from '@/components/PaymentFeatures'
 import PaymentHero from '@/components/heros/PaymentHero'
 import PaymentRating from '@/components/PaymentRating'
 import Secure from '../../../public/images/hero/secuteandtrus.png'
-import crypto from '../../../public/images/hero/cryptoinvesting.png'
+import crypto from '../../../public/images/hero/cryptoinvesting.jpg'
 
 import Pricing from '@/components/Pricing'
 import WhyUs from '@/components/WhyUs'
@@ -15,7 +15,7 @@ import { PaymentFeaturesData } from '@/data/data'
 const cryptoin = () => {
   return (
     <>
-    <div style={{margin:'3rem'}}>
+    <div className='mx-6'>
       <PaymentHero heading={'Crypto Investing'} pargraph={'Crypto Investing involves buying and holding digital currencies or tokens with the aim of benefiting from their potential price appreciation. Having digital assets in your investment portfolio can potentially enhance returns by including high-growth assets alongside more stable investments.'} src={crypto} />
 
     </div>

@@ -144,10 +144,10 @@ const SecondaryNavbar = () => {
           </ul>
 
           <div style={{background:'white'}} className={`mobile-menu max-lg:overflow-y-auto ${innerMobileMenu ? 'open' : ''}`}>
-            <button
+            <button style={{background:'#5a3acd'}}
               className=" navbar-toggle-close absolute right-6 top-5 h-10 w-10 rounded-full bg-white outline-none dark:bg-dark-200"
               onClick={() => setInnerMobileMenu(!innerMobileMenu)}>
-              <FontAwesomeIcon icon={faTimes} />
+              <FontAwesomeIcon style={{color:'white',  }  } icon={faTimes} />
             </button>
             <ul className="nav-list flex w-full max-w-[500px] flex-col gap-5 landscape:h-full">
               {menuData.menuContent.map((menuItem) => (

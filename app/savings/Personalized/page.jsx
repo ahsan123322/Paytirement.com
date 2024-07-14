@@ -6,7 +6,7 @@ import MembersCounter from '@/components/MembersCounter'
 import PaymentFeatures from '@/components/PaymentFeatures'
 import PaymentHero from '@/components/heros/PaymentHero'
 import PaymentRating from '@/components/PaymentRating'
-import Personalized from '../../../public/images/hero/personalized.png'
+import Personalized from '../../../public/images/hero/personalizedrecomedation.jpg'
 
 import Pricing from '@/components/Pricing'
 import WhyUs from '@/components/WhyUs'
@@ -14,7 +14,7 @@ import { PaymentFeaturesData } from '@/data/data'
 const personalized = () => {
   return (
     <>
-      <PaymentHero heading={'Personalized Recommendations'} pargraph={'Utilizing advanced algorithms, paytirement analyses your shopping habits and preferences to provide personalized deal recommendations. Whether you&#39;re shopping for groceries, electronics, clothing, or dining out, paytirement.com will suggest deals tailored specifically for you.'} src={Personalized} />
+      <PaymentHero heading={'Personalized Recommendations'} pargraph={"Utilizing advanced algorithms, paytirement analyses your shopping habits and preferences to provide personalized deal recommendations. Whether you're shopping for groceries, electronics, clothing, or dining out, paytirement.com will suggest deals tailored specifically for you."} src={Personalized} />
       
       {/* <PaymentRating />
       <CoreFeature />

@@ -13,9 +13,9 @@ import { motion } from 'framer-motion'
 const PaymentHero = ({heading, pargraph ,src}) => {
 
   return (
-<section  className="hero relative overflow-hidden pb-[140px] max-lg:pt-[160px] lg:pt-[260px]">
+<section  className="hero relative overflow-hidden pb-[140px] max-lg:pt-[160px] lg:pt-[160px]">
      
-      <div className="container  ">
+      <div className="container">
         <div 
           // variants={fadeUpAnimation}
           // initial="initial"
@@ -29,7 +29,7 @@ const PaymentHero = ({heading, pargraph ,src}) => {
            
             </h1>
             <p className="mb-12 max-w-[590px] max-md:mb-8">
-            {pargraph}.
+            {pargraph}
             </p>
             {/* <form>
               <div className="border-borderColour grid w-full max-w-[520px] grid-cols-12 items-center rounded-[60px] border bg-white pb-1 pe-1 pl-4 pt-1 dark:border-[#31332F] dark:bg-dark-200 sm:pl-5">
@@ -43,9 +43,9 @@ const PaymentHero = ({heading, pargraph ,src}) => {
             </form> */}
 
           </div>
-          <div className="col-span-12 md:col-span-5">
+          <div className="col-span-12 md:col-span-5 mt-24 ">
             <div className="relative min-h-[530px] w-full max-md:min-h-[400px] lg:ml-15">
-               <Image  src={src} alt="hero Image" className="inline-block h-auto w-auto dark:hidden" />
+               <Image width={900} src={src} alt="hero Image" className="inline-block h-auto w-auto dark:hidden" />
                {/* <div style={{marginTop:'2rem'}}  className="absolute !left-1/2 !top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <Image style={{Width:'150%'}} src={mocukp1} alt="hero Image" className="inline-block h-100 w-100 dark:hidden" />
               <Image style={{Width:'150%'}} src={mocukp1} alt="hero Image" className=" hidden h-100 w-100 dark:inline-block" />

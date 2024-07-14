@@ -7,7 +7,7 @@ import PaymentFeatures from '@/components/PaymentFeatures'
 import PaymentHero from '@/components/heros/PaymentHero'
 import PaymentRating from '@/components/PaymentRating'
 import Secure from '../../../public/images/hero/secuteandtrus.png'
-import portfolio from '../../../public/images/hero/portfolio_bpm_jamaica.jpg'
+import portfolio from '../../../public/images/hero/portfolioinvest.jpg'
 
 import Pricing from '@/components/Pricing'
 import WhyUs from '@/components/WhyUs'
@@ -15,7 +15,7 @@ import { PaymentFeaturesData } from '@/data/data'
 const portfolioinvestment = () => {
   return (
     <>
-      <PaymentHero heading={'Portfolio Investing'} pargraph={'Portfolio investing is a way of investing in a diversified collection of assets to achieve specific financial goals while managing risk. Choose from a variety of expertly curated investment portfolios that align with your financial goals and risk tolerance. Whether you&#39;re saving for a vacation or education, securing for emergency, or planning for retirement, paytirement has a portfolio for you.'} src={portfolio} />
+      <PaymentHero heading={'Portfolio Investing'} pargraph={"Portfolio investing is a way of investing in a diversified collection of assets to achieve specific financial goals while managing risk. Choose from a variety of expertly curated investment portfolios that align with your financial goals and risk tolerance. Whether you're saving for a vacation or education, securing for emergency, or planning for retirement, paytirement has a portfolio for you."} src={portfolio} />
 
       
       {/* <PaymentRating />

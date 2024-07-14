@@ -7,7 +7,7 @@ import PaymentFeatures from '@/components/PaymentFeatures'
 import PaymentHero from '@/components/heros/PaymentHero'
 import PaymentRating from '@/components/PaymentRating'
 import Secure from '../../../public/images/hero/secuteandtrus.png'
-import ESG from '../../../public/images/hero/What-is-ESG-investing-scaled.jpg'
+import ESG from '../../../public/images/hero/esginvesting.jpg'
 
 import Pricing from '@/components/Pricing'
 import WhyUs from '@/components/WhyUs'

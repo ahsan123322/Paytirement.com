@@ -19,7 +19,7 @@ export const menuData = {
         {
           id: 1.2,
           title: 'Payment history',
-          path: '/home-2',
+          path: '#',
           newTab: false,
         },
         // {
@@ -37,13 +37,13 @@ export const menuData = {
         {
           id: 2.1,
           title: 'Who we are',
-          path: '/about',
+          path: '#',
           newTab: false,
         },
         {
           id: 2.2,
           title: 'Pricing',
-          path: '/price',
+          path: '#',
           newTab: false,
         },
         // {
@@ -242,7 +242,7 @@ export const menuData = {
         {
           id: 6.4,
           title: 'Retirement Planning',
-          path: '/integration',
+          path: '#',
           newTab: false,
         },
       ],
@@ -279,7 +279,7 @@ export const menuData = {
         {
           id: 7.5,
           title: 'FAQs',
-          path: '/faq',
+          path: '#',
           newTab: false,
         },
       ],

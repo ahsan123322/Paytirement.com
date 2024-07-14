@@ -7,7 +7,7 @@ import PaymentFeatures from '@/components/PaymentFeatures'
 import PaymentHero from '@/components/heros/PaymentHero'
 import PaymentRating from '@/components/PaymentRating'
 import Secure from '../../../public/images/hero/secuteandtrus.png'
-import autmation from '../../../public/images/hero/automateinevestment .png'
+import autmation from '../../../public/images/hero/automateinevestment.jpg'
 
 import Pricing from '@/components/Pricing'
 import WhyUs from '@/components/WhyUs'
