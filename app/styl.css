@@ -33,6 +33,16 @@ h1,h2,h3,h4,h5,h6{
   font-style: normal;
   color: black !important;
 }
+h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6{
+  font-family: "Montserrat", sans-serif;
+  --tw-text-opacity: 1;
+  color: rgb(24 24 27 / var(--tw-text-opacity));
+}
 
 
 h1,

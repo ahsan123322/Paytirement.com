@@ -48,7 +48,7 @@ const SecondaryNavbar = () => {
           )} style={{color:'#5a3acd' ,   fontSize:'1.8rem',   fontWeight:'700' }} > Paytirement</h3>
             </Link>
           </div>
-          <ul style={{background:'#7f18c4',    borderRadius:'3rem' }} className=" p-2.5 nav-list hidden lg:ml-7 lg:flex xl:ml-15 [&>*:not(:last-child)]:me-1">
+          <ul style={{background:'#7f18c4',    borderRadius:'3rem' }} className="  rounded-full nav-list mx-auto hidden bg-Purple  p-2.5  dark:bg-dark-200 lg:flex [&>*:not(:last-child)]:me-1">
             {menuData.menuContent.map((menuItem) => (
               <li className={`${menuItem.path ? '' : 'group relative'}`} key={menuItem.id}>
                 {menuItem.path ? (
@@ -56,7 +56,7 @@ const SecondaryNavbar = () => {
                     <Link   
                       href={menuItem.path}
                       className={cn(
-                        'flex  items-center rounded-large text-white border border-transparent px-5 py-[5px] font-Inter  font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
+                        'flex  items-center rounded-large text-white border border-transparent  py-[5px] font-Inter  font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
                         pathname === menuItem.path ? 'active' : '',
                       )}>
                       {menuItem.title}

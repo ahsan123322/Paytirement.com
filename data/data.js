@@ -30,30 +30,30 @@ export const menuData = {
         // },
       ],
     },
-    {
-      id: 2,
-      title: 'About',
-      submenu: [
-        {
-          id: 2.1,
-          title: 'Who we are',
-          path: '#',
-          newTab: false,
-        },
-        {
-          id: 2.2,
-          title: 'Pricing',
-          path: '#',
-          newTab: false,
-        },
-        // {
-        //   id: 1.3,
-        //   title: 'Home 3',
-        //   path: '/home-3',
-        //   newTab: false,
-        // },
-      ],
-    },
+    // {
+    //   id: 2,
+    //   title: 'About',
+    //   submenu: [
+    //     {
+    //       id: 2.1,
+    //       title: 'Who we are',
+    //       path: '#',
+    //       newTab: false,
+    //     },
+    //     {
+    //       id: 2.2,
+    //       title: 'Pricing',
+    //       path: '#',
+    //       newTab: false,
+    //     },
+    //     // {
+    //     //   id: 1.3,
+    //     //   title: 'Home 3',
+    //     //   path: '/home-3',
+    //     //   newTab: false,
+    //     // },
+    //   ],
+    // },
     {
       id: 3,
       title: 'Investing',
@@ -187,103 +187,103 @@ export const menuData = {
         },
       ],
     },
-    {
-      id: 5,
-      title: 'Funds',
-      submenu: [
-        {
-          id: 5.1,
-          title: 'Assets Fund',
-          path: '/',
-          newTab: false,
-        },
-        {
-          id: 5.2,
-          title: 'Property Fund',
-          path: '/',
-          newTab: false,
-        },
-        {
-          id: 5.3,
-          title: 'Startup Fund',
-          path: '/',
-          newTab: false,
-        },
-        {
-          id: 5.4,
-          title: 'Emergency Fund',
-          path: '/',
-          newTab: false,
-        },
-      ],
-    },
-    {
-      id: 6,
-      title: 'Planning',
-      submenu: [
-        {
-          id: 6.1,
-          title: 'Tax Planning',
-          path: '/',
-          newTab: false,
-        },
-        {
-          id: 6.2,
-          title: 'Education Planning',
-          path: '/',
-          newTab: false,
-        },
-        {
-          id: 6.3,
-          title: 'Financial Planning',
-          path: '/',
-          newTab: false,
-        },
-        {
-          id: 6.4,
-          title: 'Retirement Planning',
-          path: '#',
-          newTab: false,
-        },
-      ],
-    },
+    // {
+    //   id: 5,
+    //   title: 'Funds',
+    //   submenu: [
+    //     {
+    //       id: 5.1,
+    //       title: 'Assets Fund',
+    //       path: '/',
+    //       newTab: false,
+    //     },
+    //     {
+    //       id: 5.2,
+    //       title: 'Property Fund',
+    //       path: '/',
+    //       newTab: false,
+    //     },
+    //     {
+    //       id: 5.3,
+    //       title: 'Startup Fund',
+    //       path: '/',
+    //       newTab: false,
+    //     },
+    //     {
+    //       id: 5.4,
+    //       title: 'Emergency Fund',
+    //       path: '/',
+    //       newTab: false,
+    //     },
+    //   ],
+    // },
+    // // {
+    //   id: 6,
+    //   title: 'Planning',
+    //   submenu: [
+    //     {
+    //       id: 6.1,
+    //       title: 'Tax Planning',
+    //       path: '/',
+    //       newTab: false,
+    //     },
+    //     {
+    //       id: 6.2,
+    //       title: 'Education Planning',
+    //       path: '/',
+    //       newTab: false,
+    //     },
+    //     {
+    //       id: 6.3,
+    //       title: 'Financial Planning',
+    //       path: '/',
+    //       newTab: false,
+    //     },
+    //     {
+    //       id: 6.4,
+    //       title: 'Retirement Planning',
+    //       path: '#',
+    //       newTab: false,
+    //     },
+    //   ],
+    // },
 
-{
-      id: 7,
-      title: 'Resources',
-      submenu: [
-        {
-          id: 7.1,
-          title: 'Blogs',
-          path: '#',
-          newTab: false,
-        },
-        {
-          id: 7.2,
-          title: 'Articles',
-          path: '#',
-          newTab: false,
-        },
-        {
-          id: 7.3,
-          title: 'Videos',
-          path: '/',
-          newTab: false,
-        },
-        {
-          id: 7.4,
-          title: 'Customer Support',
-          path: '/',
-          newTab: false,
-        },
-        {
-          id: 7.5,
-          title: 'FAQs',
-          path: '#',
-          newTab: false,
-        },
-      ],
-    },
+// {
+//       id: 7,
+//       title: 'Resources',
+//       submenu: [
+//         {
+//           id: 7.1,
+//           title: 'Blogs',
+//           path: '#',
+//           newTab: false,
+//         },
+//         {
+//           id: 7.2,
+//           title: 'Articles',
+//           path: '#',
+//           newTab: false,
+//         },
+//         {
+//           id: 7.3,
+//           title: 'Videos',
+//           path: '/',
+//           newTab: false,
+//         },
+//         {
+//           id: 7.4,
+//           title: 'Customer Support',
+//           path: '/',
+//           newTab: false,
+//         },
+//         {
+//           id: 7.5,
+//           title: 'FAQs',
+//           path: '#',
+//           newTab: false,
+//         },
+//       ],
+//     },
 
     // {
     //   id: 6,
@@ -1061,72 +1061,72 @@ export const FooterData = {
     {
       id: 1,
       name: 'Payment',
-      link: '/',
+      link: '/payment/Secureandtrust',
     },
-    {
-      id: 2,
-      name: 'About',
-      link: '/',
-    },
+    // {
+    //   id: 2,
+    //   name: 'About',
+    //   link: '/',
+    // },
     {
       id: 3,
       name: 'Investing',
-      link: '/',
+      link: '/investing/automatedInvesting',
     },
     {
       id: 4,
       name: 'Saving',
-      link: '/',
+      link: '/savings/activedeels',
     },
-    {
-      id: 5,
-      name: 'Funds',
-      link: '/',
-    },
-    {
-      id: 6,
-      name: "Plaining",
-      link: '/',
-    },
-   
-  ],
-  resources: [
-    {
-      id: 1,
-      name: 'Blog',
-      link: '/',
-    },
-    {
-      id: 2,
-      name: 'Articles',
-      link: '/',
-    },
-    {
-      id: 3,
-      name: 'Videos',
-      link: '/',
-    },
-    {
-      id: 4,
-      name: 'Customer Support',
-      link: '/',
-    },
-    {
-      id: 5,
-      name: 'FAQs',
-      link: '#',
-    },
+    // {
+    //   id: 5,
+    //   name: 'Funds',
+    //   link: '/',
+    // },
     // {
     //   id: 6,
-    //   name: 'Sign Up',
-    //   link: '/signup',
+    //   name: "Plaining",
+    //   link: '/',
     // },
-    // {
-    //   id: 7,
-    //   name: '404',
-    //   link: '/not-found',
-    // },
+   
   ],
+  // resources: [
+  //   {
+  //     id: 1,
+  //     name: 'Blog',
+  //     link: '/',
+  //   },
+  //   {
+  //     id: 2,
+  //     name: 'Articles',
+  //     link: '/',
+  //   },
+  //   {
+  //     id: 3,
+  //     name: 'Videos',
+  //     link: '/',
+  //   },
+  //   {
+  //     id: 4,
+  //     name: 'Customer Support',
+  //     link: '/',
+  //   },
+  //   {
+  //     id: 5,
+  //     name: 'FAQs',
+  //     link: '#',
+  //   },
+  //   {
+  //     id: 6,
+  //     name: 'Sign Up',
+  //     link: '/signup',
+  //   },
+  //   {
+  //     id: 7,
+  //     name: '404',
+  //     link: '/not-found',
+  //   },
+  // ],
 
   socialLinks: [
     {

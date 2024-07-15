@@ -12,7 +12,7 @@ const Footer = () => {
             <h3 className='text-Purple' style={{color:'#5a3acd', fontWeight:"bold"}} >Paytirement</h3>
             <p className="mt-6 max-w-[350px] max-lg:mx-auto">{FooterData.footerText}</p>
           </div>
-          <div className="col-span-12 max-lg:text-center lg:col-span-2">
+          <div className="col-span-12 max-lg:text-center lg:col-span-4">
             <h3 className="mb-8 text-lg font-medium">Explore</h3>
             <ul className="[&>*:not(:last-child)]:mb-3">
               {FooterData.expolre.map((items) => (
@@ -26,10 +26,10 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className="col-span-12 max-lg:text-center lg:col-span-2">
-            <h3 className="mb-8 text-lg font-medium">Resources</h3>
-            <ul className="[&>*:not(:last-child)]:mb-3">
-              {FooterData.resources.map((items) => (
+          {/* <div className="col-span-12 max-lg:text-center lg:col-span-2"> */}
+            {/* <h3 className="mb-8 text-lg font-medium">Resources</h3> */}
+            {/* <ul className="[&>*:not(:last-child)]:mb-3"> */}
+              {/* {FooterData.resources.map((items) => (
                 <li key={items.id}>
                   <Link
                     href={items.link}
@@ -37,9 +37,9 @@ const Footer = () => {
                     {items.name}
                   </Link>
                 </li>
-              ))}
-            </ul>
-          </div>
+              ))} */}
+            {/* </ul> */}
+          {/* </div> */}
           <div className="col-span-12 max-lg:text-center lg:col-span-2">
             <h3 className="mb-8 text-lg font-medium">Get In touch</h3>
             <p className="mb-3">Need Support?</p>
