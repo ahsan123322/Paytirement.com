@@ -15,12 +15,11 @@ import { PaymentFeaturesData } from '@/data/data'
 const portfolioinvestment = () => {
   
     const margintop = {
-    marginTop:"12rem",
-    overflow:'hidden',
+       overflow:'hidden',
   }
   return (
     <>
-      <PaymentHero style={margintop} heading={'Portfolio Investing'} pargraph={"Portfolio investing is a way of investing in a diversified collection of assets to achieve specific financial goals while managing risk. Choose from a variety of expertly curated investment portfolios that align with your financial goals and risk tolerance. Whether you're saving for a vacation or education, securing for emergency, or planning for retirement, paytirement has a portfolio for you."} src={portfolio} />
+      <PaymentHero addPadding={true} style={margintop} heading={'Portfolio Investing'} pargraph={"Portfolio investing is a way of investing in a diversified collection of assets to achieve specific financial goals while managing risk. Choose from a variety of expertly curated investment portfolios that align with your financial goals and risk tolerance. Whether you're saving for a vacation or education, securing for emergency, or planning for retirement, paytirement has a portfolio for you."} src={portfolio} />
 
       
       {/* <PaymentRating />

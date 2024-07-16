@@ -44,7 +44,7 @@ const PaymentHero = ({heading, pargraph ,src , style , addPadding}) => {
 
           </div>
           <div className="col-span-12 md:col-span-5  mtset" style={style}>
-            <div className="relative min-h-[530px] w-full max-md:min-h-[400px] lg:ml-15">
+            <div style={{display:'flex', flexDirection:'column', justifyContent:'center'}} className="relative min-h-[530px] w-full max-md:min-h-[400px] lg:ml-15">
                <Image width={900}  src={src} alt="hero Image" className="inline-block h-auto w-auto dark:hidden" />
                {/* <div style={{marginTop:'2rem'}}  className="absolute !left-1/2 !top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <Image style={{Width:'150%'}} src={mocukp1} alt="hero Image" className="inline-block h-100 w-100 dark:hidden" />

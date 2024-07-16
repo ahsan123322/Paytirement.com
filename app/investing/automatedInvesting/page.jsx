@@ -14,12 +14,12 @@ import WhyUs from '@/components/WhyUs'
 import { PaymentFeaturesData } from '@/data/data'
 const personalized = () => {
     const margintop = {
-    marginTop:"12rem",
+   
     overflow:'hidden',
   }
   return (
     <>
-      <PaymentHero style={margintop} heading={'Automated Investing'} pargraph={'Unlike traditional investing, which can feel intimidating and require significant capital, knowledge and commission payments. Paytirement integrates investing directly into your daily spending habits. This approach democratizes investing, making it accessible to everyone, regardless of their financial background, budget or expenses.'} src={autmation} />
+      <PaymentHero addPadding={true} style={margintop} heading={'Automated Investing'} pargraph={'Unlike traditional investing, which can feel intimidating and require significant capital, knowledge and commission payments. Paytirement integrates investing directly into your daily spending habits. This approach democratizes investing, making it accessible to everyone, regardless of their financial background, budget or expenses.'} src={autmation} />
 
       
       {/* <PaymentRating />

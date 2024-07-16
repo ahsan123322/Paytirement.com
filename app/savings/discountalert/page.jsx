@@ -13,12 +13,12 @@ import WhyUs from '@/components/WhyUs'
 import { PaymentFeaturesData } from '@/data/data'
 const personalized = () => {
    const margintop = {
-    marginTop:'12rem',
+    
     overflow:'hidden',
   }
   return (
     <>
-      <PaymentHero  style={margintop} heading={'Discounts Alerts'} pargraph={'Set up alerts for your favourite products or categories. Paytirement will notify you when there are significant discounts are available or when prices drop, allowing you to make purchases at the most opportune times.'} src={discounts} />
+      <PaymentHero addPadding={true}  style={margintop} heading={'Discounts Alerts'} pargraph={'Set up alerts for your favourite products or categories. Paytirement will notify you when there are significant discounts are available or when prices drop, allowing you to make purchases at the most opportune times.'} src={discounts} />
       
       {/* <PaymentRating />
       <CoreFeature />
