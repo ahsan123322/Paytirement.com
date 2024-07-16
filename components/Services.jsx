@@ -152,12 +152,12 @@ payment platform designed to help you to save smart and invest smarter.
               </li> */}
             </ul>
             
-            {/* <Link href="/signup" className="btn">
+            <Link href="/signup" className="btn">
               Sign up
-            </Link> */}
-                          <button onClick={() => setShowSearch(!showSearch)} className="btn btn-navbar ">
+            </Link>
+                          {/* <button onClick={() => setShowSearch(!showSearch)} className="btn btn-navbar ">
                   Signup
-                </button>
+                </button> */}
           </div>
           <Image  src={whypaytirment} height={700} width={700} />
         
