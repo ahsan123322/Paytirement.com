@@ -35,7 +35,7 @@ const PrimaryNavbar = () => {
       <header
         className={cn(
           'fixed left-0 z-50 w-full bg-transparent  text-white pt-8 transition-all duration-500 max-md:z-[500]',
-          sticky ? 'nav-sticky bg-white text-black'  : '',
+          sticky ? 'nav-sticky bg-white text-white'  : '',
         )}>
         <nav className="container flex items-center">
           <div className="nav-logo" style={{ width: '25%' }}>

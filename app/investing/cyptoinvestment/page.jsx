@@ -13,10 +13,16 @@ import Pricing from '@/components/Pricing'
 import WhyUs from '@/components/WhyUs'
 import { PaymentFeaturesData } from '@/data/data'
 const cryptoin = () => {
+  
+    const margintop = {
+    marginTop:"12rem",
+    overflow:'hidden',
+  }
   return (
     <>
-    <div className='mx-6'>
-      <PaymentHero heading={'Crypto Investing'} pargraph={'Crypto Investing involves buying and holding digital currencies or tokens with the aim of benefiting from their potential price appreciation. Having digital assets in your investment portfolio can potentially enhance returns by including high-growth assets alongside more stable investments.'} src={crypto} />
+
+    <div className=''>
+      <PaymentHero style={margintop} heading={'Crypto Investing'} pargraph={'Crypto Investing involves buying and holding digital currencies or tokens with the aim of benefiting from their potential price appreciation. Having digital assets in your investment portfolio can potentially enhance returns by including high-growth assets alongside more stable investments.'} src={crypto} />
 
     </div>
 

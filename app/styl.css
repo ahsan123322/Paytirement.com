@@ -23,9 +23,16 @@
   }
   
 }
+@media only screen and (max-width:1024px) {
+  .mtset{
+    margin-top: 15rem;
+  }
+}
 p{
   color: black !important;
+
 }
+
 h1,h2,h3,h4,h5,h6{
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -123,7 +130,7 @@ p{
 }
 .bg-primary-100{
   --tw-bg-opacity: 1;
-  background-color: #a791fa !important;
+  background-color: rgb(243 248 232 / var(--tw-bg-opacity)) !important;
 }
 .bg-primary-200\/20{
   background-color: rgba(148, 65, 242, 0.2) !important; 

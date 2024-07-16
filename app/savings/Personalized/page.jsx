@@ -12,9 +12,13 @@ import Pricing from '@/components/Pricing'
 import WhyUs from '@/components/WhyUs'
 import { PaymentFeaturesData } from '@/data/data'
 const personalized = () => {
+   const margintop = {
+    marginTop:"9rem",
+    overflow:'hidden',
+  }
   return (
     <>
-      <PaymentHero heading={'Personalized Recommendations'} pargraph={"Utilizing advanced algorithms, paytirement analyses your shopping habits and preferences to provide personalized deal recommendations. Whether you're shopping for groceries, electronics, clothing, or dining out, paytirement.com will suggest deals tailored specifically for you."} src={Personalized} />
+      <PaymentHero style={margintop} heading={'Personalized Recommendations'} pargraph={"Utilizing advanced algorithms, paytirement analyses your shopping habits and preferences to provide personalized deal recommendations. Whether you're shopping for groceries, electronics, clothing, or dining out, paytirement.com will suggest deals tailored specifically for you."} src={Personalized} />
       
       {/* <PaymentRating />
       <CoreFeature />

@@ -165,8 +165,8 @@ const Vision = () => {
           <div className="relative z-10 w-full py-[175px] max-xl:py-150 max-lg:py-25">
             <div className="align-center relative mx-auto flex h-150 w-150 flex-row justify-center rounded-full bg-white shadow-nav dark:bg-dark-200">
               <div className="align-center absolute left-1/2 top-1/2 mx-auto flex h-[122px] w-[122px] -translate-x-1/2 -translate-y-1/2  flex-row justify-center rounded-full bg-primary-100 dark:bg-[#2B2D2A]">
-                <span className="inline-block px-[25px] py-[46px] text-[30px] font-semibold leading-none text-primary">
-                  Paytirement
+                <span className="inline-block px-[25px] py-[26px] text-[30px] font-semibold leading-none text-primary">
+                  <Image src={'/images/center.png' } width={300} height={300} />
                 </span>
               </div>
             </div>

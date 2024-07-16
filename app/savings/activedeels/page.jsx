@@ -12,10 +12,14 @@ import activedeels from '../../../public/images/hero/activedeals.jpg'
 
 import { PaymentFeaturesData } from '@/data/data'
 const savings = () => {
+  const margintop = {
+    marginTop:"12rem",
+    overflow:'hidden',
+  }
   return (
     <>
     <div className='mx-12'>
-      <PaymentHero heading={'Active Dealss'}  pargraph={"Inclusive of your daily spendings, paytirement scans thousands of deals across various retailers and service providers.The platform aggregates these deals in one place, so you don't have to spend time searching multiple platforms. This ensures you never miss out on the best saving offers available. "} 
+      <PaymentHero style={margintop} heading={'Active Deals'}  pargraph={"Inclusive of your daily spendings, paytirement scans thousands of deals across various retailers and service providers.The platform aggregates these deals in one place, so you don't have to spend time searching multiple platforms. This ensures you never miss out on the best saving offers available. "} 
       src={activedeels} />
 
     </div>

@@ -10,10 +10,10 @@ import Link from 'next/link'
 import { fadeUpAnimation } from '@/data/animation'
 import { motion } from 'framer-motion'
 
-const PaymentHero = ({heading, pargraph ,src}) => {
+const PaymentHero = ({heading, pargraph ,src , style , addPadding}) => {
 
   return (
-<section  className="hero relative overflow-hidden pb-[140px] max-lg:pt-[160px] lg:pt-[160px]">
+<section  className={`hero relative overflow-hidden pb-[140px] max-lg:pt-[160px] ${addPadding ? 'lg:pt-[160px]' : '' } `}>
      
       <div className="container">
         <div 
@@ -23,11 +23,11 @@ const PaymentHero = ({heading, pargraph ,src}) => {
           className="relative z-10 grid grid-cols-12 items-center max-lg:gap-y-10">
           <div className="col-span-12 md:col-span-7">
             {/* <p className="mb-8 font-medium uppercase max-lg:mb-4 text-Purple" style={{color:"", fontWeight:'bold', fontSize:'x-large'}}  >Paytirement</p> */}
-            <h1 className="mb-12 max-md:mb-8  " style={{ color:"", fontSize:'5rem' , fontWeight:"bold"  }} >
+            <h2 className="mb-12 max-md:mb-8  " style={{ color:"", fontSize:'3rem' , fontWeight:"bold"  }} >
             {heading} {' '}
            
            
-            </h1>
+            </h2>
             <p className="mb-12 max-w-[590px] max-md:mb-8">
             {pargraph}
             </p>
@@ -43,9 +43,9 @@ const PaymentHero = ({heading, pargraph ,src}) => {
             </form> */}
 
           </div>
-          <div className="col-span-12 md:col-span-5 mt-24 ">
+          <div className="col-span-12 md:col-span-5  mtset" style={style}>
             <div className="relative min-h-[530px] w-full max-md:min-h-[400px] lg:ml-15">
-               <Image width={900} src={src} alt="hero Image" className="inline-block h-auto w-auto dark:hidden" />
+               <Image width={900}  src={src} alt="hero Image" className="inline-block h-auto w-auto dark:hidden" />
                {/* <div style={{marginTop:'2rem'}}  className="absolute !left-1/2 !top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <Image style={{Width:'150%'}} src={mocukp1} alt="hero Image" className="inline-block h-100 w-100 dark:hidden" />
               <Image style={{Width:'150%'}} src={mocukp1} alt="hero Image" className=" hidden h-100 w-100 dark:inline-block" />

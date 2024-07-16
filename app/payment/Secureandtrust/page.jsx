@@ -14,10 +14,14 @@ import Pricing from '@/components/Pricing'
 import WhyUs from '@/components/WhyUs'
 import { PaymentFeaturesData } from '@/data/data'
 const personalized = () => {
+  const margintop = {
+    marginTop:"10rem",
+    overflow:'hidden',
+  }
   return (
     <>
-      <PaymentHero heading={'Secure and Trusted'} pargraph={'At Paytirement, we prioritize your data security and peace of mind. Our payment system is designed with the latest, state-of-the-art technology to ensure that every transaction you make is safe, secure, and trusted.'} src={Secure} />
-      <PaymentHero heading={'Why Trust Our Payment System?'} pargraph={'Our payment mechanism utilizes the most advanced technology available today. This  includes robust encryption methods, secure payment gateways, and continuous system updates to protect your financial information.We use end-to-end encryption to safeguard your data from the moment you enter it until the transaction is complete. This ensures that your sensitive information remains confidential and protected from unauthorized access.' }  src={whytrust} />
+      <PaymentHero style={margintop} heading={'Secure and Trusted'} pargraph={'At Paytirement, we prioritize your data security and peace of mind. Our payment system is designed with the latest, state-of-the-art technology to ensure that every transaction you make is safe, secure, and trusted.'} src={Secure} />
+      <PaymentHero style={margintop} heading={'Why Trust Our Payment System?'} pargraph={'Our payment mechanism utilizes the most advanced technology available today. This  includes robust encryption methods, secure payment gateways, and continuous system updates to protect your financial information.We use end-to-end encryption to safeguard your data from the moment you enter it until the transaction is complete. This ensures that your sensitive information remains confidential and protected from unauthorized access.' }  src={whytrust} />
       
       {/* <PaymentRating />
       <CoreFeature />

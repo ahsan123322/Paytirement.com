@@ -10,7 +10,7 @@ const page = () => {
       <PageHero
         subtitle="GET IN TOUCH"
         title="Contact our help desk <br/> for assistance"
-        paragraph="Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin, though it looks like it"
+        paragraph="Contact us if you need any help"
       />
       <ContactInfo />
       <ContactForm />

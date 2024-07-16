@@ -13,10 +13,14 @@ import Pricing from '@/components/Pricing'
 import WhyUs from '@/components/WhyUs'
 import { PaymentFeaturesData } from '@/data/data'
 const cashbackreward = () => {
+  const margintop = {
+    marginTop:"12rem",
+    overflow:'hidden',
+  }
   return (
     <>
     <div className='mx-6'>
-      <PaymentHero heading={'Cashback Rewards'} pargraph={'With every purchase made through paytirement, you earn cashback rewards. These rewards can be accumulated and redeemed for future purchases or invested on your chosen portfolio.'} src={Cashback} />
+      <PaymentHero style={margintop} heading={'Cashback Rewards'} pargraph={'With every purchase made through paytirement, you earn cashback rewards. These rewards can be accumulated and redeemed for future purchases or invested on your chosen portfolio.'} src={Cashback} />
 
     </div>
       

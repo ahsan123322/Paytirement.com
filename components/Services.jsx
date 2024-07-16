@@ -6,10 +6,16 @@ import Image from 'next/image'
 import Link from 'next/link'
 import useWhileInView from '@/hooks/useWhileInView'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { useState } from 'react'
+import { createPortal } from 'react-dom'
 import whypaytirment from "../public/images/services/mocukp130.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useRef } from 'react'
+import SearchOption from './SearchOption'
+
 const Services = ({ sectionDetails = true }) => {
+  const [showSearch, setShowSearch] = useState(false)
+ 
   const ref = useRef(null)
   const controlAnimation = useWhileInView(ref)
   return (
@@ -108,9 +114,11 @@ const Services = ({ sectionDetails = true }) => {
           <div>
             {/* <p className="section-tagline">Data Integrations</p> */}
 
-            <h2 className="mb-8 max-lg:mb-4">Why Paytierment.</h2>
+            <h2 className="mb-8 max-lg:mb-4">Why Paytirement.</h2>
             <p className="mb-11 max-lg:mb-5">
-              In today's fast-paced world, managing and transferring money efficiently and securely is crucial. Paytirement stands out as a premier payment transfer system designed to offer you the ease, reliability, and flexibility you need. Here’s why Paytirement is the ideal choice for your financial transactions.
+              In today's fast-paced world, managing finances smartly and saving money on
+everyday purchases is more important than ever. Paytirement.com is a cutting-edge
+payment platform designed to help you to save smart and invest smarter.
             </p>
 
             <ul className="mb-14 [&>*:not(:last-child)]:mb-6 max-lg:[&>*:not(:last-child)]:mb-4 ">
@@ -143,13 +151,18 @@ const Services = ({ sectionDetails = true }) => {
                 <span className="font-jakarta_sans font-medium dark:text-white">Guided Payment Procurement</span>
               </li> */}
             </ul>
-            <Link href="/signup" className="btn">
+            
+            {/* <Link href="/signup" className="btn">
               Sign up
-            </Link>
+            </Link> */}
+                          <button onClick={() => setShowSearch(!showSearch)} className="btn btn-navbar ">
+                  Signup
+                </button>
           </div>
           <Image  src={whypaytirment} height={700} width={700} />
         
         </div>
+              {showSearch && createPortal(<SearchOption onClose={() => setShowSearch(false)} />, document.body)}
       </div>
     </section>
    </>
