@@ -65,7 +65,7 @@ const Solution = () => {
             <div className="relative   ">
               <div className="relative mx-auto aspect-video w-[250px] lg:w-[300px]" style={{width:"100%" , overflow:'hidden'}} >
               
-       <Image width={600} src={earth} />
+       <Image style={{borderRadius:'1rem'}} width={600} src={earth} />
                 {/* <Image src={earth} alt="vision image" className="" /> */}
                 {/* <Image src={solutionImageDark} alt="vision image" className="hidden dark:inline-block" /> */}
                 <motion.div
