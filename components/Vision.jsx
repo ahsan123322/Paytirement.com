@@ -156,7 +156,7 @@ const Vision = () => {
                 <span className="font-jakarta_sans font-medium dark:text-white">Guided Payment Procurement</span>
               </li> */}
             </ul>
-            <Link href="/contact" className="btn">
+            <Link style={{color:'white ' , background:'#3A5FCD'}} href="/contact" className="btn">
               Start Your Journey
             </Link>
           </div>
