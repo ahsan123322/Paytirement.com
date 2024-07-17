@@ -457,12 +457,12 @@ const Vision = () => {
                   <Image
                     src="/images/exchange_7074894.png "
                     alt="value image"
-                    className=" dark:inline-block inline-block"
+                    className=" dark:hidden inline-block"
                     width={60}
                     height={60}
                   />
                   <Image
-                    src="images/sales-dark.svg"
+                    src="/images/exchange_7074894.png "
                     alt="value image"
                     className=" hidden dark:inline-block"
                     width={40}
@@ -549,8 +549,8 @@ const Vision = () => {
           </div>
           <div className="mx-auto aspect-square w-25  rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200">
             <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark ">
-              <Image src="/images/exchange_7074894.png" alt="value image" className=" dark:inline-block inline-block" width={60} height={60} />
-              {/* <Image src="/images/exchange_7074894.png" alt="value image" className="hidden  dark:inline-block" width={40} height={40} /> */}
+              <Image src="/images/exchange_7074894.png" alt="value image" className=" dark:hidden inline-block" width={60} height={60} />
+               <Image src="/images/exchange_7074894.png" alt="value image" className="hidden  dark:inline-block" width={40} height={40} /> 
            
             </div>
           </div>
