@@ -457,7 +457,7 @@ const Vision = () => {
                   <Image
                     src="/images/exchange_7074894.png "
                     alt="value image"
-                    className=" dark:hidden inline-block"
+                    className=" dark:block inline-block"
                     width={60}
                     height={60}
                   />
