@@ -36,8 +36,8 @@ const SecondaryNavbar = () => {
 
       <div 
         className={cn(
-            ' mt-6 fixed left-0  z-50 w-full bg-transparent transition-all duration-500 max-md:z-[500]',
-          sticky ? 'nav-sticky bg-white dark:bg-dark-200' : '',
+            ' absolute mt-6  left-0  z-50 w-full bg-transparent transition-all duration-500 max-md:z-[500]',
+          sticky ? ' bg-white dark:bg-dark-200' : '',
         )}>
         <nav className="container flex items-center">
           <div className="nav-logo" style={{width:'21%'}}>
@@ -48,7 +48,7 @@ const SecondaryNavbar = () => {
           )} style={{color:'#5a3acd' ,   fontSize:'1.8rem',   fontWeight:'700' }} > Paytirement</h3>
             </Link>
           </div>
-          <ul style={{background:'#7f18c4',    borderRadius:'3rem' }} className="  rounded-full nav-list mx-auto hidden bg-Purple  p-2.5  dark:bg-dark-200 lg:flex [&>*:not(:last-child)]:me-1">
+          <ul  className="  rounded-full nav-list mx-auto hidden   p-2.5  dark:bg-dark-200 lg:flex [&>*:not(:last-child)]:me-1">
             {menuData.menuContent.map((menuItem) => (
               <li className={`${menuItem.path ? '' : 'group relative'}`} key={menuItem.id}>
                 {menuItem.path ? (
@@ -56,7 +56,7 @@ const SecondaryNavbar = () => {
                     <Link   
                       href={menuItem.path}
                       className={cn(
-                        'flex  items-center rounded-large text-white border border-transparent  py-[5px] font-Inter  font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
+                        'flex  items-center rounded-large  border border-transparent  py-[5px] font-Inter  font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
                         pathname === menuItem.path ? 'active' : '',
                       )}>
                       {menuItem.title}
@@ -64,11 +64,11 @@ const SecondaryNavbar = () => {
                   </>
                 ) : (
                   <>
-                    <Link  style={{color:'white', fontSize:'0.8rem' }}
+                    <Link  style={{ fontWeight:'bold', color:'#5a3acd', fontSize:'1rem' }}
                       href="/"
-                      className="flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-black hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5">
+                      className="flex items-center text-purple rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5">
                       {menuItem.title}
-                      <FontAwesomeIcon style={{color:'white'}}
+                      <FontAwesomeIcon style={{color:'#5a3acd'}}
                         icon={faAngleDown}
                         className="ml-1 mt-1 text-paragraph duration-500 group-hover:rotate-180 dark:text-white"
                       />

@@ -34,8 +34,8 @@ const PrimaryNavbar = () => {
     <>
       <header
         className={cn(
-          'fixed left-0 z-50 w-full bg-transparent  text-white pt-8 transition-all duration-500 max-md:z-[500]',
-          sticky ? 'nav-sticky bg-white text-white'  : '',
+          ' absolute left-0 z-50 w-full bg-transparent  text-white pt-8 transition-all duration-500 max-md:z-[500]',
+          sticky ? ' bg-white text-white'  : '',
         )}>
         <nav className="container flex items-center">
           <div className="nav-logo" style={{ width: '25%' }}>
@@ -48,11 +48,11 @@ const PrimaryNavbar = () => {
           
           </div>
 
-          <ul  className=" rounded-full nav-list mx-auto hidden bg-Purple  p-2.5  dark:bg-dark-200 lg:flex [&>*:not(:last-child)]:me-1">
+          <ul  className=" rounded-full nav-list mx-auto hidden   p-2.5  dark:bg-dark-200 lg:flex [&>*:not(:last-child)]:me-1">
             {menuData.menuContent.map((menuItem) => (
               <li className={`${menuItem.path ?? 'group relative'}`} key={menuItem.id}>
                 {menuItem.path ? (
-                  <Link style={{color:"white !important"}}  
+                  <Link style={{color:"white !important" }}  
                     href={menuItem.path}
                     className={cn(
                       'flex items-center  rounded-large  border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8  transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
@@ -61,14 +61,14 @@ const PrimaryNavbar = () => {
                   </Link>
                 ) : (
                   <>
-                    <Link style={{color:"white !important"}}
+                    <Link style={{color:"#5a3acd" , fontWeight:'bold', fontSize:'1rem'}}
                       href="#"
                       className={cn(
-                        'flex  items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8  transition-colors duration-500 hover:border-borderColor hover:bg-black hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
+                        'flex  items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8  transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
                         menuItem.title === 'home' ? 'active' : '',
                       )}>
                       {menuItem.title}
-                      <FontAwesomeIcon
+                      <FontAwesomeIcon style={{color:'#5a3acd'}}
                         icon={faAngleDown}
                         className="ml-1 mt-1 text-paragraph duration-500 group-hover:rotate-180 text-white "
                       />
