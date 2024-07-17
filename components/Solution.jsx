@@ -15,7 +15,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import mockup2 from '../public/images/vision/2mocukps.png'
-import earth from '../public/images/solution/howit.png'
+import earth from '../public/images/hero/howitwork.png'
 import Link from 'next/link'
 import { useRef } from 'react'
 import { GlobeDemo } from '@/utils/ui/globe'
@@ -53,7 +53,7 @@ const Solution = () => {
                 <span className="font-jakarta_sans font-medium dark:text-white">Cloud save data  </span>
               </li>
             </ul>
-            <Link href="/contact" className="btn-outline">
+            <Link style={{color:'white'}} href="/contact" className="btn-outline">
               Start Your Journey
             </Link>
 
@@ -62,10 +62,10 @@ const Solution = () => {
 
       
           <div className="max-md:order-2">
-            <div className="relative pt-150 lg:px-150 lg:py-150">
-              <div className="relative mx-auto aspect-video w-[250px] lg:w-[300px]" style={{width:"200%"}} >
+            <div className="relative   ">
+              <div className="relative mx-auto aspect-video w-[250px] lg:w-[300px]" style={{width:"100%" , overflow:'hidden'}} >
               
-       <Image src={earth} />
+       <Image width={600} src={earth} />
                 {/* <Image src={earth} alt="vision image" className="" /> */}
                 {/* <Image src={solutionImageDark} alt="vision image" className="hidden dark:inline-block" /> */}
                 <motion.div

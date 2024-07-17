@@ -7,7 +7,9 @@ import '../app/app/page.css'
 import '../app/globals.css'
 import '@/scss/theme.scss';
 import { Montserrat } from 'next/font/google';
+import 'react-toastify/dist/ReactToastify.css';
 
+import { ToastContainer } from '../nexotast/Toast';
 const montserrat = Montserrat({
   weight: ['200', '300', '400', '500', '600', '700', '800'],
   style: ['normal'],
@@ -28,7 +30,9 @@ export default function RootLayout({ children }) {
         className={`relative overflow-x-hidden bg-white text-base antialiased dark:bg-dark-300 ${montserrat.variable}`}
       >
         <Providers attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+
           <ThemeSwitcher />
+        <ToastContainer/>
           <Navbar />
           <main>{children}</main>
           <Footer />

@@ -13,8 +13,8 @@ import activedeels from '../../../public/images/hero/activedeals.jpg'
 import { PaymentFeaturesData } from '@/data/data'
 const savings = () => {
   const margintop = {
-    
-    overflow:'hidden',
+
+
   }
   return (
     <>

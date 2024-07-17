@@ -13,7 +13,7 @@ import WhyUs from '@/components/WhyUs'
 import { PaymentFeaturesData } from '@/data/data'
 const personalized = () => {
    const margintop = {
-    
+    width:'fit-content',
     overflow:'hidden',
   }
   return (
