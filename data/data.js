@@ -16,12 +16,12 @@ export const menuData = {
           path: '/payment/Secureandtrust',
           newTab: false,
         },
-        {
-          id: 1.2,
-          title: 'Payment history',
-          path: '#',
-          newTab: false,
-        },
+        // {
+        //   id: 1.2,
+        //   title: 'Payment history',
+        //   path: '#',
+        //   newTab: false,
+        // },
         // {
         //   id: 1.3,
         //   title: 'Home 3',
