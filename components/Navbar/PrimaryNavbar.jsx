@@ -19,7 +19,7 @@ const PrimaryNavbar = () => {
   useEffect(()=>{
     const userId =  localStorage.getItem('id')
     
-     axios.get(`api/Getuserid/${userId}`).then((response)=>{
+     axios.get(`${window.location.origin}/api/Getuserid/${userId}`).then((response)=>{
         setUser(response.data);
       }).catch((err) =>{
         console.log("Error fetching user data:", err);

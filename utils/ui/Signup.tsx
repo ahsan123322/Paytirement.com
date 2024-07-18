@@ -29,7 +29,7 @@ setFormdata({
     e.preventDefault();
     
     try{
-      const response = await axios.post('/api/Adduser', {
+      const response = await axios.post(`${window.location.origin}/api/Adduser`, {
        name:formdat.name,
        lastname:formdat.lastname,
        Email:formdat.Email
