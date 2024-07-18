@@ -238,9 +238,9 @@ window.location.reload()
 
             ) : (
                  <li>
-                <Link href={'/signup'} className="btn btn-navbar btn-sm">
+                <button href={'/'}  onClick={() => setShowSearch(!showSearch)}  className="btn btn-navbar btn-sm">
                   Signup
-                </Link>
+                </button>
               </li>
             )
               

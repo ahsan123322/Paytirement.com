@@ -8,7 +8,7 @@ import { Label } from "@/utils/ui/label"
 const SearchOption = ({ onClose }) => {
   return (
     <>
-       <div className="bg-metal-900 fixed left-0 right-0 top-0 z-[99] flex animate-bounce items-center justify-center">
+       <div style={{zIndex:'9999999'}} className=" bg-metal-900 fixed left-0 right-0 top-0 z-[99] flex animate-bounce items-center justify-center">
       <div className="relative h-auto w-full max-w-xl p-4">
         <div className="relative rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200 ">
           <div className=" rounded border border-dashed border-gray-100 p-10 dark:border-borderColor-dark ">
