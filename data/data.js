@@ -187,66 +187,66 @@ export const menuData = {
         },
       ],
     },
-    // {
-    //   id: 5,
-    //   title: 'Funds',
-    //   submenu: [
-    //     {
-    //       id: 5.1,
-    //       title: 'Assets Fund',
-    //       path: '/',
-    //       newTab: false,
-    //     },
-    //     {
-    //       id: 5.2,
-    //       title: 'Property Fund',
-    //       path: '/',
-    //       newTab: false,
-    //     },
-    //     {
-    //       id: 5.3,
-    //       title: 'Startup Fund',
-    //       path: '/',
-    //       newTab: false,
-    //     },
-    //     {
-    //       id: 5.4,
-    //       title: 'Emergency Fund',
-    //       path: '/',
-    //       newTab: false,
-    //     },
-    //   ],
-    // },
-    // // {
-    //   id: 6,
-    //   title: 'Planning',
-    //   submenu: [
-    //     {
-    //       id: 6.1,
-    //       title: 'Tax Planning',
-    //       path: '/',
-    //       newTab: false,
-    //     },
-    //     {
-    //       id: 6.2,
-    //       title: 'Education Planning',
-    //       path: '/',
-    //       newTab: false,
-    //     },
-    //     {
-    //       id: 6.3,
-    //       title: 'Financial Planning',
-    //       path: '/',
-    //       newTab: false,
-    //     },
-    //     {
-    //       id: 6.4,
-    //       title: 'Retirement Planning',
-    //       path: '#',
-    //       newTab: false,
-    //     },
-    //   ],
-    // },
+    {
+      id: 5,
+      title: 'Funds',
+      submenu: [
+        {
+          id: 5.1,
+          title: 'Assets Fund',
+          path: '/Funds/AssetFunds',
+          newTab: false,
+        },
+        {
+          id: 5.2,
+          title: 'Property Fund',
+          path: '/Funds/Propertifunds',
+          newTab: false,
+        },
+        {
+          id: 5.3,
+          title: 'Startup Fund',
+          path: '/Funds/StartupFunds',
+          newTab: false,
+        },
+        {
+          id: 5.4,
+          title: 'Emergency Fund',
+          path: '/Funds/Emergencyfunds',
+          newTab: false,
+        },
+      ],
+    },
+     {
+      id: 6,
+      title: 'Planning',
+      submenu: [
+        {
+          id: 6.1,
+          title: 'Tax Planning',
+          path: '/Planning/TaxPlaining',
+          newTab: false,
+        },
+        {
+          id: 6.2,
+          title: 'Education Planning',
+          path: '/Planning/Education',
+          newTab: false,
+        },
+        {
+          id: 6.3,
+          title: 'Financial Planning',
+          path: '/Planning/Financialplaining',
+          newTab: false,
+        },
+        {
+          id: 6.4,
+          title: 'Retirement Planning',
+          path: '/Planning/RetirementPlanning',
+          newTab: false,
+        },
+      ],
+    },
 
 // {
 //       id: 7,

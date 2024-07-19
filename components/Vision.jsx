@@ -123,7 +123,11 @@ const Vision = () => {
 
             <h2 className="mb-8 max-lg:mb-4">Discover a New Way to Pay, Save & Invest.</h2>
             <p className="mb-11 max-lg:mb-5">
-              Introducing paytirement, the revolutionary payment platform designed to turn every transaction into a potential investment opportunity.Whether you’re grabbing a coffee, paying for groceries, or dining out, paytirement ensures that every dollar you spend works harder for you.In today's fast-paced world, managing finances smartly and saving money on everyday purchases is more important than ever. Paytirement is a cutting-edge payment platform designed to help you to save smart and invest smarter.
+             In today&#39;s fast-paced world, managing finances smartly and saving money on
+everyday purchases is more important than ever. It is a cutting-edge payment
+platform designed to help you to save smart and invest smarter. 
+Whether you’re grabbing a coffee, paying for groceries, or dining out, we ensure that
+every dollar you spend works harder for you.
             </p>
 
             <ul className="mb-14 [&>*:not(:last-child)]:mb-6 max-lg:[&>*:not(:last-child)]:mb-4 ">
