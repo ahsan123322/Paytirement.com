@@ -123,7 +123,7 @@ const Vision = () => {
 
             <h2 className="mb-8 max-lg:mb-4">Discover a New Way to Pay, Save & Invest.</h2>
             <p className="mb-11 max-lg:mb-5">
-             In today&#39;s fast-paced world, managing finances smartly and saving money on
+             In today's fast-paced world, managing finances smartly and saving money on
 everyday purchases is more important than ever. It is a cutting-edge payment
 platform designed to help you to save smart and invest smarter. 
 Whether you’re grabbing a coffee, paying for groceries, or dining out, we ensure that
@@ -132,13 +132,13 @@ every dollar you spend works harder for you.
 
             <ul className="mb-14 [&>*:not(:last-child)]:mb-6 max-lg:[&>*:not(:last-child)]:mb-4 ">
               <li className="flex items-center gap-x-2 ">
-                <span className=" shadow-icon item-center relative flex h-7 w-7 justify-center rounded-full bg-white dark:bg-dark-200">
+                {/* <span className=" shadow-icon item-center relative flex h-7 w-7 justify-center rounded-full bg-white dark:bg-dark-200">
                   <FontAwesomeIcon
                     icon={faCheck}
                     className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-paragraph dark:text-primary "
                   />
-                </span>
-                <span className="font-jakarta_sans font-medium dark:text-white">Guided Payment Procurement</span>
+                </span> */}
+                {/* <span className="font-jakarta_sans font-medium dark:text-white">Guided Payment Procurement</span> */}
               </li>
               {/* <li className="flex items-center gap-x-2">
                 <span className=" shadow-icon item-center relative flex h-7 w-7 justify-center rounded-full bg-white dark:bg-dark-200">

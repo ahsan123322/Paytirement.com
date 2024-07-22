@@ -127,9 +127,9 @@ window.location.reload()
               </button> */}
             </li>
             { user && user.name ? (
-              <div className='flex justify-between max-lg:hidden'>
-                 <h2  style={{ marginRight:'3rem', fontSize:'1.4rem'}} className='text-Purple'> Welcome {user.name} </h2>
-              <button onClick={logout}  href="#" className="btn btn-navbar btn-sm">
+              <div className='flex justify-between max-lg:hidden  '>
+                 <h2  style={{ marginRight:'3rem', fontSize:'1.4rem', fontWeight:'100' }} className='text-Purple absolutes'> Welcome {user.name} </h2>
+              <button onClick={logout}  href="#" className="btn btn-navbar btn-sm  " style={{width:'100%'}}>
                 Log out
               </button>
               </div>

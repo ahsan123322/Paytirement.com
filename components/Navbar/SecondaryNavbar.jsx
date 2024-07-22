@@ -5,6 +5,7 @@ import { faAngleDown, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import Link from 'next/link'
+import axios from 'axios'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
@@ -16,6 +17,24 @@ const SecondaryNavbar = () => {
   const [showSearch, setShowSearch] = useState(false)
   const [innerMobileMenu, setInnerMobileMenu] = useState(false)
   const [sticky, setSticky] = useState(false)
+  const [user , setUser] = useState(null)
+  
+function logout(){
+window.location.reload()
+  localStorage.removeItem('id')
+ }
+
+  useEffect(()=>{
+    const userId =  localStorage.getItem('id')
+    
+     axios.get(`${window.location.origin}/api/Getuserid/${userId}`).then((response)=>{
+        setUser(response.data);
+      }).catch((err) =>{
+        console.log("Error fetching user data:", err);
+       
+      })
+    
+  }, [])
   const handleStickyNavbar = () => {
     if (window.scrollY >= 20) {
       setSticky(true)
@@ -107,11 +126,25 @@ const SecondaryNavbar = () => {
                 </svg>
               </button> */}
             </li>
-            <li className="max-lg:hidden">
-                <button onClick={() => setShowSearch(!showSearch)}  href="#" className="btn btn-navbar btn-sm">
+            { user && user.name ? (
+              <div className='flex justify-between max-lg:hidden'>
+                 <h2  style={{ marginRight:'3rem', fontSize:'1.4rem' , fontWeight:'300', color:'#5a3acd' }} className='text-Purple'> Welcome {user.name} </h2>
+              <button onClick={logout}  href="#" className="btn btn-navbar btn-sm">
+                Log out
+              </button>
+              </div>
+            
+            ) : (
+
+            <li className="text-center max-lg:hidden">
+              <button onClick={() => setShowSearch(!showSearch)}  href="#" className="btn btn-navbar btn-sm">
                 Sign up
               </button>
             </li>
+            )
+               
+            }
+
             <li className="max-lg:inline-block lg:hidden ">
               <button
                 className="mobile-menu-button relative h-10 w-10 rounded-full bg-white outline-none dark:bg-dark-200"
@@ -194,11 +227,24 @@ const SecondaryNavbar = () => {
                 </li>
               ))}
 
+{user && user.name ?(
+<div>
+   <div className='flex justify-between max-lg:hidden'>
+                 <h2  style={{ marginRight:'3rem', fontSize:'1.4rem'}} className='text-Purple'> Welcome {user.name} </h2>
+              <button onClick={logout}  href="#" className="btn btn-navbar btn-sm">
+                Log out
+              </button>
+              </div>
+</div>
+)  : (
+
               <li>
                 <button onClick={() => setShowSearch(!showSearch)} className="btn btn-navbar btn-sm">
                   Signup
                 </button>
               </li>
+)
+}
             </ul>
           </div>
         </nav>

@@ -105,16 +105,15 @@ const Hero = () => {
           // animate="animate"
           className="relative z-10 grid grid-cols-12 items-center max-lg:gap-y-10">
           <div className="col-span-12 md:col-span-7">
-            {/* <p className="mb-8 font-medium uppercase max-lg:mb-4 text-Purple" style={{color:"white", fontWeight:'bold', fontSize:'x-large'}}  >Paytirement</p> */}
+            <p className="mb-8 font-medium uppercase max-lg:mb-4 text-Purple" style={{color:"white", fontWeight:'bold', fontSize:'x-large'}}  >Paytirement</p>
             <h1 className="mb-12 max-md:mb-8  " style={{ color:"white" , fontWeight:"bold"  }} >
-             Where every {' '}
-           transaction   {/* <span className="inline-block rounded-[88px] border-2 border-paragraph bg-[#D9D9D900] px-5 pb-2.5 pt-0.5 font-playfair italic leading-none dark:border-[#F0F3EA]">
-                transaction
-              </span> */}
-              counts.
+             Unlock Your Financial Future {' '}
+           
             </h1>
             <p className="mb-12 max-w-[590px] max-md:mb-8" >
-              Imagine a payment platform that not only makes your daily transactions seamless but also helps you to pay, save & invest effortlessly in your financial future.
+              Paytirement is a payment method that not only makes your daily transactions
+seamless but also helps you to save  invest effortlessly in your financial future. It is
+a platform designed to make the most of your daily transactions.
             </p>
             {/* <form>
               <div className="border-borderColour grid w-full max-w-[520px] grid-cols-12 items-center rounded-[60px] border bg-white pb-1 pe-1 pl-4 pt-1 dark:border-[#31332F] dark:bg-dark-200 sm:pl-5">
