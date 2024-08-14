@@ -58,7 +58,6 @@ export const menuData = {
       id: 3,
       title: 'Investing',
       submenu: [
-        
         {
           id: 3.1,
           title: 'Automated Investing',
@@ -217,7 +216,7 @@ export const menuData = {
         },
       ],
     },
-     {
+    {
       id: 6,
       title: 'Planning',
       submenu: [
@@ -248,42 +247,42 @@ export const menuData = {
       ],
     },
 
-// {
-//       id: 7,
-//       title: 'Resources',
-//       submenu: [
-//         {
-//           id: 7.1,
-//           title: 'Blogs',
-//           path: '#',
-//           newTab: false,
-//         },
-//         {
-//           id: 7.2,
-//           title: 'Articles',
-//           path: '#',
-//           newTab: false,
-//         },
-//         {
-//           id: 7.3,
-//           title: 'Videos',
-//           path: '/',
-//           newTab: false,
-//         },
-//         {
-//           id: 7.4,
-//           title: 'Customer Support',
-//           path: '/',
-//           newTab: false,
-//         },
-//         {
-//           id: 7.5,
-//           title: 'FAQs',
-//           path: '#',
-//           newTab: false,
-//         },
-//       ],
-//     },
+    // {
+    //       id: 7,
+    //       title: 'Resources',
+    //       submenu: [
+    //         {
+    //           id: 7.1,
+    //           title: 'Blogs',
+    //           path: '#',
+    //           newTab: false,
+    //         },
+    //         {
+    //           id: 7.2,
+    //           title: 'Articles',
+    //           path: '#',
+    //           newTab: false,
+    //         },
+    //         {
+    //           id: 7.3,
+    //           title: 'Videos',
+    //           path: '/',
+    //           newTab: false,
+    //         },
+    //         {
+    //           id: 7.4,
+    //           title: 'Customer Support',
+    //           path: '/',
+    //           newTab: false,
+    //         },
+    //         {
+    //           id: 7.5,
+    //           title: 'FAQs',
+    //           path: '#',
+    //           newTab: false,
+    //         },
+    //       ],
+    //     },
 
     // {
     //   id: 6,
@@ -1054,8 +1053,8 @@ export const FooterData = {
   logo: '/images/logo.svg',
   logoDark: '/images/logo-light.svg',
   footerText: 'With Paytirement, sending and receiving money is straightforward and hassle-free.',
-  copyright: `${new Date().getFullYear()} Powered by Protaxpak.`,                                                                                                      
-  email: 'info@example.com',
+  copyright: `${new Date().getFullYear()} Powered by Protaxpak.`,
+  email: 'contact@paytirement.com.au',
   phone: '+3 230 705 5448',
   expolre: [
     {
@@ -1078,17 +1077,16 @@ export const FooterData = {
       name: 'Saving',
       link: '/savings/activedeels',
     },
-    // {
-    //   id: 5,
-    //   name: 'Funds',
-    //   link: '/',
-    // },
+    {
+      id: 5,
+      name: 'Funds',
+      link: '/Funds/AssetFunds',
+    },
     // {
     //   id: 6,
     //   name: "Plaining",
     //   link: '/',
     // },
-   
   ],
   // resources: [
   //   {

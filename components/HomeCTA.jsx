@@ -92,10 +92,8 @@ const HomeCta = () => {
       </div>
       <div className="container relative z-10">
         <div className=" mx-auto   text-center">
-          <h2 className="mb-5 text-[48px] font-semibold max-lg:text-[32px]">
-          Convert your payment method now to Paytirement. 
-          </h2>
-          <p className="mx-auto mb-12 max-w-[400px] max-lg:mt-6">  </p>
+          <h2 className="mb-5 text-[48px] font-semibold max-lg:text-[32px]">Join Paytirement today.</h2>
+          <p className="mx-auto mb-12 max-w-[400px] max-lg:mt-6"> </p>
           <Link href="/contact" className="btn">
             Get Started Today
           </Link>
@@ -117,7 +115,7 @@ const HomeCta = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-              <p>No Credit Card Required</p>
+              <p>Sign up to explore more.</p>
             </li>
             <li className="flex items-center">
               <svg
@@ -136,7 +134,7 @@ const HomeCta = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-              <p>Free For 30 Day Trial.</p>
+              <p>Verify your email.</p>
             </li>
             <li className="flex items-center">
               <svg
@@ -155,7 +153,7 @@ const HomeCta = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-              <p>Money Back Guarente.</p>
+              <p>Enjoy 30 days of free access.</p>
             </li>
           </ul>
         </div>
