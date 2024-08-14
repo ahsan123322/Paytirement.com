@@ -19,16 +19,16 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Vision />
-      {/* <Solution /> */}
-        {/* <Clients /> */}
-       {/* <Services /> */}
+      {/* <Vision /> */}
+      <Solution />
+      {/* <Clients /> */}
+      <Services />
       {/* <Counter /> */}
       {/* <Integration /> */}
       {/* <Testimonial /> */}
       {/* <HomeBlog />  */}
       {/* <FAQ />  */}
- {/* <TypewriterEffectSmoothDemo/> */}
+      {/* <TypewriterEffectSmoothDemo/> */}
       <HomeCta />
     </>
   )

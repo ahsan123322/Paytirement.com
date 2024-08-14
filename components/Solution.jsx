@@ -15,7 +15,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import mockup2 from '../public/images/vision/2mocukps.png'
-import earth from '../public/images/hero/howitwork.png'
+import earth from '../public/images/hero/Test-Automation.jpg'
 import Link from 'next/link'
 import { useRef } from 'react'
 import { GlobeDemo } from '@/utils/ui/globe'
@@ -27,19 +27,18 @@ const Solution = () => {
   const controlAnimation2 = useWhileInView(ref2)
   const controlAnimation3 = useWhileInView(ref3)
   return (
-    <section   className="skew relative overflow-hidden bg-white pb-150 pt-[160px] dark:bg-dark-300 max-lg:pb-150 max-lg:pt-20 lg:pb-15">
-      <div className="container skwrewvers ">
+    <section className=" relative  bg-white pb-150 pt-[160px] dark:bg-dark-300 max-lg:pb-150 max-lg:pt-20 lg:pb-15">
+      <div className=" container ">
         <div className="  grid grid-cols-2 items-center gap-10 max-md:grid-cols-1 1xl:gap-x-24">
-   
-
-        <div className="  max-md:order-1 lg:-mt-15">
+          <div className="  max-md:order-1 ">
             {/* <p className=" text-white  section-tagline">Unlock Your Financial Future with Paytirement</p> */}
 
-            <h2 className=" text-white mb-8 max-lg:mb-4">Unlock Your Financial Future </h2>
-            <p className=" text-white mb-11 max-lg:mb-6">
-             Paytirement is a payment method that not only makes your daily transactions
-seamless but also helps you to save &amp; invest effortlessly in your financial future. It is
-a platform designed to make the most of your daily transactions.
+            <h2 className=" mb-8 text-white max-lg:mb-4"> Automated solution designed</h2>
+            <p className=" mb-11 text-white max-lg:mb-6">
+              Paytirement understands these challenges and offers a streamlined, automated solution designed to help you
+              manage your financial life with ease. It is a platform that helps you save and invest effortlessly, giving
+              you the support you need to make financial progress with minimal time commitment—so you can focus more on
+              living your life while your money grows.
             </p>
             <ul className="mb-14 flex max-lg:mb-6 max-md:flex-col max-md:gap-y-5 lg:items-center lg:[&>*:not(:last-child)]:mr-10">
               <li className="relative flex items-center gap-x-2 ">
@@ -52,33 +51,29 @@ a platform designed to make the most of your daily transactions.
               </li>
               <li className="relative flex items-center gap-x-2 ">
                 <FontAwesomeIcon icon={faCheck} className="text-paragraph dark:text-primary" />
-                <span className="font-jakarta_sans font-medium dark:text-white">Cloud save data  </span>
+                <span className="font-jakarta_sans font-medium dark:text-white">Cloud save data </span>
               </li>
             </ul>
-            <Link style={{color:'white'}} href="/contact" className="btn-outline">
+            <Link style={{ color: 'white' }} href="/contact" className="btn-outline">
               Start Your Journey
             </Link>
-
           </div>
-          
 
-      
           <div className="max-md:order-2">
             <div className="relative   ">
-              <div className="relative mx-auto aspect-video w-[250px] lg:w-[300px]" style={{width:"100%" , overflow:'hidden'}} >
-              
-       <Image style={{borderRadius:'1rem'}} width={600} src={earth} />
+              <div className="relative mx-auto aspect-video flex-col  justify-center " style={{ width: '100%' }}>
+                <Image style={{ borderRadius: '1rem' }} width={600} src={earth} />
                 {/* <Image src={earth} alt="vision image" className="" /> */}
                 {/* <Image src={solutionImageDark} alt="vision image" className="hidden dark:inline-block" /> */}
-                <motion.div
+                {/* <motion.div
                   ref={ref1}
                   initial="initial"
                   animate={controlAnimation1}
                   variants={fadeFromLeftAnimation}
                   className=" -top-[130px] bottom-auto  right-auto h-[150px] w-[250px] lg:-top-[185px]  lg:h-[180px] lg:w-[280px] xl:h-[230px] xl:w-[320px]">
-                  {/* <Image src={mockup2} alt="vision image" className="w-full  " /> */}
-                  {/* <Image src={solutionImage1Dark} alt="vision image" className="hidden w-full dark:inline-block" /> */}
-                </motion.div>
+                </motion.div> */}
+                {/* <Image src={mockup2} alt="vision image" className="w-full  " /> */}
+                {/* <Image src={solutionImage1Dark} alt="vision image" className="hidden w-full dark:inline-block" /> */}
                 {/* <motion.div
                   ref={ref2}
                   initial="initial"
@@ -100,7 +95,6 @@ a platform designed to make the most of your daily transactions.
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </section>

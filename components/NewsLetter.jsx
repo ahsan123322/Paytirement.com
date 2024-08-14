@@ -46,7 +46,7 @@ const NewsLetter = () => {
                       strokeLinejoin="round"
                     />
                   </svg>
-                  <p>No Credit Card Required</p>
+                  <p>Sign up to explore more</p>
                 </li>
                 <li className="flex items-center">
                   <svg
@@ -65,7 +65,7 @@ const NewsLetter = () => {
                       strokeLinejoin="round"
                     />
                   </svg>
-                  <p>Free For 30 Day Trial.</p>
+                  <p>Verify your email.</p>
                 </li>
               </ul>
             </div>

@@ -58,7 +58,7 @@ const ContactInfo = () => {
                   />
                 </svg>
                 <h3 className="mb-2.5">Email Us</h3>
-                <Link href="mailto:hallo@aplio.com"> hallo@aplio.com </Link>
+                <Link href="mailto:hallo@aplio.com"> contact@paytirement.com.au </Link>
               </div>
             </motion.div>
 
