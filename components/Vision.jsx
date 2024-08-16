@@ -1,11 +1,12 @@
 'use client'
 import { fadeFromLeftAnimation, fadeFromRightAnimation, fadeUpAnimation } from '@/data/animation'
 import useWhileInView from '@/hooks/useWhileInView'
-import visionImage2Light from '@/public/images/vision/vision-image-1.png'
-import visionImage3Light from '@/public/images/vision/vision-image-2.png'
-import visionImage2Dark from '@/public/images/vision/vision-image-dark-1.png'
-import visionImage3Dark from '@/public/images/vision/vision-image-dark-2.png'
+// import visionImage2Light from '@/public/images/vision/vision-image-1.png'
+// import visionImage3Light from '@/public/images/vision/vision-image-2.png'
+// import visionImage2Dark from '@/public/images/vision/vision-image-dark-1.png'
+// import visionImage3Dark from '@/public/images/vision/vision-image-dark-2.png'
 // import { default as visionImageOneDark, default as visionImageOneLight } from '@/public/images/vision/vision-image.png'
+import Retirement from '../public/images/hero/Retitrementplaining.jpg'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { motion } from 'framer-motion'
@@ -27,7 +28,7 @@ const Vision = () => {
   const controlAnimation3 = useWhileInView(ref3)
 
   return (
-    <section className="relative -mt-24 overflow-hidden bg-white pb-150 pt-[300px] dark:-mt-24 dark:bg-dark max-md:-mt-60 max-md:pb-20 max-md:pt-[320px] dark:max-md:-mt-60">
+    <section className="relative  overflow-hidden bg-white pb-150 pt-[300px] dark:-mt-24 dark:bg-dark  max-md:pb-20 max-md:pt-[320px] dark:max-md:-mt-60">
       <div className="absolute left-0 top-0 max-w-[1612px] max-md:hidden">
         <svg width="454" height="942" viewBox="0 0 454 942" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -119,12 +120,12 @@ const Vision = () => {
       <div className="container relative z-10">
         <div className="grid grid-cols-2 items-end gap-10 max-md:grid-cols-1 1xl:gap-x-24">
           <div>
-            <h2 className="mb-8 max-lg:mb-4">Discover a New Way to Pay, Save & Invest.</h2>
+            <h2 className="mb-8 max-lg:mb-4">Emergency Fund Planning For Retirement.</h2>
             <p className="mb-11 max-lg:mb-5">
-              Paytirement understands these challenges and offers a streamlined, automated solution designed to help you
-              manage your financial life with ease. It is a platform that helps you save and invest effortlessly, giving
-              you the support you need to make financial progress with minimal time commitment—so you can focus more on
-              living your life while your money grows. .
+              Whether you're building an emergency fund, planning for retirement, or looking to grow your wealth through
+              diversified investments, Paytirement equips you with the tools and convenience needed to support your
+              financial well-being. At Paytirement, we are committed to providing you with a user-friendly platform to
+              pay, save, invest, and monitor your money with confidence.
             </p>
 
             <ul className="mb-14 [&>*:not(:last-child)]:mb-6 max-lg:[&>*:not(:last-child)]:mb-4 ">
@@ -161,8 +162,10 @@ const Vision = () => {
               Start Your Journey
             </Link>
           </div>
-          <div className="relative max-md:mt-150">
-            <div className="relative -z-10 mx-auto -mt-15 max-w-[1068px] max-md:hidden">
+          <div className="relative flex-col justify-center rounded max-md:mt-150">
+            <Image src={Retirement} className="rounded" />
+
+            {/* <div className="relative -z-10 mx-auto -mt-15 max-w-[1068px] max-md:hidden">
               <div className="relative z-10 w-full py-[175px] max-xl:py-150 max-lg:py-25">
                 <div className="align-center relative mx-auto flex h-150 w-150 flex-row justify-center rounded-full bg-white shadow-nav dark:bg-dark-200">
                   <div className="align-center absolute left-1/2 top-1/2 mx-auto flex h-[122px] w-[122px] -translate-x-1/2 -translate-y-1/2  flex-row justify-center rounded-full bg-primary-100 dark:bg-[#2B2D2A]">
@@ -690,7 +693,7 @@ const Vision = () => {
                   />
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* <motion.div ref={ref1} variants={fadeFromRightAnimation} initial="initial" animate={controlAnimation1}>
               <img src={svg} alt="vision image" className="w-[260px]  xl:w-[310px]" />
             </motion.div> */}

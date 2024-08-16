@@ -33,14 +33,14 @@ const Solution = () => {
           <div className="  max-md:order-1 ">
             {/* <p className=" text-white  section-tagline">Unlock Your Financial Future with Paytirement</p> */}
 
-            <h2 className=" mb-8 text-white max-lg:mb-4"> Automated solution designed</h2>
+            <h2 className=" mb-8 text-white max-lg:mb-4"> Automated Solution Designed</h2>
             <p className=" mb-11 text-white max-lg:mb-6">
               Paytirement understands these challenges and offers a streamlined, automated solution designed to help you
               manage your financial life with ease. It is a platform that helps you save and invest effortlessly, giving
               you the support you need to make financial progress with minimal time commitment—so you can focus more on
               living your life while your money grows.
             </p>
-            <ul className="mb-14 flex max-lg:mb-6 max-md:flex-col max-md:gap-y-5 lg:items-center lg:[&>*:not(:last-child)]:mr-10">
+            {/* <ul className="mb-14 flex max-lg:mb-6 max-md:flex-col max-md:gap-y-5 lg:items-center lg:[&>*:not(:last-child)]:mr-10">
               <li className="relative flex items-center gap-x-2 ">
                 <FontAwesomeIcon icon={faCheck} className="text-paragraph dark:text-primary" />
                 <span className="font-jakarta_sans font-medium dark:text-white">Fast payment send</span>
@@ -53,7 +53,7 @@ const Solution = () => {
                 <FontAwesomeIcon icon={faCheck} className="text-paragraph dark:text-primary" />
                 <span className="font-jakarta_sans font-medium dark:text-white">Cloud save data </span>
               </li>
-            </ul>
+            </ul> */}
             <Link style={{ color: 'white' }} href="/contact" className="btn-outline">
               Start Your Journey
             </Link>

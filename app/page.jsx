@@ -19,17 +19,17 @@ export default function Home() {
   return (
     <>
       <Hero />
-      {/* <Vision /> */}
       <Solution />
-      {/* <Clients /> */}
+      <Vision />
       <Services />
+      <HomeCta />
+      {/* <Clients /> */}
       {/* <Counter /> */}
       {/* <Integration /> */}
       {/* <Testimonial /> */}
-      {/* <HomeBlog />  */}
+      {/* <HomeBlog /> */}
       {/* <FAQ />  */}
       {/* <TypewriterEffectSmoothDemo/> */}
-      <HomeCta />
     </>
   )
 }
