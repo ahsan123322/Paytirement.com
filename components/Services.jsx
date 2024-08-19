@@ -110,7 +110,7 @@ const Services = ({ sectionDetails = true }) => {
           </svg>
         </div>
         <div className="container relative z-10">
-          <div className="grid grid-cols-2 items-end gap-10 max-md:grid-cols-1 1xl:gap-x-24">
+          <div className="grid grid-cols-2 items-center gap-10 max-md:grid-cols-1 1xl:gap-x-24">
             <div>
               {/* <p className="section-tagline">Data Integrations</p> */}
 
@@ -130,7 +130,9 @@ const Services = ({ sectionDetails = true }) => {
                       className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-paragraph dark:text-primary "
                     />
                   </span>
-                  <span className="font-jakarta_sans font-medium dark:text-white">Sign up to explore more</span>
+                  <span className="font-jakarta_sans text-lg   font-medium dark:text-white">
+                    Sign up to explore more
+                  </span>
                 </li>
                 <li className="flex items-center gap-x-2 ">
                   <span className=" shadow-icon item-center relative flex h-7 w-7 justify-center rounded-full bg-white dark:bg-dark-200">
@@ -139,7 +141,7 @@ const Services = ({ sectionDetails = true }) => {
                       className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-paragraph dark:text-primary "
                     />
                   </span>
-                  <span className="font-jakarta_sans font-medium dark:text-white">Verify your email</span>
+                  <span className="font-jakarta_sans text-lg font-medium dark:text-white">Verify your email</span>
                 </li>
                 <li className="flex items-center gap-x-2 ">
                   <span className=" shadow-icon item-center relative flex h-7 w-7 justify-center rounded-full bg-white dark:bg-dark-200">
@@ -148,7 +150,7 @@ const Services = ({ sectionDetails = true }) => {
                       className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-paragraph dark:text-primary "
                     />
                   </span>
-                  <span className="font-jakarta_sans font-medium dark:text-white">
+                  <span className="font-jakarta_sans text-lg font-medium dark:text-white">
                     Enjoy 30 days of free access when you create your account
                   </span>
                 </li>

@@ -121,7 +121,7 @@ const Hero = () => {
               Paytirement
             </p> */}
             <h1 className="mb-12 max-md:mb-8  " style={{ color: 'white', fontWeight: 'bold' }}>
-              Empowering Your Financial Future.{' '}
+              Empower Your Financial Future{' '}
             </h1>
             <p className="mb-12 max-w-[590px] max-md:mb-8">
               Are you a busy professional, self-employed individual, student, or household struggling to manage your

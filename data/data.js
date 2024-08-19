@@ -1052,10 +1052,10 @@ export const IntegrationData = [
 export const FooterData = {
   logo: '/images/logo.svg',
   logoDark: '/images/logo-light.svg',
-  footerText: 'With Paytirement, sending and receiving money is straightforward and hassle-free.',
+  // footerText: 'With Paytirement, sending and receiving money is straightforward and hassle-free.',
   copyright: `${new Date().getFullYear()} Powered by Protaxpak.`,
   email: 'contact@paytirement.com.au',
-  phone: '+3 230 705 5448',
+
   expolre: [
     {
       id: 1,
@@ -1082,11 +1082,11 @@ export const FooterData = {
       name: 'Funds',
       link: '/Funds/AssetFunds',
     },
-    // {
-    //   id: 6,
-    //   name: "Plaining",
-    //   link: '/',
-    // },
+    {
+      id: 6,
+      name: 'Plaining',
+      link: '/',
+    },
   ],
   // resources: [
   //   {
