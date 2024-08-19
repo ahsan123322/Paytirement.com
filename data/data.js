@@ -1084,7 +1084,7 @@ export const FooterData = {
     },
     {
       id: 6,
-      name: 'Plaining',
+      name: 'Planning',
       link: '/',
     },
   ],

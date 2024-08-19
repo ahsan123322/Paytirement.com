@@ -118,7 +118,7 @@ const Vision = () => {
         </svg>
       </div>
       <div className="container relative z-10">
-        <div className="grid grid-cols-2 items-end gap-10 max-md:grid-cols-1 1xl:gap-x-24">
+        <div className="grid grid-cols-2 items-start gap-10 max-md:grid-cols-1 1xl:gap-x-24">
           <div>
             <h2 className="mb-8 max-lg:mb-4">Emergency Fund Planning For Retirement.</h2>
             <p className="mb-11 max-lg:mb-5">
