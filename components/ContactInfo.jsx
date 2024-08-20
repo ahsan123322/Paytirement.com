@@ -13,7 +13,7 @@ const ContactInfo = () => {
             <div className="-ml-[170px] rounded-full  bg-primary-200/25 blur-[145px]  max-1xl:h-[335px] max-1xl:w-[335px] max-md:ml-0 1xl:h-[442px] 1xl:w-[442px]"></div>
             <div className="-ml-[170px] rounded-full  bg-primary-200/20 blur-[145px]  max-1xl:h-[335px] max-1xl:w-[335px] max-md:ml-0 1xl:h-[442px] 1xl:w-[442px]"></div>
           </div>
-          <div className=" grid grid-cols-3 gap-8 max-md:grid-cols-1">
+          <div className=" grid grid-cols-2 gap-8 max-md:grid-cols-1">
             <motion.div
               className="rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200"
               initial="initial"
@@ -34,7 +34,7 @@ const ContactInfo = () => {
                   />
                 </svg>
                 <h3 className="mb-2.5">Our Address</h3>
-                <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
+                <p> NSW, Australia, 2500.</p>
               </div>
             </motion.div>
 
@@ -62,7 +62,7 @@ const ContactInfo = () => {
               </div>
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               className="rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200"
               initial="initial"
               animate="animate"
@@ -95,7 +95,7 @@ const ContactInfo = () => {
                 <h3 className="mb-2.5">Call Us</h3>
                 <Link href="tel:+391(0)355684593">+391 (0)35 2568 4593</Link>
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </div>

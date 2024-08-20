@@ -110,16 +110,14 @@ const Services = ({ sectionDetails = true }) => {
           </svg>
         </div>
         <div className="container relative z-10">
-          <div className="grid grid-cols-2 items-start gap-10 max-md:grid-cols-1 1xl:gap-x-24">
+          <div className="grid grid-cols-2 items-center gap-10 max-md:grid-cols-1 1xl:gap-x-24">
             <div>
               {/* <p className="section-tagline">Data Integrations</p> */}
 
-              <h2 className="mb-8 max-lg:mb-4">No more reading charts</h2>
+              {/* <h2 className="mb-8 max-lg:mb-4">No more reading charts</h2> */}
               <p className="mb-11 max-lg:mb-5">
-                No more reading charts, market updates or complex investment strategies. Paytirement handles it all for
-                you, so you can spend more time with friends and family. Don’t let time constraints or investment
-                complexity stand in the way of your financial growth. Get started on your financial journey today in
-                three simple steps:
+                Don’t let time constraints or investment complexity stand in the way of your financial growth. Get
+                started on your financial journey today in three simple steps:
               </p>
 
               <ul className="mb-14 [&>*:not(:last-child)]:mb-6 max-lg:[&>*:not(:last-child)]:mb-4 ">

@@ -91,14 +91,14 @@ const HomeCta = () => {
         </svg>
       </div>
       <div className="container relative z-10">
-        <div className=" mx-auto   text-center">
+        <div className=" mx-auto   text-start">
           <h2 className="mb-5 text-[48px] font-semibold max-lg:text-[32px]">Join Paytirement today.</h2>
           <p className="mx-auto mb-12 max-w-[400px] max-lg:mt-6"> </p>
           <Link href="/contact" className="btn">
             Get Started Today
           </Link>
-          <ul className="mx-auto mt-20 flex max-w-[815px] items-center justify-between max-lg:mt-5 max-md:flex-col max-md:gap-5">
-            <li className="flex items-center">
+          <ul className=" mb-10 mt-10 max-w-[815px] flex-col items-start justify-between space-y-10 max-lg:mt-5 max-md:flex-col max-md:gap-5">
+            <li className="flex items-start">
               <svg
                 width="20"
                 height="20"
@@ -156,6 +156,9 @@ const HomeCta = () => {
               <p>Enjoy 30 days of free access.</p>
             </li>
           </ul>
+          <h2 className="mb-5  text-[28px] font-semibold max-lg:text-[32px]">
+            Empower Your Financial Future With Paytirement
+          </h2>
         </div>
       </div>
     </section>

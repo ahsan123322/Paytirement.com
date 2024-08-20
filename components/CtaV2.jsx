@@ -16,9 +16,9 @@ const CtaV2 = () => {
             Start your best payment <br />
             experience now!
           </h2>
-          <p className="mx-auto mb-12 max-w-[400px] max-lg:mt-6">
+          {/* <p className="mx-auto mb-12 max-w-[400px] max-lg:mt-6">
             By creating a custom Web design for your business, we can bring your vision to life.
-          </p>
+          </p> */}
           <Link href="/contact" className="btn">
             Get Started Today
           </Link>

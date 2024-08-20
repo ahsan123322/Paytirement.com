@@ -33,7 +33,7 @@ const Solution = () => {
           <div className="  max-md:order-1 ">
             {/* <p className=" text-white  section-tagline">Unlock Your Financial Future with Paytirement</p> */}
 
-            <h2 className=" mb-8 text-white max-lg:mb-4"> Automated Solution Designed</h2>
+            {/* <h2 className=" mb-8 text-white max-lg:mb-4"> Automated Solution Designed</h2> */}
             <p className=" mb-11 text-white max-lg:mb-6">
               Paytirement understands these challenges and offers a streamlined, automated solution designed to help you
               manage your financial life with ease. It is a platform that helps you save and invest effortlessly, giving
