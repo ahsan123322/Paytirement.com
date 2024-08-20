@@ -110,7 +110,7 @@ const Services = ({ sectionDetails = true }) => {
           </svg>
         </div>
         <div className="container relative z-10">
-          <div className="grid grid-cols-2 items-center gap-10 max-md:grid-cols-1 1xl:gap-x-24">
+          <div className="grid grid-cols-2 items-start gap-10 max-md:grid-cols-1 1xl:gap-x-24">
             <div>
               {/* <p className="section-tagline">Data Integrations</p> */}
 

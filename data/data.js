@@ -1052,7 +1052,7 @@ export const IntegrationData = [
 export const FooterData = {
   logo: '/images/logo.svg',
   logoDark: '/images/logo-light.svg',
-  // footerText: 'With Paytirement, sending and receiving money is straightforward and hassle-free.',
+  footerText: 'Empower Your Financial Future.',
   copyright: `${new Date().getFullYear()} Powered by Protaxpak.`,
   email: 'contact@paytirement.com.au',
 
