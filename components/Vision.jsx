@@ -164,7 +164,7 @@ const Vision = () => {
               Start Your Journey
             </Link>
           </div>
-          <div className="relative flex-col justify-center rounded max-md:mt-150">
+          <div className="relative flex justify-center rounded max-md:mt-150">
             <Image src={Retirement} className="rounded" />
 
             {/* <div className="relative -z-10 mx-auto -mt-15 max-w-[1068px] max-md:hidden">

@@ -29,12 +29,12 @@ const Solution = () => {
   return (
     <section className=" relative  bg-white pb-150 pt-[160px] dark:bg-dark-300 max-lg:pb-150 max-lg:pt-20 lg:pb-15">
       <div className=" container ">
-        <div className="  grid grid-cols-2 items-center gap-10 max-md:grid-cols-1 1xl:gap-x-24">
+        <div className="  grid grid-cols-2 items-start gap-10 max-md:grid-cols-1 1xl:gap-x-24">
           <div className="  max-md:order-1 ">
             {/* <p className=" text-white  section-tagline">Unlock Your Financial Future with Paytirement</p> */}
 
             {/* <h2 className=" mb-8 text-white max-lg:mb-4"> Automated Solution Designed</h2> */}
-            <p className=" mb-11 text-white max-lg:mb-6">
+            <p className=" mb-20 text-white max-lg:mb-6" style={{ lineHeight: '2rem' }}>
               Paytirement understands these challenges and offers a streamlined, automated solution designed to help you
               manage your financial life with ease. It is a platform that helps you save and invest effortlessly, giving
               you the support you need to make financial progress with minimal time commitment—so you can focus more on
@@ -61,7 +61,7 @@ const Solution = () => {
 
           <div className="max-md:order-2">
             <div className="relative   ">
-              <div className="relative mx-auto aspect-video flex-col  justify-center " style={{ width: '100%' }}>
+              <div className="relative mx-auto flex aspect-video  justify-center " style={{ width: '100%' }}>
                 <Image style={{ borderRadius: '1rem' }} width={600} src={earth} />
                 {/* <Image src={earth} alt="vision image" className="" /> */}
                 {/* <Image src={solutionImageDark} alt="vision image" className="hidden dark:inline-block" /> */}
