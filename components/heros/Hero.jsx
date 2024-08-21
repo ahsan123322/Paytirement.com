@@ -113,7 +113,7 @@ const Hero = () => {
           // variants={fadeUpAnimation}
           // initial="initial"
           // animate="animate"
-          className="relative z-10 grid grid-cols-12 items-center max-lg:gap-y-10">
+          className="relative z-10 grid grid-cols-12 items-start max-lg:gap-y-10">
           <div className="col-span-12 md:col-span-7">
             {/* <p
               className="text-Purple mb-8 font-medium uppercase max-lg:mb-4"
