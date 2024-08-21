@@ -157,7 +157,7 @@ const HomeCta = () => {
             </li>
           </ul>
           <h2 className="mb-5  text-[28px] font-semibold max-lg:text-[32px]">
-            Empower Your Financial Future With Paytirement
+            Paytirement - Empowering your Financial Future
           </h2>
         </div>
       </div>
