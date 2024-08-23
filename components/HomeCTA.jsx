@@ -169,7 +169,12 @@ const HomeCta = () => {
           {/* <h2 className="mb-5  text-[28px] font-semibold max-lg:text-[32px]">
             Paytirement <span>Empowering Your Financial Future</span>{' '}
           </h2> */}
-          <p> </p>
+          {/* <p> </p> */}
+          {/* </ul> */}
+          {/* <h2 className="mb-5  text-[28px] font-semibold max-lg:text-[32px]">
+            Paytirement - Empowering your Financial Future
+          </h2>
+     */}
         </div>
         {showSearch && createPortal(<SearchOption onClose={() => setShowSearch(false)} />, document.body)}
       </div>
