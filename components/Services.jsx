@@ -20,7 +20,7 @@ const Services = ({ sectionDetails = true }) => {
   const controlAnimation = useWhileInView(ref)
   return (
     <>
-      <section className="relative overflow-hidden bg-white pb-150 pt-[300px] dark:-mt-24 dark:bg-dark max-md:pb-20 max-md:pt-[320px] dark:max-md:-mt-60">
+      <section className="relative overflow-hidden bg-white   dark:-mt-24 dark:bg-dark  max-md:pt-[120px] dark:max-md:-mt-60">
         <div className="absolute left-0 top-0 max-w-[1612px] max-md:hidden">
           <svg width="454" height="942" viewBox="0 0 454 942" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -110,18 +110,18 @@ const Services = ({ sectionDetails = true }) => {
           </svg>
         </div>
         <div className="container relative z-10">
-          <div className="grid grid-cols-2 items-center gap-10 max-md:grid-cols-1 1xl:gap-x-24">
+          <div className="grid grid-cols-1 items-center gap-10 max-md:grid-cols-1 1xl:gap-x-24">
             <div>
               {/* <p className="section-tagline">Data Integrations</p> */}
 
               {/* <h2 className="mb-8 max-lg:mb-4">No more reading charts</h2> */}
-              <p className="mb-11 max-lg:mb-5">
-                Don’t let time constraints or investment complexity stand in the way of your financial growth. Get
-                started on your financial journey today in three simple steps:
+              <p className="mb-11 text-lg max-lg:mb-5 " style={{ lineHeight: '3rem' }}>
+                Don’t let time constraints or investment complexity stand in the way of your financial growth. Sign up
+                today to register your interest.
               </p>
 
               <ul className="mb-14 [&>*:not(:last-child)]:mb-6 max-lg:[&>*:not(:last-child)]:mb-4 ">
-                <li className="flex items-center gap-x-2 ">
+                {/* <li className="flex items-center gap-x-2 ">
                   <span className=" shadow-icon item-center relative flex h-7 w-7 justify-center rounded-full bg-white dark:bg-dark-200">
                     <FontAwesomeIcon
                       icon={faCheck}
@@ -151,7 +151,7 @@ const Services = ({ sectionDetails = true }) => {
                   <span className="font-jakarta_sans text-lg font-medium dark:text-white">
                     Enjoy 30 days of free access when you create your account
                   </span>
-                </li>
+                </li> */}
 
                 {/* <li className="flex items-center gap-x-2">
                 <span className=" shadow-icon item-center relative flex h-7 w-7 justify-center rounded-full bg-white dark:bg-dark-200">
@@ -177,13 +177,13 @@ const Services = ({ sectionDetails = true }) => {
               <Link href="/signup" className="btn">
                 Sign up
               </Link> */}
-              <button onClick={() => setShowSearch(!showSearch)} className="btn btn-navbar ">
+              {/* <button onClick={() => setShowSearch(!showSearch)} className="btn btn-navbar ">
                 Signup
-              </button>
+              </button> */}
             </div>
-            <div className="relative mx-auto aspect-video flex-col  justify-center " style={{ width: '100%' }}>
-              <Image className="rounded" src={whypaytirment} height={700} width={700} />
-            </div>
+            {/* <div className="relative mx-auto aspect-video flex-col  justify-center " style={{ width: '100%' }}>
+              <Image className="rounded" src={whypaytirment} height={500} width={500} />
+            </div> */}
           </div>
           {showSearch && createPortal(<SearchOption onClose={() => setShowSearch(false)} />, document.body)}
         </div>

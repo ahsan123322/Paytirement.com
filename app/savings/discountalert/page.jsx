@@ -12,14 +12,24 @@ import Pricing from '@/components/Pricing'
 import WhyUs from '@/components/WhyUs'
 import { PaymentFeaturesData } from '@/data/data'
 const personalized = () => {
-   const margintop = {
-    width:'fit-content',
-    overflow:'hidden',
+  const margintop = {
+    width: 'fit-content',
+    overflow: 'hidden',
   }
   return (
     <>
-      <PaymentHero addPadding={true}  style={margintop} heading={'Discounts Alerts'} pargraph={'Set up alerts for your favourite products or categories. Paytirement will notify you when there are significant discounts are available or when prices drop, allowing you to make purchases at the most opportune times.'} src={discounts} />
-      
+      <PaymentHero
+        addPadding={true}
+        style={margintop}
+        linheight={'4rem'}
+        font={'1rem'}
+        heading={'Discounts Alerts'}
+        pargraph={
+          'Set up alerts for your favourite products or categories. Paytirement will notify you when there are significant discounts are available or when prices drop, allowing you to make purchases at the most opportune times.'
+        }
+        src={discounts}
+      />
+
       {/* <PaymentRating />
       <CoreFeature />
       <WhyUs />

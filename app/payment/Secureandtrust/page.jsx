@@ -9,20 +9,38 @@ import PaymentRating from '@/components/PaymentRating'
 import Secure from '../../../public/images/hero/secureandtrust.jpg'
 import whytrust from '../../../public/images/hero/whyturstus.jpg'
 
-
 import Pricing from '@/components/Pricing'
 import WhyUs from '@/components/WhyUs'
 import { PaymentFeaturesData } from '@/data/data'
 const personalized = () => {
   const margintop = {
-   
-    overflow:'hidden',
+    overflow: 'hidden',
   }
   return (
     <>
-      <PaymentHero addPadding={true} style={margintop} heading={'Secure and Trusted'} pargraph={'At Paytirement, we prioritize your data security and peace of mind. Our payment system is designed with the latest, state-of-the-art technology to ensure that every transaction you make is safe, secure, and trusted.'} src={Secure} />
-      <PaymentHero addPadding={true} style={margintop} heading={'Why Trust Our Payment System?'} pargraph={'Our payment mechanism utilizes the most advanced technology available today. This  includes robust encryption methods, secure payment gateways, and continuous system updates to protect your financial information.We use end-to-end encryption to safeguard your data from the moment you enter it until the transaction is complete. This ensures that your sensitive information remains confidential and protected from unauthorized access.' }  src={whytrust} />
-      
+      <PaymentHero
+        width={900}
+        addPadding={true}
+        linheight={'3rem'}
+        font={'1rem'}
+        style={margintop}
+        heading={'Secure and Trusted'}
+        pargraph={
+          'At Paytirement, we prioritize your data security and peace of mind. Our payment system is designed with the latest, state-of-the-art technology to ensure that every transaction you make is safe, secure, and trusted.'
+        }
+        src={Secure}
+      />
+      <PaymentHero
+        addPadding={false}
+        style={margintop}
+        font={'0.9rem'}
+        heading={'Why Trust Our Payment System?'}
+        pargraph={
+          'Our payment mechanism utilizes the most advanced technology available today. This  includes robust encryption methods, secure payment gateways, and continuous system updates to protect your financial information.We use end-to-end encryption to safeguard your data from the moment you enter it until the transaction is complete. This ensures that your sensitive information remains confidential and protected from unauthorized access.'
+        }
+        src={whytrust}
+      />
+
       {/* <PaymentRating />
       <CoreFeature />
       <WhyUs />

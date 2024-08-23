@@ -19,7 +19,7 @@ import heroRatingLight from '../../public/images/hero/online-payment_5262525.png
 const Hero = () => {
   return (
     <section
-      className="  hero max-mb:pb-[70px] max-mb:pb-[70px] relative overflow-hidden bg-gray pb-[140px] pt-[230px] dark:bg-dark max-lg:pb-25 max-lg:pt-[160px]"
+      className="  hero max-mb:pb-[70px] max-mb:pb-[70px] relative overflow-hidden bg-gray  pt-[230px] dark:bg-dark max-lg:pb-25 max-lg:pt-[160px]"
       id="scene">
       <div className="absolute left-1/2 top-0 max-w-[1612px] -translate-x-1/2 max-lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" width="1612" height="520" viewBox="0 0 1612 520" fill="none">
@@ -113,7 +113,7 @@ const Hero = () => {
           // variants={fadeUpAnimation}
           // initial="initial"
           // animate="animate"
-          className="relative z-10 grid grid-cols-12 items-start max-lg:gap-y-10">
+          className="relative z-10 grid grid-cols-12 items-center max-lg:gap-y-10">
           <div className="col-span-12 md:col-span-7">
             {/* <p
               className="text-Purple mb-8 font-medium uppercase max-lg:mb-4"
@@ -123,7 +123,70 @@ const Hero = () => {
             <h1 className="mb-12 max-md:mb-8  " style={{ color: 'white', fontWeight: 'bold' }}>
               Empower Your Financial Future With Paytirement{' '}
             </h1>
-            <p className="mb-12 max-w-[590px] max-md:mb-8">
+            {/* <p className="mb-12 max-w-[590px] max-md:mb-8">
+              Are you a busy professional, self-employed individual, student, or household struggling to manage your
+              finances and build wealth? Managing finances and building wealth can be tough, especially with a packed
+              schedule that leaves little time and energy for planning and investing.
+            </p> */}
+            {/* <form>
+              <div className="border-borderColour grid w-full max-w-[520px] grid-cols-12 items-center rounded-[60px] border bg-white pb-1 pe-1 pl-4 pt-1 dark:border-[#31332F] dark:bg-dark-200 sm:pl-5">
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  className=" placeholder:text-light text-light col-span-8 bg-transparent leading-[1.75] text-[#A1A49D] outline-none transition-all duration-300  focus:border-primary focus:outline-none dark:placeholder:text-[#A1A49D] xs:col-span-8 "
+                />
+                <button className="btn col-span-4 max-lg:!px-3 max-lg:!text-sm xs:col-span-4 ">Get Started</button>
+              </div>
+            </form> */}
+          </div>
+          <div className="col-span-12 md:col-span-5">
+            <div className=" relative  w-full flex-col justify-center  ">
+              <Image
+                src={hero}
+                style={{ width: '40rem', borderRadius: '1rem' }}
+                alt="hero Image"
+                className="inline-block  dark:hidden"
+              />
+              {/* <div style={{marginTop:'2rem'}}  className="absolute !left-1/2 !top-1/2 -translate-x-1/2 -translate-y-1/2">
+                <Image style={{Width:'150%'}} src={mocukp1} alt="hero Image" className="inline-block h-100 w-100 dark:hidden" />
+              <Image style={{Width:'150%'}} src={mocukp1} alt="hero Image" className=" hidden h-100 w-100 dark:inline-block" />
+              </div>  */}
+              <div className="absolute !-left-[40px] !top-15 max-lg:!left-0 max-lg:aspect-video max-lg:w-[220px] max-md:!top-5 lg:!-top-[20px]">
+                <Image
+                  src={hero}
+                  width={500}
+                  alt="hero Image"
+                  className="hidden h-auto w-auto rounded dark:inline-block"
+                />
+              </div>
+              <div className="absolute !bottom-[150px] !left-[50px] max-lg:aspect-square max-lg:w-28 max-md:!bottom-[70px]  max-md:!left-[50px] lg:!bottom-0 lg:!left-[45px] xl:!left-[85px]">
+                {/* <Image src={heroRatingLight} alt="hero Image" className="inline-block h-auto w-auto  " /> */}
+                {/* <Image src={heroRatingDark} alt="hero Image" className="hidden h-auto w-auto  dark:inline-block" />  */}
+              </div>
+              {/* <div className="lg:!not-sr-only-bottom-[45px] absolute !-bottom-0 !-right-5 max-lg:w-[196px] max-md:!-bottom-5 max-md:!-right-5 lg:right-0 xl:right-[30px]"> 
+               <Image src={hero} alt="hero Image" className="inline-block dark:hidden" />
+                <Image src={hero} alt="hero Image" className="hidden dark:inline-block" />  */}
+              {/* </div> */}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container mt-9 ">
+        <div
+          // variants={fadeUpAnimation}
+          // initial="initial"
+          // animate="animate"
+          className="relative z-10 grid grid-cols-12 items-start max-lg:gap-y-10">
+          <div className="col-span-12 md:col-span-12">
+            {/* <p
+              className="text-Purple mb-8 font-medium uppercase max-lg:mb-4"
+              style={{ color: 'white', fontWeight: 'bold', fontSize: 'x-large' }}>
+              Paytirement
+            </p> */}
+            {/* <h1 className="mb-12 max-md:mb-8  " style={{ color: 'white', fontWeight: 'bold' }}>
+              Empower Your Financial Future With Paytirement{' '}
+            </h1> */}
+            <p className="mb-12 text-lg   max-md:mb-8" style={{ lineHeight: '3rem' }}>
               Are you a busy professional, self-employed individual, student, or household struggling to manage your
               finances and build wealth? Managing finances and building wealth can be tough, especially with a packed
               schedule that leaves little time and energy for planning and investing.
@@ -139,7 +202,7 @@ const Hero = () => {
               </div>
             </form> */}
           </div>
-          <div className="col-span-12 md:col-span-5">
+          {/* <div className="col-span-12 md:col-span-5">
             <div className=" relative  w-full flex-col justify-center max-md:min-h-[400px] ">
               <Image
                 src={hero}
@@ -147,23 +210,23 @@ const Hero = () => {
                 alt="hero Image"
                 className="inline-block h-auto w-auto dark:hidden"
               />
-              {/* <div style={{marginTop:'2rem'}}  className="absolute !left-1/2 !top-1/2 -translate-x-1/2 -translate-y-1/2">
+              <div style={{marginTop:'2rem'}}  className="absolute !left-1/2 !top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <Image style={{Width:'150%'}} src={mocukp1} alt="hero Image" className="inline-block h-100 w-100 dark:hidden" />
               <Image style={{Width:'150%'}} src={mocukp1} alt="hero Image" className=" hidden h-100 w-100 dark:inline-block" />
-              </div>  */}
+              </div> 
               <div className="absolute !-left-[40px] !top-15 max-lg:!left-0 max-lg:aspect-video max-lg:w-[220px] max-md:!top-5 lg:!-top-[20px]">
                 <Image src={hero} alt="hero Image" className="hidden h-auto w-auto rounded dark:inline-block" />
               </div>
               <div className="absolute !bottom-[150px] !left-[50px] max-lg:aspect-square max-lg:w-28 max-md:!bottom-[70px]  max-md:!left-[50px] lg:!bottom-0 lg:!left-[45px] xl:!left-[85px]">
-                {/* <Image src={heroRatingLight} alt="hero Image" className="inline-block h-auto w-auto  " /> */}
-                {/* <Image src={heroRatingDark} alt="hero Image" className="hidden h-auto w-auto  dark:inline-block" />  */}
+                <Image src={heroRatingLight} alt="hero Image" className="inline-block h-auto w-auto  " />
+                <Image src={heroRatingDark} alt="hero Image" className="hidden h-auto w-auto  dark:inline-block" /> 
               </div>
-              {/* <div className="lg:!not-sr-only-bottom-[45px] absolute !-bottom-0 !-right-5 max-lg:w-[196px] max-md:!-bottom-5 max-md:!-right-5 lg:right-0 xl:right-[30px]"> 
+              <div className="lg:!not-sr-only-bottom-[45px] absolute !-bottom-0 !-right-5 max-lg:w-[196px] max-md:!-bottom-5 max-md:!-right-5 lg:right-0 xl:right-[30px]"> 
                <Image src={hero} alt="hero Image" className="inline-block dark:hidden" />
-                <Image src={hero} alt="hero Image" className="hidden dark:inline-block" />  */}
-              {/* </div> */}
+                <Image src={hero} alt="hero Image" className="hidden dark:inline-block" /> 
+              </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

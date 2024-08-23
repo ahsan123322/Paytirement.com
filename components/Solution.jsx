@@ -27,17 +27,17 @@ const Solution = () => {
   const controlAnimation2 = useWhileInView(ref2)
   const controlAnimation3 = useWhileInView(ref3)
   return (
-    <section className=" relative  bg-white pb-150 pt-[160px] dark:bg-dark-300 max-lg:pb-150 max-lg:pt-20 lg:pb-15">
+    <section className=" relative  bg-white   dark:bg-dark-300  max-lg:pt-20 lg:pb-15">
       <div className=" container ">
         <div className="  grid grid-cols-2 items-start gap-10 max-md:grid-cols-1 1xl:gap-x-24">
           <div className="  max-md:order-1 ">
             {/* <p className=" text-white  section-tagline">Unlock Your Financial Future with Paytirement</p> */}
 
             {/* <h2 className=" mb-8 text-white max-lg:mb-4"> Automated Solution Designed</h2> */}
-            <p className=" mb-20 text-white max-lg:mb-6" style={{ lineHeight: '2rem' }}>
+            <p className="  text-lg text-white " style={{ lineHeight: '3rem' }}>
               Paytirement understands these challenges and offers a streamlined, automated solution designed to help you
               manage your financial life with ease. It is a platform that helps you save and invest effortlessly, giving
-              you the support you need to make financial progress with minimal time commitment—so you can focus more on
+              you the support you need to make financial progress with minimal time commitment so you can focus more on
               living your life while your money grows.
             </p>
             {/* <ul className="mb-14 flex max-lg:mb-6 max-md:flex-col max-md:gap-y-5 lg:items-center lg:[&>*:not(:last-child)]:mr-10">
@@ -54,15 +54,15 @@ const Solution = () => {
                 <span className="font-jakarta_sans font-medium dark:text-white">Cloud save data </span>
               </li>
             </ul> */}
-            <Link style={{ color: 'white' }} href="/contact" className="btn-outline">
+            {/* <Link style={{ color: 'white' }} href="/contact" className="btn-outline">
               Start Your Journey
-            </Link>
+            </Link> */}
           </div>
 
           <div className="max-md:order-2">
             <div className="relative   ">
               <div className="relative mx-auto flex aspect-video  justify-center " style={{ width: '100%' }}>
-                <Image style={{ borderRadius: '1rem' }} width={600} src={earth} />
+                <Image style={{ borderRadius: '1rem' }} width={500} src={earth} />
                 {/* <Image src={earth} alt="vision image" className="" /> */}
                 {/* <Image src={solutionImageDark} alt="vision image" className="hidden dark:inline-block" /> */}
                 {/* <motion.div

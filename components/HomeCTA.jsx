@@ -1,8 +1,18 @@
+'use client'
 import Link from 'next/link'
+import SearchOption from './SearchOption'
+import { useState } from 'react'
+import useWhileInView from '@/hooks/useWhileInView'
+import { useRef } from 'react'
+import { createPortal } from 'react-dom'
 
 const HomeCta = () => {
+  const [showSearch, setShowSearch] = useState(false)
+
+  const ref = useRef(null)
+  const controlAnimation = useWhileInView(ref)
   return (
-    <section className="relative overflow-hidden bg-white pb-[145px] pt-[135px] dark:bg-dark max-md:py-20">
+    <section className="relative overflow-hidden bg-white pb-[145px]  dark:bg-dark max-md:py-20">
       <div className="absolute left-1/2 top-0 max-w-[1612px] -translate-x-1/2 max-md:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" width="1612" height="520" viewBox="0 0 1612 520" fill="none">
           <path
@@ -91,13 +101,13 @@ const HomeCta = () => {
         </svg>
       </div>
       <div className="container relative z-10">
-        <div className=" mx-auto   text-start">
-          <h2 className="mb-5 text-[48px] font-semibold max-lg:text-[32px]">Join Paytirement today.</h2>
+        <div className=" mx-auto   text-center">
+          {/* <h2 className="mb-5 text-[48px] font-semibold max-lg:text-[32px]">Join Paytirement today.</h2> */}
           <p className="mx-auto mb-12 max-w-[400px] max-lg:mt-6"> </p>
-          <Link href="/contact" className="btn">
-            Get Started Today
-          </Link>
-          <ul className=" mb-10 mt-10 max-w-[815px] flex-col items-start justify-between space-y-10 max-lg:mt-5 max-md:flex-col max-md:gap-5">
+          <button onClick={() => setShowSearch(!showSearch)} className="btn btn-navbar ">
+            Sign up
+          </button>
+          {/* <ul className=" mb-10 mt-10 max-w-[815px] flex-col items-start justify-between space-y-10 max-lg:mt-5 max-md:flex-col max-md:gap-5">
             <li className="flex items-start">
               <svg
                 width="20"
@@ -155,11 +165,13 @@ const HomeCta = () => {
               </svg>
               <p>Enjoy 30 days of free access.</p>
             </li>
-          </ul>
-          <h2 className="mb-5  text-[28px] font-semibold max-lg:text-[32px]">
-            Empower Your Financial Future With Paytirement
-          </h2>
+          </ul> */}
+          {/* <h2 className="mb-5  text-[28px] font-semibold max-lg:text-[32px]">
+            Paytirement <span>Empowering Your Financial Future</span>{' '}
+          </h2> */}
+          <p> </p>
         </div>
+        {showSearch && createPortal(<SearchOption onClose={() => setShowSearch(false)} />, document.body)}
       </div>
     </section>
   )

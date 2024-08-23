@@ -13,16 +13,23 @@ import WhyUs from '@/components/WhyUs'
 import { PaymentFeaturesData } from '@/data/data'
 const RetirementPlanning = () => {
   const margintop = {
-   overflow:'hidden',
+    overflow: 'hidden',
   }
   return (
     <>
-      <PaymentHero   addPadding={true} style={margintop} heading={'Retirement Planning'}   pargraph={'Retirement planning is the process of determining retirement income goals and the actions and decisions necessary to achieve those goals. This involves identifying sources of income, estimating expenses, implementing a savings program, and managing assets and risk. The ultimate aim is to ensure that you have sufficient funds to enjoy a comfortable and financially secure retirement. Our team of professionals can work with you to ensure a secure and comfortable future for you. By setting clear goals, saving and investing wisely, and regularly reviewing your plan, you can enjoy peace of mind and financial independence in your retirement years. Join us and start planning to build a secure and fulfilling retirement tomorrow. ' } src={Financial} />
- 
+      <PaymentHero
+        linheight={'1.3rem'}
+        addPadding={true}
+        font={'0.9rem'}
+        style={margintop}
+        heading={'Retirement Planning'}
+        pargraph={
+          'Retirement planning is the process of determining retirement income goals and the actions and decisions necessary to achieve those goals. This involves identifying sources of income, estimating expenses, implementing a savings program, and managing assets and risk. The ultimate aim is to ensure that you have sufficient funds to enjoy a comfortable and financially secure retirement. Our team of professionals can work with you to ensure a secure and comfortable future for you. By setting clear goals, saving and investing wisely, and regularly reviewing your plan, you can enjoy peace of mind and financial independence in your retirement years. Join us and start planning to build a secure and fulfilling retirement tomorrow. '
+        }
+        src={Financial}
+      />
 
-       {/* <PaymentHero  addPadding={true} style={margintop} heading={''} pargraph={'' }  src={whytrust} />  */}
-      
-    
+      {/* <PaymentHero  addPadding={true} style={margintop} heading={''} pargraph={'' }  src={whytrust} />  */}
     </>
   )
 }

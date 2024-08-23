@@ -13,19 +13,25 @@ import Pricing from '@/components/Pricing'
 import WhyUs from '@/components/WhyUs'
 import { PaymentFeaturesData } from '@/data/data'
 const esginvesting = () => {
-   const margintop = {
-
-    overflow:'hidden',
+  const margintop = {
+    overflow: 'hidden',
   }
   return (
     <>
-    <div style={{margin:'1rem'}}>
-      <PaymentHero  style={margintop} addPadding={true} heading={'ESG Investing'} pargraph={'ESG Investing involves considering Environmental, Social, and Governance factors in investment decisions. This approach aims to generate long-term competitive financial returns alongside positive societal impact. Firms that prioritize ESG issues are often better prepared for future changes. Those who invest in ESG companies can align their portfolio with their personal values and ethical beliefs by promoting responsible corporate behaviour. By investing in ESG-focused companies you can contribute to environmental conversation,social equity, and ethical governance.'} src={ESG} />
+      <div>
+        <PaymentHero
+          style={margintop}
+          addPadding={true}
+          linheight={'1.5rem'}
+          font={'1rem'}
+          heading={'ESG Investing'}
+          pargraph={
+            'ESG Investing involves considering Environmental, Social, and Governance factors in investment decisions. This approach aims to generate long-term competitive financial returns alongside positive societal impact. Firms that prioritize ESG issues are often better prepared for future changes. Those who invest in ESG companies can align their portfolio with their personal values and ethical beliefs by promoting responsible corporate behaviour. By investing in ESG-focused companies you can contribute to environmental conversation,social equity, and ethical governance.'
+          }
+          src={ESG}
+        />
+      </div>
 
-
-    </div>
-
-      
       {/* <PaymentRating />
       <CoreFeature />
       <WhyUs />

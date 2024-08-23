@@ -13,8 +13,8 @@ const page = () => {
         paragraph="Contact us if you need any help"
       />
       <ContactInfo />
-      <ContactForm />
-      <NewsLetter />
+      {/* <ContactForm />
+      <NewsLetter /> */}
     </>
   )
 }

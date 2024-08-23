@@ -14,16 +14,24 @@ import WhyUs from '@/components/WhyUs'
 import { PaymentFeaturesData } from '@/data/data'
 const cashbackreward = () => {
   const margintop = {
-
-    overflow:'hidden',
+    overflow: 'hidden',
   }
   return (
     <>
-    <div className='mx-6'>
-      <PaymentHero addPadding={true} style={margintop} heading={'Cashback Rewards'} pargraph={'With every purchase made through paytirement, you earn cashback rewards. These rewards can be accumulated and redeemed for future purchases or invested on your chosen portfolio.'} src={Cashback} />
+      <div className="mx-6">
+        <PaymentHero
+          linheight={'4rem'}
+          font={'1.1rem'}
+          addPadding={true}
+          style={margintop}
+          heading={'Cashback Rewards'}
+          pargraph={
+            'With every purchase made through paytirement, you earn cashback rewards. These rewards can be accumulated and redeemed for future purchases or invested on your chosen portfolio.'
+          }
+          src={Cashback}
+        />
+      </div>
 
-    </div>
-      
       {/* <PaymentRating />
       <CoreFeature />
       <WhyUs />

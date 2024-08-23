@@ -28,7 +28,7 @@ const Vision = () => {
   const controlAnimation3 = useWhileInView(ref3)
 
   return (
-    <section className="relative  overflow-hidden bg-white pb-150 pt-[300px] dark:-mt-24 dark:bg-dark  max-md:pb-20 max-md:pt-[320px] dark:max-md:-mt-60">
+    <section className="relative  overflow-hidden bg-white   dark:-mt-24 dark:bg-dark  max-md:pb-20 max-md:pt-[120px] dark:max-md:-mt-60">
       <div className="absolute left-0 top-0 max-w-[1612px] max-md:hidden">
         <svg width="454" height="942" viewBox="0 0 454 942" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -118,10 +118,10 @@ const Vision = () => {
         </svg>
       </div>
       <div className="container relative z-10">
-        <div className="grid grid-cols-2 items-center gap-10 max-md:grid-cols-1 1xl:gap-x-24">
+        <div className="grid grid-cols-2 items-start gap-10 max-md:grid-cols-1 1xl:gap-x-24">
           <div>
             {/* <h2 className="mb-8 max-lg:mb-4">Emergency Fund Planning For Retirement.</h2> */}
-            <p className="mb-11 max-lg:mb-5">
+            <p className="mb-11 text-lg  max-lg:mb-5 " style={{ lineHeight: '2.7rem' }}>
               Whether you're building an emergency fund, planning for retirement, or looking to grow your wealth through
               diversified investments, Paytirement equips you with the tools and convenience needed to support your
               financial well-being. At Paytirement, we are committed to providing you with a user-friendly platform to
@@ -160,12 +160,12 @@ const Vision = () => {
                 <span className="font-jakarta_sans font-medium dark:text-white">Guided Payment Procurement</span>
               </li> */}
             </ul>
-            <Link style={{ color: 'white ', background: '#3A5FCD' }} href="/contact" className="btn">
+            {/* <Link style={{ color: 'white ', background: '#3A5FCD' }} href="/contact" className="btn">
               Start Your Journey
-            </Link>
+            </Link> */}
           </div>
-          <div className="relative flex justify-center rounded max-md:mt-150">
-            <Image src={Retirement} className="rounded" />
+          <div className="relative flex justify-center rounded ">
+            <Image src={Retirement} className="rounded" width={500} />
 
             {/* <div className="relative -z-10 mx-auto -mt-15 max-w-[1068px] max-md:hidden">
               <div className="relative z-10 w-full py-[175px] max-xl:py-150 max-lg:py-25">

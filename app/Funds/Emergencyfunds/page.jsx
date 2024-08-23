@@ -7,23 +7,30 @@ import PaymentFeatures from '@/components/PaymentFeatures'
 import PaymentHero from '@/components/heros/PaymentHero'
 import PaymentRating from '@/components/PaymentRating'
 import Financial from '../../../public/images/hero/Emergencyfund.jpg'
-import whytrust from '../../../public/images/hero/finacialplainers.jpg' 
+import whytrust from '../../../public/images/hero/finacialplainers.jpg'
 import Pricing from '@/components/Pricing'
 import WhyUs from '@/components/WhyUs'
 
 import { PaymentFeaturesData } from '@/data/data'
 const Emergency = () => {
   const margintop = {
-   overflow:'hidden',
+    overflow: 'hidden',
   }
   return (
     <>
-      <PaymentHero   addPadding={true} style={margintop} heading={'Emergency Fund'}   pargraph={"An emergency fund is a crucial component of financial planning that provides a buffer for unexpected expenses or financial emergencies. This dedicated savings account ensures that you have the resources to handle sudden financial challenges without resorting to high-interest debt or compromising your long-term financial goals.  An emergency fund is an essential financial tool that provides a safety net for unexpected expenses and financial emergencies. By choosing this fund, you can avoid debt, protect your investments, and navigate life's uncertainties with greater confidence and peace of mind. Start building your emergency fund today with  paytirement to secure your financial future and ensure that you are prepared for whatever challenges may come your way."  } src={Financial} />
- 
+      <PaymentHero
+        addPadding={true}
+        font={'0.9rem'}
+        linheight={'1.3rem'}
+        style={margintop}
+        heading={'Emergency Fund'}
+        pargraph={
+          "An emergency fund is a crucial component of financial planning that provides a buffer for unexpected expenses or financial emergencies. This dedicated savings account ensures that you have the resources to handle sudden financial challenges without resorting to high-interest debt or compromising your long-term financial goals.  An emergency fund is an essential financial tool that provides a safety net for unexpected expenses and financial emergencies. By choosing this fund, you can avoid debt, protect your investments, and navigate life's uncertainties with greater confidence and peace of mind. Start building your emergency fund today with  paytirement to secure your financial future and ensure that you are prepared for whatever challenges may come your way."
+        }
+        src={Financial}
+      />
 
-       {/* <PaymentHero  addPadding={true} style={margintop} heading={''} pargraph={'' }  src={whytrust} />  */}
-      
-    
+      {/* <PaymentHero  addPadding={true} style={margintop} heading={''} pargraph={'' }  src={whytrust} />  */}
     </>
   )
 }
