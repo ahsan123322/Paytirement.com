@@ -24,7 +24,7 @@ const PaymentHero = ({ heading, linheight, pargraph, src, style, bottommar, addP
             <h2
               className="mb-12 max-md:mb-8  "
               style={{ marginBottom: `${bottommar} `, color: '', fontSize: '3rem', fontWeight: 'bold' }}>
-              {heading}
+              {heading} {''}
             </h2>
             <p className="mb-12 max-w-[590px] max-md:mb-8 " style={{ lineHeight: `${linheight}`, fontSize: `${font}` }}>
               {pargraph}

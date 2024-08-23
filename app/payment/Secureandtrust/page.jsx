@@ -22,7 +22,7 @@ const personalized = () => {
         width={900}
         addPadding={true}
         linheight={'3rem'}
-        font={'1rem'}
+        font={'1.2rem'}
         style={margintop}
         heading={'Secure and Trusted'}
         pargraph={
