@@ -104,9 +104,9 @@ const HomeCta = () => {
         <div className=" mx-auto   text-center">
           {/* <h2 className="mb-5 text-[48px] font-semibold max-lg:text-[32px]">Join Paytirement today.</h2> */}
           <p className="mx-auto mb-12 max-w-[400px] max-lg:mt-6"> </p>
-          <button onClick={() => setShowSearch(!showSearch)} className="btn btn-navbar ">
+          <Link href={'/contact'} className="btn btn-navbar ">
             Sign up
-          </button>
+          </Link>
           {/* <ul className=" mb-10 mt-10 max-w-[815px] flex-col items-start justify-between space-y-10 max-lg:mt-5 max-md:flex-col max-md:gap-5">
             <li className="flex items-start">
               <svg
