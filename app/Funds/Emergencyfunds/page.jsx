@@ -20,8 +20,6 @@ const Emergency = () => {
     <>
       <PaymentHero
         addPadding={true}
-        font={'0.9rem'}
-        linheight={'1.3rem'}
         style={margintop}
         heading={'Emergency Fund'}
         pargraph={

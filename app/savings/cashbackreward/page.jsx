@@ -20,8 +20,6 @@ const cashbackreward = () => {
     <>
       <div className="mx-6">
         <PaymentHero
-          linheight={'4rem'}
-          font={'1.1rem'}
           addPadding={true}
           style={margintop}
           heading={'Cashback Rewards'}

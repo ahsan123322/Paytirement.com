@@ -17,7 +17,6 @@ const savings = () => {
     <>
       <div className="mx-12">
         <PaymentHero
-          linheight={'2.8rem'}
           addPadding={true}
           style={margintop}
           heading={'Active Deals'}

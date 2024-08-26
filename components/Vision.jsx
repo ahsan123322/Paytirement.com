@@ -121,7 +121,7 @@ const Vision = () => {
         <div className="grid grid-cols-2 items-start gap-10 max-md:grid-cols-1 1xl:gap-x-24">
           <div>
             {/* <h2 className="mb-8 max-lg:mb-4">Emergency Fund Planning For Retirement.</h2> */}
-            <p className="mb-11 text-lg  max-lg:mb-5 " style={{ lineHeight: '2.7rem' }}>
+            <p className="mb-11  max-lg:mb-5 ">
               Whether you're building an emergency fund, planning for retirement, or looking to grow your wealth through
               diversified investments, Paytirement equips you with the tools and convenience needed to support your
               financial well-being. At Paytirement, we are committed to providing you with a user-friendly platform to

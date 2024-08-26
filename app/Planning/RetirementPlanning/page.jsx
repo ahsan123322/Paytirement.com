@@ -18,9 +18,7 @@ const RetirementPlanning = () => {
   return (
     <>
       <PaymentHero
-        linheight={'1.3rem'}
         addPadding={true}
-        font={'0.9rem'}
         style={margintop}
         heading={'Retirement Planning'}
         pargraph={

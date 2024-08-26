@@ -21,8 +21,6 @@ const personalized = () => {
       <PaymentHero
         width={900}
         addPadding={true}
-        linheight={'3rem'}
-        font={'1.2rem'}
         style={margintop}
         heading={'Secure and Trusted'}
         pargraph={
@@ -33,7 +31,6 @@ const personalized = () => {
       <PaymentHero
         addPadding={false}
         style={margintop}
-        font={'0.9rem'}
         heading={'Why Trust Our Payment System?'}
         pargraph={
           'Our payment mechanism utilizes the most advanced technology available today. This  includes robust encryption methods, secure payment gateways, and continuous system updates to protect your financial information.We use end-to-end encryption to safeguard your data from the moment you enter it until the transaction is complete. This ensures that your sensitive information remains confidential and protected from unauthorized access.'

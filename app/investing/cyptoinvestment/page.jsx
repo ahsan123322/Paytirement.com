@@ -21,8 +21,6 @@ const cryptoin = () => {
       <div className="">
         <PaymentHero
           addPadding={true}
-          linheight={'2.7rem'}
-          font={'1rem'}
           style={margintop}
           heading={'Crypto Investing'}
           pargraph={

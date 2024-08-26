@@ -21,8 +21,6 @@ const TaxPlaining = () => {
       <PaymentHero
         addPadding={true}
         style={margintop}
-        font={'0.9rem'}
-        linheight={'1.5rem'}
         heading={'Tax Planning'}
         pargraph={
           'Tax planning is a strategic approach to managing finances with the objective of minimizing tax liabilities while ensuring compliance with the law. Effective tax planning leverages various tax breaks, deductions, exemptions, and incentives to reduce taxable income and ultimately the amount of tax owed. Our tax planners can help you with this essential aspect of financial management that offers numerous benefits, from tax savings and improved cash flow to enhanced investment returns and compliance. By implementing effective tax planning strategies, individuals and businesses can achieve greater financial stability and security while fulfilling your tax obligations responsibly.'

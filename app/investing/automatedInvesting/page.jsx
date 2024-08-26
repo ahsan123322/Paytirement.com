@@ -22,8 +22,6 @@ const personalized = () => {
         addPadding={true}
         width={900}
         height={800}
-        font={'1rem'}
-        linheight={'2.6rem'}
         style={margintop}
         heading={'Automated Investing'}
         pargraph={

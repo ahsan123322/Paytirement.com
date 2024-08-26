@@ -20,7 +20,6 @@ const portfolioinvestment = () => {
     <>
       <PaymentHero
         addPadding={true}
-        linheight={'2.7rem'}
         style={margintop}
         heading={'Portfolio Investing'}
         pargraph={

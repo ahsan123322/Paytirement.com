@@ -23,7 +23,6 @@ const RetirementPlanning = () => {
           addPadding={true}
           style={margintop}
           heading={'Property Funds'}
-          font={'0.9rem'}
           pargraph={
             'Property funds, also known as real estate funds, are pooled investment vehicles that invest in real estate properties or real estate-related securities. These funds allow individual investors to gain exposure to the property market without directly purchasing and managing properties. Property funds provide a convenient and efficient way for investors to gain exposure to the real estate market. With benefits like diversification, professional management, and accessibility, property funds make it easier for individuals to invest in high-quality real estate assets without the need for significant capital or direct property management responsibilities. By choosing property fund you can start investing in Australian property market to enhance your portfolio and achieve financial goals.'
           }

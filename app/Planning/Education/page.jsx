@@ -21,8 +21,6 @@ const RetirementPlanning = () => {
         addPadding={true}
         style={margintop}
         heading={'Education planning'}
-        font={'0.9rem'}
-        linheight={'1.4rem'}
         pargraph={
           "Education funds are specialized savings or investment accounts designed to help families save and invest money for their children's education expenses. These funds provide a financial cushion that enables young teens to pursue their educational goals without falling into the trap of debt. By joining our education fund, you can ensure that our young teens can pursue their educational dreams without the burden of debt. By taking advantage of the various  types of education funds and starting to save early, families can provide a solid  financial foundation for their children’s education. With benefits like tax advantages, compounding growth, and financial flexibility, education funds offer a smart and  effective way to support higher education and build a brighter future for the next generation."
         }

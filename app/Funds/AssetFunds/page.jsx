@@ -19,7 +19,6 @@ const RetirementPlanning = () => {
   return (
     <>
       <PaymentHero
-        font={'0.9rem'}
         addPadding={true}
         style={margintop}
         heading={'Asset Funds'}

@@ -20,8 +20,7 @@ const personalized = () => {
       <PaymentHero
         addPadding={true}
         style={margintop}
-        linheight={'2rem'}
-        heading={'Personalized Recommendation'}
+        heading={'Personalized       Recommendation'}
         pargraph={
           "Utilizing advanced algorithms, paytirement analyses your shopping habits and preferences to provide personalized deal recommendations. Whether you're shopping for groceries, electronics, clothing, or dining out, paytirement.com will suggest deals tailored specifically for you."
         }

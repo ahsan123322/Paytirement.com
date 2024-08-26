@@ -115,7 +115,7 @@ const Services = ({ sectionDetails = true }) => {
               {/* <p className="section-tagline">Data Integrations</p> */}
 
               {/* <h2 className="mb-8 max-lg:mb-4">No more reading charts</h2> */}
-              <p className="mb-11 text-lg max-lg:mb-5 " style={{ lineHeight: '3rem' }}>
+              <p className="mb-11  max-lg:mb-5 ">
                 Don’t let time constraints or investment complexity stand in the way of your financial growth. Sign up
                 today to register your interest.
               </p>

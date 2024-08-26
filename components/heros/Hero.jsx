@@ -186,7 +186,7 @@ const Hero = () => {
             {/* <h1 className="mb-12 max-md:mb-8  " style={{ color: 'white', fontWeight: 'bold' }}>
               Empower Your Financial Future With Paytirement{' '}
             </h1> */}
-            <p className="mb-12 text-lg   max-md:mb-8" style={{ lineHeight: '3rem' }}>
+            <p className="mb-12   max-md:mb-8">
               Are you a busy professional, self-employed individual, student, or household struggling to manage your
               finances and build wealth? Managing finances and building wealth can be tough, especially with a packed
               schedule that leaves little time and energy for planning and investing.
