@@ -22,7 +22,7 @@ const PaymentHero = ({ heading, linheight, pargraph, src, style, bottommar, addP
           <div className="col-span-12 md:col-span-7">
             {/* <p className="mb-8 font-medium uppercase max-lg:mb-4 text-Purple" style={{color:"", fontWeight:'bold', fontSize:'x-large'}}  >Paytirement</p> */}
             <h2
-              className="mb-12 max-md:mb-8  "
+              className="mb-8 max-md:mb-8  "
               style={{ marginBottom: `${bottommar} `, color: '', fontSize: '3rem', fontWeight: 'bold' }}>
               {heading} {''}
             </h2>
