@@ -114,7 +114,7 @@ const Hero = () => {
           // initial="initial"
           // animate="animate"
           className="relative z-10 grid grid-cols-12 items-center max-lg:gap-y-10">
-          <div className="col-span-12 md:col-span-7">
+          <div className="col-span-12 md:col-span-6">
             {/* <p
               className="text-Purple mb-8 font-medium uppercase max-lg:mb-4"
               style={{ color: 'white', fontWeight: 'bold', fontSize: 'x-large' }}>
@@ -139,13 +139,13 @@ const Hero = () => {
               </div>
             </form> */}
           </div>
-          <div className="col-span-12 md:col-span-5">
-            <div className=" relative  w-full flex-col justify-center  ">
+          <div className="col-span-12 md:col-span-6">
+            <div className=" relative   flex justify-center  ">
               <Image
                 src={hero}
-                style={{ width: '40rem', borderRadius: '1rem' }}
+                style={{ width: '31rem', height: '21rem', borderRadius: '1rem' }}
                 alt="hero Image"
-                className="inline-block  dark:hidden"
+                className="inline-block   dark:hidden"
               />
               {/* <div style={{marginTop:'2rem'}}  className="absolute !left-1/2 !top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <Image style={{Width:'150%'}} src={mocukp1} alt="hero Image" className="inline-block h-100 w-100 dark:hidden" />
