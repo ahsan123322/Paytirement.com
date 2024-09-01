@@ -1,77 +1,78 @@
-"use client";
-import React from "react";
-import { Label } from "../ui/label";
-import { Input } from "../ui/input";
-import { cn } from "@/utils/cn";
-import {
-  IconBrandGithub,
-  IconBrandGoogle,
-  IconBrandOnlyfans,
-} from "@tabler/icons-react";
-import { useState } from "react";
-import axios from "axios";
-import { model } from "mongoose";
-import { toast } from "react-toastify";
+'use client'
+import React from 'react'
+import { Label } from '../ui/label'
+import { Input } from '../ui/input'
+import { cn } from '@/utils/cn'
+import { IconBrandGithub, IconBrandGoogle, IconBrandOnlyfans } from '@tabler/icons-react'
+import { useState } from 'react'
+import axios from 'axios'
+import { model } from 'mongoose'
+import { toast } from 'react-toastify'
 export function SignupFormDemo() {
-  const [formdat , setFormdata] = useState({
-    name:'',
-    lastname:'',
-    Email:''
+  const [formdat, setFormdata] = useState({
+    name: '',
+    lastname: '',
+    Email: '',
   })
-  const handleChange = (e) =>{
-const {name , value} = e.target;
-setFormdata({
-  ...formdat,
-  [name]:value
-})
+  const handleChnge = (e) => {
+    const { name, value } = e.target
+    setFormdata({
+      ...formdat,
+      [name]: value,
+    })
   }
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    
-    try{
-      const response = await axios.post(`${window.location.origin}/api/Adduser`, {
-       name:formdat.name,
-       lastname:formdat.lastname,
-       Email:formdat.Email
- 
-      } ).then(modal =>{
-        const {userId} = modal.data;
-        localStorage.setItem('id' , userId) 
-        toast.success('form is submited')
-      window.location.reload()
-      }).catch((e)=>{
-        toast.error('user already exist')
-      })
-      
-    }catch(err ){
-      console.log(err,'form not submited');
-         toast.error('something wrong')
-      
-    }  
-  };
+    e.preventDefault()
+
+    try {
+      const response = await axios
+        .post(`${window.location.origin}/api/Adduser`, {
+          name: formdat.name,
+          lastname: formdat.lastname,
+          Email: formdat.Email,
+        })
+        .then((modal) => {
+          const { userId } = modal.data
+          localStorage.setItem('id', userId)
+          toast.success('form is submited')
+          window.location.reload()
+        })
+        .catch((e) => {
+          toast.error('user already exist')
+        })
+    } catch (err) {
+      console.log(err, 'form not submited')
+      toast.error('something wrong')
+    }
+  }
   return (
-    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
-      <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
-        Join Paytirement community
-      </h2>
-      <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
-        Signup to Paytirement For fastest and Secure payment mathod 
+    <div className="shadow-input mx-auto w-full max-w-md rounded-none bg-white p-4 dark:bg-black md:rounded-2xl md:p-8">
+      <h2 className="text-xl font-bold text-neutral-800 dark:text-neutral-200">Join Paytirement community</h2>
+      <p className="mt-2 max-w-sm text-sm text-neutral-600 dark:text-neutral-300">
+        Signup to Paytirement For fastest and Secure payment mathod
       </p>
 
       <form className="my-8" onSubmit={handleSubmit}>
-        <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
+        <div className="mb-4 flex flex-col space-y-2 md:flex-row md:space-x-2 md:space-y-0">
           <LabelInputContainer>
             <Label htmlFor="firstname">First name</Label>
-            <Input required name="name"  id="firstname" onChange={handleChange} placeholder="Tyler" type="text" />
+            <Input required name="name" id="firstname" onChange={handleChnge} placeholder="Tyler" type="text" />
           </LabelInputContainer>
           <LabelInputContainer>
             <Label htmlFor="lastname">Last name</Label>
-            <Input required name="lastname" onChange={handleChange} id="lastname" placeholder="Durden" type="text" />
+            <Input required name="lastname" onChange={handleChnge} id="lastname" placeholder="Durden" type="text" />
           </LabelInputContainer>
         </div>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="email">Email Address</Label>
-          <Input required name="Email" onChange={handleChange} id="email" placeholder="projectmayhem@fc.com" type="email" />
+          <Input
+            required
+            name="Email"
+            onChange={handleChnge}
+            id="email"
+            placeholder="projectmayhem@fc.com"
+            type="email"
+          />
         </LabelInputContainer>
         {/* <LabelInputContainer className="mb-4">
           <Label htmlFor="password">Password</Label>
@@ -87,9 +88,8 @@ setFormdata({
         </LabelInputContainer> */}
 
         <button
-          className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
-          type="submit"
-        >
+          className="group/btn relative block h-10 w-full rounded-md bg-gradient-to-br from-black to-neutral-600 font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:bg-zinc-800 dark:from-zinc-900 dark:to-zinc-900 dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+          type="submit">
           Sign up &rarr;
           <BottomGradient />
         </button>
@@ -130,28 +130,18 @@ setFormdata({
         </div> */}
       </form>
     </div>
-  );
+  )
 }
 
 const BottomGradient = () => {
   return (
     <>
-      <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
-      <span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
+      <span className="absolute inset-x-0 -bottom-px block h-px w-full bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-0 transition duration-500 group-hover/btn:opacity-100" />
+      <span className="absolute inset-x-10 -bottom-px mx-auto block h-px w-1/2 bg-gradient-to-r from-transparent via-indigo-500 to-transparent opacity-0 blur-sm transition duration-500 group-hover/btn:opacity-100" />
     </>
-  );
-};
+  )
+}
 
-const LabelInputContainer = ({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) => {
-  return (
-    <div className={cn("flex flex-col space-y-2 w-full", className)}>
-      {children}
-    </div>
-  );
-};
+const LabelInputContainer = ({ children, className }: { children: React.ReactNode; className?: string }) => {
+  return <div className={cn('flex w-full flex-col space-y-2', className)}>{children}</div>
+}
